@@ -8,6 +8,9 @@
   function applyLanguage(language) {
     if (language !== 'th') language = 'en';
     document.documentElement.lang = language;
+    document.querySelectorAll('[data-label-en][data-label-th]').forEach(node => {
+      node.setAttribute('aria-label', node.dataset[`label${language === 'th' ? 'Th' : 'En'}`]);
+    });
     if (search) search.placeholder = search.dataset[`placeholder${language === 'th' ? 'Th' : 'En'}`] || search.placeholder;
     document.body.classList.toggle('lang-en', language === 'en');
     document.body.classList.toggle('lang-th', language === 'th');
