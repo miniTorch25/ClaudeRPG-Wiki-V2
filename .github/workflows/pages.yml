@@ -3,6 +3,8 @@ name: Deploy ClaudeRPG Wiki V2
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -22,6 +24,40 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Extract ClaudeRPG images from the add-on archive
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import shutil
+
+          archive = Path("ClaudeRPG_v1_39_0.zip")
+          if not archive.exists():
+              raise SystemExit("ClaudeRPG_v1_39_0.zip was not found in the repository root")
+
+          routes = {
+              "ClaudeRP/textures/icons/ach/": Path("assets/images/achievements"),
+              "ClaudeRP/textures/items/": Path("assets/images/items"),
+              "ClaudeRP/textures/blocks/": Path("assets/images/blocks"),
+              "ClaudeRP/textures/entity/": Path("assets/images/mobs"),
+              "ClaudeRP/textures/crpg_toast/": Path("assets/images/ui/toast"),
+              "ClaudeRP/textures/ui/clauderpg_rarity/": Path("assets/images/ui/rarity"),
+          }
+          with ZipFile(archive) as addon:
+              copied = 0
+              for name in addon.namelist():
+                  if not name.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                      continue
+                  for prefix, destination in routes.items():
+                      if name.startswith(prefix):
+                          target = destination / Path(name).name
+                          target.parent.mkdir(parents=True, exist_ok=True)
+                          with addon.open(name) as src, target.open("wb") as dst:
+                              shutil.copyfileobj(src, dst)
+                          copied += 1
+                          break
+          print(f"Extracted {copied} image assets for the wiki build")
+          PY
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1
         with:
@@ -33,6 +69,7 @@ jobs:
           path: ./_site
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
