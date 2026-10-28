@@ -93,7 +93,7 @@ No ingredient, crafting-method, or output-count mismatch was found in the 35 rec
 - [x] Checked `req_config.js` against the Stats reference table for listed melee/ranged weapons, armor, and tools. The documented base requirements match the config values, including multi-stat requirements for spears, bows, crossbows, tridents, mace, turtle helmet, and elytra.
 - [x] Confirmed the Stats manager's “refund all” operation returns invested stat values to the Points pool without changing Level or XP; the separate full reset also clears Level/XP/Points and resets Mana to 50. Player-facing text should distinguish these actions if describing both.
 - [x] Found and corrected a bilingual mismatch in `Progression.md`: the English section used the central feature gates (Gem P4/A2, Rune P6/A3), while the Thai section still said P2/A2 and P3/A3. The Thai gate table, route, and Ascension notes now match the central gate and disclose the addon confirmation-text conflict.
-- [ ] Further verify exact equipment enforcement outcomes in runtime (especially automatic armor removal and whether weapon/tool restrictions behave exactly as summarized); config values alone do not prove all user-visible behavior.
+- [x] Inspected `item_restriction.js`: melee damage is blocked when requirements fail; ranged use is cancelled; the mainhand warns for melee/ranged/tools; armor and offhand equipment are automatically removed when stats fail. Armor with installed Gems also requires its Gem equip level (the code comment identifies this as Lv.75+ / requirement 8). This is source inspection, not a live in-game test.
 
 ## Recommended execution order
 
