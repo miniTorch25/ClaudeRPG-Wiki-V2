@@ -55,11 +55,11 @@ A system opens when **all** requirements are met. Level gates are remembered, so
 |---|---|---|
 | Augment | P1 | — |
 | Chorus | P2 | — |
-| Gem | P2 | A2 |
-| Rune | P3 | A3 |
+| Gem | P4 | A2 |
+| Rune | P6 | A3 |
 | Mastery | P1 | — |
 
-The requirements above distinguish **system access** from **item availability**. For example, the Gem system can unlock at P2/A2; Uncarved Gems begin dropping from bosses at A2. Geode mobs become another source at A4.
+The requirements above distinguish **system access** from **item availability**. The v1.39.0 feature-gate configuration requires **P4 + A2 for Gem** and **P6 + A3 for Rune**. Uncarved Gems begin dropping from bosses at A2, before the Gem system itself is unlocked; Geode mobs become another source at A4. Note: the Ascension confirmation notes in the addon describe Gem/Rune as unlockable at P2/P3, which conflicts with the central feature-gate configuration. This wiki follows the central gate used by `ProgressionManager.canUse`; the conflicting confirmation text should be corrected in a future addon update.
 
 ### Suggested progression route
 
@@ -67,7 +67,7 @@ The requirements above distinguish **system access** from **item availability**.
 2. **Prepare for Prestige:** reach the current level cap and collect the required Prestige Sigils.
 3. **Prestige:** raise your level cap by 20 and choose one available Perk. Your Level, XP, allocated Points, and invested stats are reset.
 4. **Raise world Ascension carefully:** Ascension affects the entire world, not just the player who activates it. Higher levels increase enemy difficulty.
-5. **Unlock systems by milestones:** Augment at P1, Chorus at P2, Gem at P2/A2, and Rune at P3/A3.
+5. **Unlock systems by milestones:** Augment at P1, Chorus at P2, Gem at P4/A2, and Rune at P6/A3. Gem drops start earlier at A2, but drops alone do not unlock the system.
 
 Before activating a higher Ascension in a shared world, make sure the players are prepared for the stronger mobs and bosses.
 
