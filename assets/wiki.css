@@ -16,3 +16,6 @@
 .topbar-meta{margin-left:0}
 body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{display:none!important}
 @media(max-width:850px){.language-switch{margin-left:auto}.menu-toggle{margin-left:0}}
+
+/* Ensure hidden language sections stay hidden even when components define display styles. */
+[hidden] { display: none !important; }
