@@ -4,26 +4,33 @@ permalink: /
 layout: default
 ---
 
-<section class="home-hero">
-  <div class="eyebrow">MINECRAFT BEDROCK · RPG ADD-ON</div>
-  <h1>ClaudeRPG Wiki</h1>
-  <div data-lang="en" markdown="1">
+<section class="home-hero home-hero--split">
+  <div class="home-hero-copy">
+    <div class="eyebrow">MINECRAFT BEDROCK · RPG ADD-ON</div>
+    <h1>ClaudeRPG Wiki</h1>
+    <div data-lang="en" markdown="1">
 
 Your reference for progression, equipment, combat, exploration, and every major system in ClaudeRPG.
 
-  </div>
-  <div data-lang="th" markdown="1">
+    </div>
+    <div data-lang="th" markdown="1">
 
 คู่มืออ้างอิง ClaudeRPG ครอบคลุมระบบความก้าวหน้า อุปกรณ์ การต่อสู้ การสำรวจ และระบบสำคัญต่าง ๆ
 
+    </div>
+    <div class="hero-links">
+      <a data-lang="en" href="{{ '/Getting-Started' | relative_url }}">Get started</a>
+      <a data-lang="th" href="{{ '/Getting-Started' | relative_url }}">เริ่มต้นใช้งาน</a>
+      <a data-lang="en" href="{{ '/Systems' | relative_url }}">Browse systems</a>
+      <a data-lang="th" href="{{ '/Systems' | relative_url }}">ดูระบบทั้งหมด</a>
+      <a data-lang="en" href="{{ '/Items' | relative_url }}">Item reference</a>
+      <a data-lang="th" href="{{ '/Items' | relative_url }}">ข้อมูลไอเทม</a>
+    </div>
   </div>
-  <div class="hero-links">
-    <a data-lang="en" href="{{ '/Getting-Started' | relative_url }}">Get started</a>
-    <a data-lang="th" href="{{ '/Getting-Started' | relative_url }}">เริ่มต้นใช้งาน</a>
-    <a data-lang="en" href="{{ '/Systems' | relative_url }}">Browse systems</a>
-    <a data-lang="th" href="{{ '/Systems' | relative_url }}">ดูระบบทั้งหมด</a>
-    <a data-lang="en" href="{{ '/Items' | relative_url }}">Item reference</a>
-    <a data-lang="th" href="{{ '/Items' | relative_url }}">ข้อมูลไอเทม</a>
+  <div class="home-hero-art">
+    <img src="{{ '/assets/images/clauderpg-hero.svg' | relative_url }}" alt="" width="520" height="360" fetchpriority="high">
+    <span data-lang="en" class="hero-art-caption">EXPLORE · GROW · TRANSCEND</span>
+    <span data-lang="th" class="hero-art-caption">ออกสำรวจ · พัฒนา · ก้าวข้ามขีดจำกัด</span>
   </div>
 </section>
 
