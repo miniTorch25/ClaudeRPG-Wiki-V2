@@ -13,7 +13,7 @@
     while (walker.nextNode()) {
       const node = walker.currentNode;
       if (!node.parentElement || node.parentElement.closest('script,style,code,pre,textarea')) continue;
-      if (/[ \u00b7|/]/.test(node.nodeValue) && /[\u0E00-\u0E7F]/.test(node.nodeValue)) nodes.push(node);
+      if (/[ \u00b7|\/]/.test(node.nodeValue) && /[\u0E00-\u0E7F]/.test(node.nodeValue)) nodes.push(node);
     }
     nodes.forEach(node => {
       const value = node.nodeValue;
