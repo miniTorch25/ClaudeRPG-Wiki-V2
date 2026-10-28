@@ -85,6 +85,16 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 
 No ingredient, crafting-method, or output-count mismatch was found in the 35 recipe definitions against the recipe summaries currently in `Items.md`. This conclusion is limited to the recipe JSON definitions; it does not validate every drop source, durability value, or in-game interaction described on the item page.
 
+
+
+### Stats and bilingual progression cross-check
+
+- [x] Checked `stats_manager.js`: nine tracked stats; default cap 80, with Mag 256, Wis 48, Con 64, and Vit 8; cap increases are rounded with `Math.round(base × capMultiplier)`.
+- [x] Checked `req_config.js` against the Stats reference table for listed melee/ranged weapons, armor, and tools. The documented base requirements match the config values, including multi-stat requirements for spears, bows, crossbows, tridents, mace, turtle helmet, and elytra.
+- [x] Confirmed the Stats manager's “refund all” operation returns invested stat values to the Points pool without changing Level or XP; the separate full reset also clears Level/XP/Points and resets Mana to 50. Player-facing text should distinguish these actions if describing both.
+- [x] Found and corrected a bilingual mismatch in `Progression.md`: the English section used the central feature gates (Gem P4/A2, Rune P6/A3), while the Thai section still said P2/A2 and P3/A3. The Thai gate table, route, and Ascension notes now match the central gate and disclose the addon confirmation-text conflict.
+- [ ] Further verify exact equipment enforcement outcomes in runtime (especially automatic armor removal and whether weapon/tool restrictions behave exactly as summarized); config values alone do not prove all user-visible behavior.
+
 ## Recommended execution order
 
 1. Resolve factual contradictions and verify core progression rules.
@@ -106,7 +116,7 @@ Use these labels in editorial notes while drafting:
 ## Completion checklist
 
 - [x] Resolve the Gem/Rune unlock contradiction in the wiki using the central feature gate; the conflicting addon confirmation text remains an upstream issue.
-- [ ] Confirm formulas, costs, caps, and rounding rules.
+- [ ] Confirm formulas, costs, caps, and rounding rules. Initial source checks now confirm the stat caps and cap-rounding method; the full progression/XP and perk edge cases still need a dedicated pass.
 - [ ] Expand key pages with step-by-step player workflows.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compare all 35 recipe JSON definitions with the English and Thai item tables; no recipe ingredient/method/output mismatch found.
