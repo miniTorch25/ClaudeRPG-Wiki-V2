@@ -53,9 +53,17 @@ This audit tracks missing explanations, shallow coverage, contradictions, and ve
 ## Work completed on the audit branch
 
 - [x] Expanded `Progression.md` with a practical progression route in English and Thai.
-- [x] Aligned the feature-unlock table with the same page's Ascension notes: Gem at P2/A2 and Rune at P3/A3. This is an internal consistency correction; it still needs direct code verification against the v1.39.0 package before being treated as source-verified.
+- [x] Verified the Gem/Rune feature gates against `ClaudeBP/scripts/config/progression_config.js` and `ClaudeBP/scripts/managers/progression_manager.js`. The central gate requires Gem at P4/A2 and Rune at P6/A3. Corrected `Progression.md` accordingly and documented a genuine inconsistency in the addon: the Ascension confirmation notes say Gem can unlock with P2 and Rune with P3, while the central feature gate requires P4/P6. Boss Uncarved Gem drops still begin at A2, and Geode drops at A4; those drop milestones are not the same as unlocking the Gem system.
 - [x] Expanded `Stats.md` with point-allocation planning and equipment-requirement troubleshooting in English and Thai.
 - [x] Updated `assets/wiki.css` so regular reference tables fill the article width, remain horizontally scrollable when wide, and use tighter cell spacing on small screens. This is a CSS-level fix; visual verification on a real phone/browser is still outstanding.
+
+## Additional source verification
+
+The v1.39.0 addon package was retrieved from the Library and inspected directly. Relevant findings:
+- `ClaudeBP/scripts/config/progression_config.js`: central feature gates list Augment P1, Chorus P2, Gem P4/A2, Rune P6/A3.
+- `ClaudeBP/scripts/managers/progression_manager.js`: `canUse` checks each configured Prestige and Ascension requirement.
+- `ClaudeBP/scripts/config/progression_config.js` also sets boss Uncarved Gem drops to Ascension 2; Ascension notes state Geode mobs can drop them at Ascension 4.
+- The same config's `ASCENSION.UNLOCK_NOTES` describes Gem at P2 and Rune at P3, conflicting with the feature gates above. Wiki copy now follows the central feature gate and explicitly documents the mismatch rather than hiding it.
 
 ## Recommended execution order
 
