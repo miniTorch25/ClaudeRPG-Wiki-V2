@@ -9,75 +9,75 @@
   <link rel="stylesheet" href="{{ '/assets/wiki.css' | relative_url }}">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content"><span data-lang="en">Skip to content</span><span data-lang="th">ข้ามไปยังเนื้อหา</span></a>
   <header class="topbar">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="ClaudeRPG Wiki home">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="ClaudeRPG Wiki home" data-label-en="ClaudeRPG Wiki home" data-label-th="หน้าแรก ClaudeRPG Wiki">
       <span class="brand-mark">C</span>
-      <span><strong>ClaudeRPG</strong><small>COMMUNITY WIKI</small></span>
+      <span><strong>ClaudeRPG</strong><small><span data-lang="en">COMMUNITY WIKI</span><span data-lang="th">ชุมชนวิกิ</span></small></span>
     </a>
-    <div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="language-option is-active" data-language="en" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="th" aria-pressed="false">ไทย</button></div>
-    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar">Menu</button>
-    <div class="topbar-meta"><span class="status-dot"></span> Add-on reference <span class="version-tag">v1.39.0</span></div>
+    <div class="language-switch" role="group" aria-label="Choose language" data-label-en="Choose language" data-label-th="เลือกภาษา"><button type="button" class="language-option is-active" data-language="en" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="th" aria-pressed="false">ไทย</button></div>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar"><span data-lang="en">Menu</span><span data-lang="th">เมนู</span></button>
+    <div class="topbar-meta"><span class="status-dot"></span> <span data-lang="en">Add-on reference</span><span data-lang="th">คู่มือแอดออน</span> <span class="version-tag">v1.39.0</span></div>
   </header>
   <div class="site-shell">
     <aside class="sidebar" id="sidebar">
-      <label class="search-label" for="nav-search">Find a page</label>
-      <input id="nav-search" class="nav-search" type="search" placeholder="Search navigation…" autocomplete="off">
-      <nav class="side-nav" aria-label="Wiki navigation">
-        <a class="nav-home" href="{{ '/' | relative_url }}">⌂ <span>Wiki Home</span></a>
-        <p class="nav-heading">GETTING STARTED</p>
-        <a href="{{ '/Getting-Started' | relative_url }}">Getting Started</a>
-        <a href="{{ '/Guide-Quest' | relative_url }}">Guide Quest</a>
-        <a href="{{ '/FAQ' | relative_url }}">FAQ</a>
-        <a href="{{ '/Glossary' | relative_url }}">Glossary</a>
-        <p class="nav-heading">CHARACTER &amp; PROGRESSION</p>
-        <a href="{{ '/Progression' | relative_url }}">Progression</a>
-        <a href="{{ '/Stats' | relative_url }}">Stats</a>
-        <a href="{{ '/Mastery' | relative_url }}">Mastery</a>
-        <a href="{{ '/Achievements' | relative_url }}">Achievements</a>
-        <a class="nav-sub" href="{{ '/Achievements-Combat' | relative_url }}">Combat achievements</a>
-        <a class="nav-sub" href="{{ '/Achievements-Work-and-Support' | relative_url }}">Work &amp; support achievements</a>
-        <a class="nav-sub" href="{{ '/Achievements-Misc' | relative_url }}">Misc. achievements</a>
-        <p class="nav-heading">EQUIPMENT &amp; ITEMS</p>
-        <a href="{{ '/Items' | relative_url }}">Items</a>
-        <a href="{{ '/Item-Categories' | relative_url }}">Item categories</a>
-        <a href="{{ '/Augment' | relative_url }}">Augment &amp; Reforge</a>
-        <a href="{{ '/Chorus' | relative_url }}">Chorus</a>
-        <a class="nav-sub" href="{{ '/Chorus-Echo' | relative_url }}">Echo</a>
-        <a class="nav-sub" href="{{ '/Chorus-Resonance' | relative_url }}">Resonance</a>
-        <a class="nav-sub" href="{{ '/Chorus-Transcend' | relative_url }}">Transcend</a>
-        <a class="nav-sub" href="{{ '/Chorus-Fusion' | relative_url }}">Fusion</a>
-        <a class="nav-sub" href="{{ '/Chorus-Elements' | relative_url }}">Elements</a>
-        <a href="{{ '/Gem' | relative_url }}">Gems</a>
-        <a class="nav-sub" href="{{ '/Gem-Abilities' | relative_url }}">Gem abilities</a>
-        <a href="{{ '/Rune' | relative_url }}">Runes</a>
-        <a class="nav-sub" href="{{ '/Runes-Weapon-Types' | relative_url }}">Weapon types</a>
-        <a class="nav-sub" href="{{ '/Runes-All-Weapon' | relative_url }}">All-weapon runes</a>
-        <a class="nav-sub" href="{{ '/Runes-Tool' | relative_url }}">Tool runes</a>
-        <a class="nav-sub" href="{{ '/Runes-Curse' | relative_url }}">Curse runes</a>
-        <p class="nav-heading">WORLD &amp; COMBAT</p>
-        <a href="{{ '/Mob-Evolution' | relative_url }}">Mob evolution</a>
-        <a href="{{ '/Bosses-and-Special-Mobs' | relative_url }}">Bosses &amp; special mobs</a>
-        <a href="{{ '/Exploration' | relative_url }}">Exploration</a>
-        <a href="{{ '/Quality-of-Life' | relative_url }}">Quality of life</a>
-        <p class="nav-heading">REFERENCE &amp; ADMIN</p>
-        <a href="{{ '/Systems' | relative_url }}">Systems index</a>
-        <a href="{{ '/Changelog' | relative_url }}">Changelog</a>
-        <a href="{{ '/Admin' | relative_url }}">Admin tools</a>
+      <label class="search-label" for="nav-search"><span data-lang="en">Find a page</span><span data-lang="th">ค้นหาหน้า</span></label>
+      <input id="nav-search" class="nav-search" type="search" aria-label="Search navigation" data-label-en="Search navigation" data-label-th="ค้นหาในเมนู" placeholder="Search navigation…" data-placeholder-en="Search navigation…" data-placeholder-th="ค้นหาในเมนู…" autocomplete="off">
+      <nav class="side-nav" aria-label="Wiki navigation" data-label-en="Wiki navigation" data-label-th="เมนูนำทางวิกิ">
+        <a class="nav-home" href="{{ '/' | relative_url }}">⌂ <span><span data-lang="en">Wiki Home</span><span data-lang="th">หน้าแรกวิกิ</span></span></a>
+        <p class="nav-heading"><span data-lang="en">GETTING STARTED</span><span data-lang="th">เริ่มต้นใช้งาน</span></p>
+        <a href="{{ '/Getting-Started' | relative_url }}"><span data-lang="en">Getting Started</span><span data-lang="th">เริ่มต้นใช้งาน</span></a>
+        <a href="{{ '/Guide-Quest' | relative_url }}"><span data-lang="en">Guide Quest</span><span data-lang="th">เควสต์แนะนำ</span></a>
+        <a href="{{ '/FAQ' | relative_url }}"><span data-lang="en">FAQ</span><span data-lang="th">คำถามที่พบบ่อย</span></a>
+        <a href="{{ '/Glossary' | relative_url }}"><span data-lang="en">Glossary</span><span data-lang="th">อภิธานศัพท์</span></a>
+        <p class="nav-heading"><span data-lang="en">CHARACTER &amp; PROGRESSION</span><span data-lang="th">ตัวละครและความก้าวหน้า</span></p>
+        <a href="{{ '/Progression' | relative_url }}"><span data-lang="en">Progression</span><span data-lang="th">ความก้าวหน้า</span></a>
+        <a href="{{ '/Stats' | relative_url }}"><span data-lang="en">Stats</span><span data-lang="th">ค่าสถานะ</span></a>
+        <a href="{{ '/Mastery' | relative_url }}"><span data-lang="en">Mastery</span><span data-lang="th">ความชำนาญ</span></a>
+        <a href="{{ '/Achievements' | relative_url }}"><span data-lang="en">Achievements</span><span data-lang="th">ความสำเร็จ</span></a>
+        <a class="nav-sub" href="{{ '/Achievements-Combat' | relative_url }}"><span data-lang="en">Combat achievements</span><span data-lang="th">ความสำเร็จด้านการต่อสู้</span></a>
+        <a class="nav-sub" href="{{ '/Achievements-Work-and-Support' | relative_url }}"><span data-lang="en">Work &amp; support achievements</span><span data-lang="th">ความสำเร็จด้านงานและสนับสนุน</span></a>
+        <a class="nav-sub" href="{{ '/Achievements-Misc' | relative_url }}"><span data-lang="en">Misc. achievements</span><span data-lang="th">ความสำเร็จเบ็ดเตล็ด</span></a>
+        <p class="nav-heading"><span data-lang="en">EQUIPMENT &amp; ITEMS</span><span data-lang="th">อุปกรณ์และไอเทม</span></p>
+        <a href="{{ '/Items' | relative_url }}"><span data-lang="en">Items</span><span data-lang="th">ไอเทม</span></a>
+        <a href="{{ '/Item-Categories' | relative_url }}"><span data-lang="en">Item categories</span><span data-lang="th">หมวดหมู่ไอเทม</span></a>
+        <a href="{{ '/Augment' | relative_url }}"><span data-lang="en">Augment &amp; Reforge</span><span data-lang="th">Augment และ Reforge</span></a>
+        <a href="{{ '/Chorus' | relative_url }}"><span data-lang="en">Chorus</span><span data-lang="th">Chorus</span></a>
+        <a class="nav-sub" href="{{ '/Chorus-Echo' | relative_url }}"><span data-lang="en">Echo</span><span data-lang="th">Echo</span></a>
+        <a class="nav-sub" href="{{ '/Chorus-Resonance' | relative_url }}"><span data-lang="en">Resonance</span><span data-lang="th">Resonance</span></a>
+        <a class="nav-sub" href="{{ '/Chorus-Transcend' | relative_url }}"><span data-lang="en">Transcend</span><span data-lang="th">Transcend</span></a>
+        <a class="nav-sub" href="{{ '/Chorus-Fusion' | relative_url }}"><span data-lang="en">Fusion</span><span data-lang="th">Fusion</span></a>
+        <a class="nav-sub" href="{{ '/Chorus-Elements' | relative_url }}"><span data-lang="en">Elements</span><span data-lang="th">ธาตุ</span></a>
+        <a href="{{ '/Gem' | relative_url }}"><span data-lang="en">Gems</span><span data-lang="th">อัญมณี</span></a>
+        <a class="nav-sub" href="{{ '/Gem-Abilities' | relative_url }}"><span data-lang="en">Gem abilities</span><span data-lang="th">ความสามารถอัญมณี</span></a>
+        <a href="{{ '/Rune' | relative_url }}"><span data-lang="en">Runes</span><span data-lang="th">รูน</span></a>
+        <a class="nav-sub" href="{{ '/Runes-Weapon-Types' | relative_url }}"><span data-lang="en">Weapon types</span><span data-lang="th">ประเภทอาวุธ</span></a>
+        <a class="nav-sub" href="{{ '/Runes-All-Weapon' | relative_url }}"><span data-lang="en">All-weapon runes</span><span data-lang="th">รูนอาวุธทุกชนิด</span></a>
+        <a class="nav-sub" href="{{ '/Runes-Tool' | relative_url }}"><span data-lang="en">Tool runes</span><span data-lang="th">รูนเครื่องมือ</span></a>
+        <a class="nav-sub" href="{{ '/Runes-Curse' | relative_url }}"><span data-lang="en">Curse runes</span><span data-lang="th">รูนคำสาป</span></a>
+        <p class="nav-heading"><span data-lang="en">WORLD &amp; COMBAT</span><span data-lang="th">โลกและการต่อสู้</span></p>
+        <a href="{{ '/Mob-Evolution' | relative_url }}"><span data-lang="en">Mob evolution</span><span data-lang="th">วิวัฒนาการมอนสเตอร์</span></a>
+        <a href="{{ '/Bosses-and-Special-Mobs' | relative_url }}"><span data-lang="en">Bosses &amp; special mobs</span><span data-lang="th">บอสและมอนสเตอร์พิเศษ</span></a>
+        <a href="{{ '/Exploration' | relative_url }}"><span data-lang="en">Exploration</span><span data-lang="th">การสำรวจ</span></a>
+        <a href="{{ '/Quality-of-Life' | relative_url }}"><span data-lang="en">Quality of life</span><span data-lang="th">ระบบอำนวยความสะดวก</span></a>
+        <p class="nav-heading"><span data-lang="en">REFERENCE &amp; ADMIN</span><span data-lang="th">ข้อมูลอ้างอิงและผู้ดูแล</span></p>
+        <a href="{{ '/Systems' | relative_url }}"><span data-lang="en">Systems index</span><span data-lang="th">สารบัญระบบ</span></a>
+        <a href="{{ '/Changelog' | relative_url }}"><span data-lang="en">Changelog</span><span data-lang="th">บันทึกการเปลี่ยนแปลง</span></a>
+        <a href="{{ '/Admin' | relative_url }}"><span data-lang="en">Admin tools</span><span data-lang="th">เครื่องมือผู้ดูแล</span></a>
       </nav>
-      <div class="sidebar-footer">English · ไทย<br>Community reference</div>
+      <div class="sidebar-footer"><span data-lang="en">English · Thai</span><span data-lang="th">English · ไทย</span><br><span data-lang="en">Community reference</span><span data-lang="th">คู่มือสำหรับชุมชน</span></div>
     </aside>
     <main class="main-panel" id="main-content">
-      <div class="breadcrumbs"><a href="{{ '/' | relative_url }}">Wiki</a><span>/</span><span>{% if page.title %}{{ page.title }}{% else %}Home{% endif %}</span></div>
+      <div class="breadcrumbs"><a href="{{ '/' | relative_url }}"><span data-lang="en">Wiki</span><span data-lang="th">วิกิ</span></a><span>/</span><span>{% if page.title %}{{ page.title }}{% else %}Home{% endif %}</span></div>
       <article class="article-content">
         {{ content }}
       </article>
       <footer class="page-footer">
         <span>ClaudeRPG Wiki · v1.39.0</span>
-        <a href="https://github.com/miniTorch25/ClaudeRPG-Wiki-V2">View source on GitHub</a>
+        <a href="https://github.com/miniTorch25/ClaudeRPG-Wiki-V2"><span data-lang="en">View source on GitHub</span><span data-lang="th">ดูซอร์สโค้ดบน GitHub</span></a>
       </footer>
     </main>
   </div>
-  <script src="{{ '/assets/wiki.js' | relative_url }}?v=4" defer></script>
+  <script src="{{ '/assets/wiki.js' | relative_url }}?v=6" defer></script>
 </body>
 </html>
