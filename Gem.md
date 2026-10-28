@@ -24,6 +24,8 @@
 
 **TH:** แต่ละ **ชิ้นเกราะ** มี **ช่อง Gem 1 ช่อง** ปลดล็อกที่ Prestige 4 + Ascension 2 ขั้นตอน: **แกะสลัก** Uncarved Gem → **เจาะช่อง** → **ใส่ Gem** → **Enchant** เพื่อสุ่ม Ability ทำทั้งหมดที่บล็อก **Ultimate Enchanter** Ability **ไม่มีเลเวล** แต่ **Gem Potency** (จาก Gem Mastery สูงสุด +20% รวมสูงสุด +40%) เพิ่มเฉพาะค่าพลัง (ไม่เพิ่มคูลดาวน์ รัศมี หรือเพดาน)
 
+**Unlock note / หมายเหตุการปลดล็อก:** The v1.39.0 central feature gate requires **Prestige 4 + Ascension 2**. Bosses can drop Uncarved Gems from Ascension 2, before the system itself unlocks. The Ascension confirmation note says P2, but that note conflicts with the central gate. / เงื่อนไขหลักในโค้ด v1.39.0 กำหนด **Prestige 4 + Ascension 2** บอสเริ่มดรอป Uncarved Gem ได้ตั้งแต่ Ascension 2 ซึ่งเกิดก่อนปลดล็อกระบบ ส่วนข้อความยืนยัน Ascension ที่ระบุ P2 ขัดแย้งกับเงื่อนไขหลักในโค้ด.
+
 
 | Tier | Name / ชื่อ | Item | Carve chance | Mag needed | Gem Mastery Lv | Stacks |
 |---|---|---|---|---|---|---|
