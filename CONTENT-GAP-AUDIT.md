@@ -50,6 +50,13 @@ This audit tracks missing explanations, shallow coverage, contradictions, and ve
 - **Achievements and Guide Quest:** preserve the existing catalogues and add navigation/context where players need help finding a particular condition or step.
 - **Admin:** clearly separate player features from admin-only commands and document permissions and safe usage.
 
+## Work completed on the audit branch
+
+- [x] Expanded `Progression.md` with a practical progression route in English and Thai.
+- [x] Aligned the feature-unlock table with the same page's Ascension notes: Gem at P2/A2 and Rune at P3/A3. This is an internal consistency correction; it still needs direct code verification against the v1.39.0 package before being treated as source-verified.
+- [x] Expanded `Stats.md` with point-allocation planning and equipment-requirement troubleshooting in English and Thai.
+- [x] Updated `assets/wiki.css` so regular reference tables fill the article width, remain horizontally scrollable when wide, and use tighter cell spacing on small screens. This is a CSS-level fix; visual verification on a real phone/browser is still outstanding.
+
 ## Recommended execution order
 
 1. Resolve factual contradictions and verify core progression rules.
