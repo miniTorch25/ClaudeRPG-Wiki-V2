@@ -1,45 +1,91 @@
-[🏠 Home](Home) · [📖 Systems / ระบบ](Systems) · [👾 Mobs / มอนสเตอร์](Mob-Evolution) · [🎒 Items / ไอเทม](Items) · [❓ FAQ](FAQ)
+<div data-lang="en" markdown="1">
+
+[🏠 Home](Home) · [📖 Systems](Systems) · [👾 Mobs](Mob-Evolution) · [🎒 Items](Items) · [❓ FAQ](FAQ)
 
 ---
 
-# FAQ · คำถามที่พบบ่อย
+# Frequently Asked Questions
 
+Quick answers to common questions about ClaudeRPG.
 
-**EN:** Quick answers to common questions.
+### Why can I not use my sword or armor?
+The item requires minimum stats. Check its Lore and the table on [Stats](Stats). Melee and ranged weapons may deal no damage, tools may not break blocks, and armor may unequip if you do not meet the requirements.
 
-**TH:** คำตอบสั้นๆ สำหรับคำถามที่พบบ่อย
+### How do I get the Script Tool?
+Use `/scriptevent status:get_script_tool`.
 
+### How do I open the menus?
+Right-click the Stats Book (Status), Knowledge Book (encyclopedia), or Script Tool (shortcuts).
 
-### Why can I not use my sword / armor? · ทำไมใช้ดาบ/เกราะไม่ได้
-The item needs minimum stats (see its Lore and the table on [Stats](Stats)). Melee/ranged deal no damage, tools cannot break blocks and armor unequips if you do not meet them. · ไอเทมต้องใช้ค่าสเตตัสขั้นต่ำ ดูใน Lore และตารางที่หน้า [Stats](Stats)
+### When do Augment, Chorus, Gem, and Rune unlock?
+Augment at P1, Chorus at P2, Gem at P4 + Ascension 2, and Rune at P6 + Ascension 3. See [Progression](Progression).
 
-### How do I get the Script Tool? · รับ Script Tool ได้อย่างไร
-`/scriptevent status:get_script_tool`
+### Where do I get Echo Shards?
+Sculk Evolve mobs and the Warden can drop 1–3 when killed by a player. Echo Shards can also be found in Ancient Cities.
 
-### How do I open the menus? · เปิดเมนูอย่างไร
-Right-click the Stats Book (Status), Knowledge Book (encyclopedia) or Script Tool (all shortcuts). · คลิกขวา Stats Book / Knowledge Book / Script Tool
+### Why are there no Magic runes?
+The Magic rune pool exists but is disabled until magic weapons are added.
 
-### When do Augment, Chorus, Gem and Rune unlock? · ปลดล็อกเมื่อไร
-Augment P1 · Chorus P2 · Gem P4 + Ascension 2 · Rune P6 + Ascension 3. See [Progression](Progression).
+### The Toast card does not show. What should I do?
+Check **Settings › Toast pop-ups**, then ask an Admin to run `/scriptevent status:admin toast test`. If it still fails, turn Toast off to use chat/action bar notifications.
 
-### Where do I get Echo Shards? · หา Echo Shard ที่ไหน
-Sculk Evolve mobs and the Warden drop 1–3 when killed by a player; also found in Ancient Cities. · ดรอปจาก Sculk Evolve และ Warden (ผู้เล่นฆ่า) และพบใน Ancient City
+### How do I become an Admin?
+An operator can run `/tag <name> add Admin`. See [Admin](Admin).
 
-### Why are there no Magic runes? · ทำไมไม่มีรูนเวท
-The Magic rune pool exists but is disabled until magic weapons are added. · พูลรูนเวทปิดอยู่จนกว่าจะมีอาวุธเวท
+### Do Prestige or Ascension reset Mastery and Achievements?
+Prestige resets Level, XP, Points, and stats only. Ascension is a one-way world value. Settings are never reset.
 
-### The Toast card does not show · Toast ไม่ขึ้น
-Check Settings › Toast pop-ups, and ask an Admin to run `/scriptevent status:admin toast test`. If it fails, turn Toast off to use chat/action bar. · ตรวจ Settings แล้วให้ Admin ทดสอบ
-
-### How do I become Admin? · เป็น Admin อย่างไร
-An operator runs `/tag <name> add Admin`. See [Admin](Admin).
-
-### Do Prestige or Ascension reset Mastery and Achievements? · รีเซ็ต Mastery/Achievement ไหม
-Prestige resets Level, XP, Points and stats only. Ascension is a one-way world value. Settings are never reset. · Prestige รีเซ็ตเลเวล XP แต้ม สเตตัสเท่านั้น Ascension เพิ่มอย่างเดียว Settings ไม่ถูกรีเซ็ต
-
-### Does the Class system exist? · มีระบบ Class ไหม
-Not yet. · ยังไม่มี
-
+### Does the Class system exist?
+Not yet.
 
 ---
-**See also / ดูเพิ่มเติม:** [Getting Started](Getting-Started) · [Glossary](Glossary)
+
+**See also:** [Getting Started](Getting-Started) · [Glossary](Glossary)
+
+</div>
+
+<div data-lang="th" markdown="1">
+
+[🏠 หน้าหลัก](Home) · [📖 สารบัญระบบ](Systems) · [👾 มอนสเตอร์](Mob-Evolution) · [🎒 ไอเทม](Items) · [❓ คำถามที่พบบ่อย](FAQ)
+
+---
+
+# คำถามที่พบบ่อย
+
+คำตอบสั้น ๆ สำหรับคำถามที่พบบ่อยเกี่ยวกับ ClaudeRPG
+
+### ทำไมจึงใช้งานดาบหรือเกราะไม่ได้?
+ไอเทมต้องการค่าสเตตัสขั้นต่ำ ตรวจสอบได้จาก Lore ของไอเทมและตารางในหน้า [ค่าสเตตัส](Stats) หากค่าไม่ถึง อาวุธระยะประชิดหรือระยะไกลอาจไม่สร้างความเสียหาย เครื่องมืออาจขุดบล็อกไม่ได้ และเกราะอาจถอดออกเอง
+
+### รับ Script Tool ได้อย่างไร?
+ใช้คำสั่ง `/scriptevent status:get_script_tool`
+
+### เปิดเมนูต่าง ๆ อย่างไร?
+คลิกขวาที่ Stats Book เพื่อเปิด Status, Knowledge Book เพื่อเปิดสารานุกรม หรือ Script Tool เพื่อดูทางลัดทั้งหมด
+
+### Augment, Chorus, Gem และ Rune ปลดล็อกเมื่อไร?
+Augment ปลดล็อกที่ P1, Chorus ที่ P2, Gem ที่ P4 + Ascension 2 และ Rune ที่ P6 + Ascension 3 ดูรายละเอียดที่หน้า [ความก้าวหน้า](Progression)
+
+### หา Echo Shard ได้จากที่ไหน?
+มอนสเตอร์ Sculk Evolve และ Warden มีโอกาสดรอป 1–3 ชิ้นเมื่อผู้เล่นเป็นผู้กำจัด นอกจากนี้ยังพบ Echo Shard ได้ใน Ancient City
+
+### ทำไมจึงไม่มีรูน Magic?
+มีพูลรูน Magic อยู่แล้ว แต่ปิดใช้งานไว้จนกว่าจะเพิ่มอาวุธเวทมนตร์เข้ามา
+
+### การ์ด Toast ไม่แสดง ต้องทำอย่างไร?
+ตรวจสอบ **Settings › Toast pop-ups** แล้วให้ผู้ดูแลรันคำสั่ง `/scriptevent status:admin toast test` หากยังไม่ทำงาน ให้ปิด Toast เพื่อใช้การแจ้งเตือนผ่านแชตหรือแถบ Action Bar แทน
+
+### จะเป็นผู้ดูแลระบบได้อย่างไร?
+ผู้เล่นที่มีสิทธิ์ Operator สามารถใช้คำสั่ง `/tag <name> add Admin` ดูเพิ่มเติมที่หน้า [Admin](Admin)
+
+### Prestige หรือ Ascension รีเซ็ต Mastery และ Achievements หรือไม่?
+Prestige จะรีเซ็ตเฉพาะ Level, XP, Points และค่าสเตตัส ส่วน Ascension เป็นค่าความก้าวหน้าของโลกที่เพิ่มขึ้นทางเดียว และ Settings จะไม่ถูกรีเซ็ต
+
+### มีระบบ Class แล้วหรือยัง?
+ยังไม่มีในเวอร์ชันปัจจุบัน
+
+---
+
+**ดูเพิ่มเติม:** [เริ่มต้นเล่น](Getting-Started) · [อภิธานศัพท์](Glossary)
+
+</div>
