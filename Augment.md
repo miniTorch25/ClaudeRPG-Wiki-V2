@@ -41,6 +41,28 @@
 | Shears · กรรไกร | Vein (0–10) |
 | Armor · เกราะ | Movement Speed (0–10%), Armor (0–10), Health (0–10), Evasion (0–5%), Mana (-10–100), Mana Regen (0–5/s) |
 
+
+### Recommended workflow · ลำดับการใช้งานที่แนะนำ
+
+**EN**
+
+1. **Inspect before spending:** check the item type's stat pool and decide which bonuses matter for your build.
+2. **Reroll:** use Augment Crystals to reroll unlocked stats. Any stat you want to preserve should be locked first.
+3. **Lock strategically:** locking costs 2 Augment Crystals and 20 durability per action, so reserve it for valuable rolls rather than locking every stat automatically.
+4. **Max a key stat:** an Augment Core sets one stat to its maximum, but the action costs 100 durability. Use it when the guaranteed maximum is worth the material and durability cost.
+5. **Review active effects:** use **Augment Stats** in the Stats Book to inspect totals and toggle stats on or off.
+6. **Choose salvage carefully:** ordinary salvage may return only 50% of crafting materials; Perfect Salvage consumes an Augment Core and guarantees 100% material return.
+
+**TH**
+
+1. **ตรวจสอบก่อนใช้วัสดุ:** ดูกลุ่มค่าสเตตัสของอุปกรณ์ชนิดนั้น แล้วเลือกว่าค่าใดสำคัญกับบิลด์ของคุณ
+2. **สุ่มใหม่:** ใช้ Augment Crystal เพื่อสุ่มค่าที่ไม่ได้ล็อก หากต้องการเก็บค่าที่ดีไว้ ให้ล็อกก่อน
+3. **ล็อกอย่างมีแผน:** การล็อกใช้ Augment Crystal 2 อันและความทนทาน 20 ต่อครั้ง จึงควรเก็บไว้ล็อกค่าที่มีประโยชน์ แทนการล็อกทุกค่าโดยอัตโนมัติ
+4. **ทำค่าสำคัญให้เต็ม:** Augment Core ตั้งค่าสเตตัสหนึ่งตัวให้สูงสุดได้ แต่ใช้ความทนทาน 100 ควรใช้เมื่อค่าสูงสุดที่รับประกันคุ้มกับวัสดุและความทนทาน
+5. **ตรวจสอบเอฟเฟกต์ที่ใช้งาน:** เปิด **Augment Stats** ใน Stats Book เพื่อดูค่ารวมและเปิดหรือปิดค่า
+6. **พิจารณาก่อนย่อย:** การย่อยทั่วไปอาจคืนวัสดุเพียง 50%; Perfect Salvage ใช้ Augment Core แต่รับประกันการคืนวัสดุ 100%
+
+
 ## Reforge menu · เมนู Reforge
 
 **EN:** **Sneak + right-click an Anvil**, or right-click an Anvil while holding a **Reforge Hammer**. Each action costs Hammer durability plus a material. The lowest-tier hammer with enough durability is used first. While an **Eternal Hammer** is anywhere in your inventory, all Augment durability costs are halved.
