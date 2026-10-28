@@ -8,15 +8,11 @@ layout: default
   <div class="home-hero-copy">
     <div class="eyebrow">MINECRAFT BEDROCK · RPG ADD-ON</div>
     <h1>ClaudeRPG Wiki</h1>
-    <div data-lang="en" markdown="1">
-
-Your reference for progression, equipment, combat, exploration, and every major system in ClaudeRPG.
-
+    <div data-lang="en">
+    <p>Your reference for progression, equipment, combat, exploration, and every major system in ClaudeRPG.</p>
     </div>
-    <div data-lang="th" markdown="1">
-
-คู่มืออ้างอิง ClaudeRPG ครอบคลุมระบบความก้าวหน้า อุปกรณ์ การต่อสู้ การสำรวจ และระบบสำคัญต่าง ๆ
-
+    <div data-lang="th">
+    <p>คู่มืออ้างอิง ClaudeRPG ครอบคลุมระบบความก้าวหน้า อุปกรณ์ การต่อสู้ การสำรวจ และระบบสำคัญต่าง ๆ</p>
     </div>
     <div class="hero-links">
       <a data-lang="en" href="{{ '/Getting-Started' | relative_url }}">Get started</a>
@@ -34,16 +30,12 @@ Your reference for progression, equipment, combat, exploration, and every major 
   </div>
 </section>
 
-<div data-lang="en" markdown="1">
-
-## Explore the wiki
-
-</div>
-<div data-lang="th" markdown="1">
-
-## เลือกหมวดหมู่ในวิกิ
-
-</div>
+<div data-lang="en">
+    <h2>Explore the wiki</h2>
+    </div>
+<div data-lang="th">
+    <h2>เลือกหมวดหมู่ในวิกิ</h2>
+    </div>
 
 <div class="category-grid">
   <a class="category-card" data-lang="en" href="{{ '/Getting-Started' | relative_url }}"><span class="card-number">01 / START</span><h3>Getting Started</h3><p>Installation, first steps, guided quest, FAQ and glossary.</p></a>
@@ -62,13 +54,9 @@ Your reference for progression, equipment, combat, exploration, and every major 
   <a class="category-card" data-lang="th" href="{{ '/Admin' | relative_url }}"><span class="card-number">07 / ผู้ดูแล</span><h3>เครื่องมือผู้ดูแลและบำรุงรักษา</h3><p>เครื่องมือผู้ดูแลระบบและคำสั่งสำหรับบำรุงรักษา</p></a>
 </div>
 
-<div data-lang="en" markdown="1">
-
-> **Version note:** This wiki documents ClaudeRPG v1.39.0. Confirm gameplay values and requirements against the matching add-on package before treating them as definitive.
-
-</div>
-<div data-lang="th" markdown="1">
-
-> **หมายเหตุเวอร์ชัน:** วิกินี้อ้างอิง ClaudeRPG v1.39.0 โปรดตรวจสอบค่าต่าง ๆ ในเกมและเงื่อนไขกับไฟล์แอดออนเวอร์ชันเดียวกันก่อนใช้เป็นข้อมูลยืนยัน
-
-</div>
+<div data-lang="en">
+    <p><strong>Version note:</strong> This wiki documents ClaudeRPG v1.39.0. Confirm gameplay values and requirements against the matching add-on package before treating them as definitive.</p>
+    </div>
+<div data-lang="th">
+    <p><strong>หมายเหตุเวอร์ชัน:</strong> วิกินี้อ้างอิง ClaudeRPG v1.39.0 โปรดตรวจสอบค่าต่าง ๆ ในเกมและเงื่อนไขกับไฟล์แอดออนเวอร์ชันเดียวกันก่อนใช้เป็นข้อมูลยืนยัน</p>
+    </div>
