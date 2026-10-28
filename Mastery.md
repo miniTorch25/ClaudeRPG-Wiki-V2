@@ -40,6 +40,28 @@ Level `n → n+1` needs `base + per × n` XP. · เลเวล `n → n+1` ใ
 | [Gem](#gem) / อัญมณี | 6 | 600 + 400×Lv | 9,600 | Carve gems, engrave sockets, salvage gems |
 | [Rune](#rune) / รูน | 30 | 500 + 200×Lv | 102,000 | Kill mobs with a Rune-enchanted weapon |
 
+
+### Practical guide · คู่มือใช้งาน
+
+**EN**
+
+1. **Unlock:** reach Prestige 1, then open Mastery from the Status menu.
+2. **Train naturally:** each line gains XP from its listed activity. For example, melee combat trains Melee, taking damage trains Defense, and spending Mana trains Magic.
+3. **Choose paths deliberately:** lines marked as exclusive require you to choose one path at a time. You can switch for free, but the 60-second cooldown means you cannot change repeatedly in quick succession.
+4. **Toggle effects when useful:** toggling an ability off does not stop its Mastery XP gain. This can help when you want to keep progressing without using a particular effect.
+5. **Expect variation before max level:** per-level effect values can vary by ±60%; the page's max-cap tables show the full-strength values, not a promise that every intermediate level reaches the same value.
+6. **Keep earning XP:** XP gained beyond a line's maximum level is still tracked as a statistic, even though the line cannot level further.
+
+**TH**
+
+1. **ปลดล็อก:** ทำ Prestige 1 แล้วเปิด Mastery จากเมนู Status
+2. **ฝึกจากการเล่นตามปกติ:** แต่ละสายได้ XP จากกิจกรรมที่ระบุ เช่น ต่อสู้ประชิดเพิ่ม Melee, รับดาเมจเพิ่ม Defense และใช้ Mana เพิ่ม Magic
+3. **เลือกเส้นทางให้เหมาะ:** สายที่ระบุว่าเป็นเส้นทางเฉพาะให้เลือกได้ทีละเส้นทาง เปลี่ยนได้ฟรี แต่มีคูลดาวน์ 60 วินาที จึงเปลี่ยนซ้ำทันทีไม่ได้
+4. **ปิดเอฟเฟกต์เมื่อจำเป็น:** การปิดความสามารถไม่ได้หยุดการได้รับ Mastery XP เหมาะเมื่ออยากพัฒนาสายต่อแต่ไม่ต้องการใช้เอฟเฟกต์นั้น
+5. **ค่าโบนัสก่อนเลเวลสูงสุดอาจแกว่ง:** ค่าต่อเลเวลอาจต่างกัน ±60%; ตารางค่าสูงสุดในหน้านี้แสดงค่าที่ระดับเต็ม ไม่ได้หมายความว่าทุกเลเวลก่อนหน้าจะได้ค่าเท่ากัน
+6. **รับ XP ต่อไปได้:** XP ที่เกินเลเวลสูงสุดยังถูกนับเป็นสถิติ แม้จะไม่ทำให้สายนั้นเลเวลเพิ่มอีก
+
+
 ### XP constants · ค่า XP ต่างๆ
 - Travel / เดินทาง: 0.4 XP per block (Nether ×1.5, Elytra ×1.5)
 - Defense / ป้องกัน: 5 XP per damage point taken · Magic: 1 XP per Mana spent

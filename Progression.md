@@ -59,6 +59,18 @@ A system opens when **all** requirements are met. Level gates are remembered, so
 | Rune | P6 | A3 |
 | Mastery | P1 | — |
 
+The requirements above distinguish **system access** from **item availability**. The v1.39.0 feature-gate configuration requires **P4 + A2 for Gem** and **P6 + A3 for Rune**. Uncarved Gems begin dropping from bosses at A2, before the Gem system itself is unlocked; Geode mobs become another source at A4. Note: the Ascension confirmation notes in the addon describe Gem/Rune as unlockable at P2/P3, which conflicts with the central feature-gate configuration. This wiki follows the central gate used by `ProgressionManager.canUse`; the conflicting confirmation text should be corrected in a future addon update.
+
+### Suggested progression route
+
+1. **Level up:** earn XP and spend the 4 Stat Points gained per level in the Stats Book.
+2. **Prepare for Prestige:** reach the current level cap and collect the required Prestige Sigils.
+3. **Prestige:** raise your level cap by 20 and choose one available Perk. Your Level, XP, allocated Points, and invested stats are reset.
+4. **Raise world Ascension carefully:** Ascension affects the entire world, not just the player who activates it. Higher levels increase enemy difficulty.
+5. **Unlock systems by milestones:** Augment at P1, Chorus at P2, Gem at P4/A2, and Rune at P6/A3. Gem drops start earlier at A2, but drops alone do not unlock the system.
+
+Before activating a higher Ascension in a shared world, make sure the players are prepared for the stronger mobs and bosses.
+
 ## Prestige
 
 Prestige resets **Level, XP, Points, and stats** in exchange for a higher level cap, higher stat caps (Stat Limit Break), a permanent XP bonus, and one **Perk**. There is no maximum Prestige. It costs **Prestige Sigils**.
@@ -214,6 +226,18 @@ XP ที่ต้องใช้เพื่อขึ้นเลเวลถ�
 | Rune | P6 | A3 |
 | Mastery | P1 | — |
 
+เงื่อนไขข้างต้นแยก **การปลดล็อกระบบ** ออกจาก **การหาไอเทม** ตัวอย่างเช่น ระบบ Gem ต้องถึง P4/A2 และ Rune ต้องถึง P6/A3 ตาม feature gate หลัก แม้ข้อความยืนยัน Ascension ในแอดออนจะระบุ P2/P3 ซึ่งขัดแย้งกับเงื่อนไขจริง บอสเริ่มดรอป Uncarved Gem ที่ A2 และมอนสเตอร์ Geode เป็นแหล่งดรอปเพิ่มเติมเมื่อถึง A4
+
+### เส้นทางความก้าวหน้าที่แนะนำ
+
+1. **เพิ่มเลเวล:** รับ XP และใช้ Stat Points 4 แต้มต่อเลเวลใน Stats Book
+2. **เตรียม Prestige:** ไปให้ถึงเลเวลสูงสุดปัจจุบันและรวบรวม Prestige Sigil ให้ครบ
+3. **ทำ Prestige:** เพิ่มเพดานเลเวลอีก 20 และเลือก Perk ที่มีให้ โดย Level, XP, แต้มที่จัดสรร และค่าสเตตัสที่ลงทุนไว้จะถูกรีเซ็ต
+4. **เพิ่ม Ascension อย่างระมัดระวัง:** Ascension มีผลกับทั้งโลก ไม่ใช่แค่ผู้เล่นที่กดเพิ่ม ระดับที่สูงขึ้นทำให้ศัตรูแข็งแกร่งขึ้น
+5. **ปลดล็อกระบบตามความก้าวหน้า:** Augment ที่ P1, Chorus ที่ P2, Gem ที่ P4/A2 และ Rune ที่ P6/A3
+
+ก่อนเพิ่ม Ascension ในโลกที่เล่นร่วมกัน ควรตรวจสอบให้แน่ใจว่าผู้เล่นพร้อมรับมือกับมอนสเตอร์และบอสที่แข็งแกร่งขึ้น
+
 ## Prestige
 
 Prestige จะรีเซ็ต **Level, XP, Points และค่าสเตตัส** เพื่อแลกกับเลเวลสูงสุดที่เพิ่มขึ้น เพดานค่าสเตตัสที่สูงขึ้น (Stat Limit Break) โบนัส XP ถาวร และ **Perk** 1 อย่าง ไม่มีระดับ Prestige สูงสุด และต้องใช้ **Prestige Sigil**
@@ -298,8 +322,8 @@ Ascension คือ **ระดับความยากของโลก** �
 | A6 | Nightmare |
 | A7 | Awaken |
 
-- **A2:** บอสเริ่มดรอป Uncarved Gem และสามารถปลดล็อกระบบ Gem ได้เมื่อมี Prestige 2
-- **A3:** สามารถปลดล็อกระบบ Rune ได้เมื่อมี Prestige 3
+- **A2:** บอสเริ่มดรอป Uncarved Gem; ระบบ Gem ต้องมี P4/A2 ตาม feature gate หลัก (แม้ข้อความยืนยันในแอดออนจะระบุ P2)
+- **A3:** ระบบ Rune ต้องมี P6/A3 ตาม feature gate หลัก (แม้ข้อความยืนยันในแอดออนจะระบุ P3)
 - **A4:** มอนสเตอร์ Geode สามารถดรอป Uncarved Gem ได้
 
 ---

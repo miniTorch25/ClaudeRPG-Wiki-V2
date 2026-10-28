@@ -34,7 +34,40 @@
 
 **EN:** Spend points in the **Stats Book** (Status menu). Caps are raised by Prestige (Stat Limit Break). Resetting returns every spent point.
 
+### How to plan your stats
+
+- **Check equipment first.** Read the item's Lore and identify every stat requirement before spending points.
+- **Prioritize your current goal.** Str, Agi, Def, Psi, and Exc mainly act as equipment gates in this reference; Mag, Wis, Con, and Vit directly improve Mana, Mana regeneration, Max HP, and HP regeneration respectively.
+- **Keep requirements in mind when changing gear.** A higher-tier item may need more stats than the item it replaces. If a requirement is not met, the equipment restrictions below apply.
+- **Use Prestige as a long-term reset point.** Prestige resets invested stats and points, so plan to reallocate points after the reset rather than expecting the previous build to remain.
+- **Do not confuse a stat's base cap with its current cap.** Prestige's Stat Limit Break raises the caps; the table above lists the starting caps.
+
+### If an item does not work
+
+1. Open the item's Lore and compare each listed requirement with your current stats.
+2. For a weapon, check both requirements if more than one stat is listed.
+3. For tools, check Excavation (Exc); for armor and shields, check Defense (Def).
+4. If the requirement is still unmet, use a suitable lower-tier item or allocate more points when available.
+
+
+
 **TH:** ใช้แต้มในเมนู **Stats Book (Status)** เพดานเพิ่มตาม Prestige (Stat Limit Break) การรีเซ็ตคืนแต้มที่ใช้ทั้งหมด
+
+### วิธีวางแผนค่าสเตตัส
+
+- **ตรวจสอบอุปกรณ์ก่อนลงแต้ม** อ่าน Lore ของไอเทมและดูค่าสเตตัสทุกตัวที่จำเป็น
+- **เลือกตามเป้าหมายปัจจุบัน** Str, Agi, Def, Psi และ Exc ใช้เป็นเงื่อนไขสวมใส่อุปกรณ์เป็นหลัก ส่วน Mag, Wis, Con และ Vit เพิ่ม Mana สูงสุด การฟื้น Mana, HP สูงสุด และการฟื้น HP ตามลำดับ
+- **คำนึงถึงเงื่อนไขเมื่อเปลี่ยนอุปกรณ์** อุปกรณ์ระดับสูงกว่าอาจต้องใช้ค่าสเตตัสมากกว่าชิ้นเดิม หากไม่ผ่านเงื่อนไขจะมีข้อจำกัดตามที่อธิบายด้านล่าง
+- **ใช้ Prestige เป็นจุดวางแผนใหม่ระยะยาว** Prestige รีเซ็ตแต้มและค่าสเตตัสที่ลงทุนไว้ จึงต้องจัดแต้มใหม่หลังรีเซ็ต
+- **อย่าสับสนระหว่างเพดานเริ่มต้นกับเพดานปัจจุบัน** Stat Limit Break จาก Prestige จะเพิ่มเพดาน ตารางด้านบนแสดงค่าเริ่มต้น
+
+### เมื่อไอเทมใช้งานไม่ได้
+
+1. เปิด Lore ของไอเทมแล้วเปรียบเทียบเงื่อนไขทุกข้อกับค่าสเตตัสปัจจุบัน
+2. สำหรับอาวุธ ให้ตรวจสอบทุกค่าสเตตัสที่ระบุ หากมีมากกว่าหนึ่งค่า
+3. สำหรับเครื่องมือ ให้ตรวจ Excavation (Exc); สำหรับเกราะและโล่ ให้ตรวจ Defense (Def)
+4. หากยังไม่ผ่านเงื่อนไข ให้ใช้อุปกรณ์ระดับต่ำกว่าที่เหมาะสม หรือจัดแต้มเพิ่มเมื่อมีแต้มให้ใช้
+
 
 
 ## Item requirements · เงื่อนไขของไอเทม

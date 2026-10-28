@@ -17,6 +17,8 @@
 
 **TH:** รูนเพิ่มเอฟเฟกต์แบบทริกเกอร์หรือพาสซีฟให้อาวุธและเครื่องมือ แต่ละตัวมีด้านดีและข้อเสีย
 
+**Unlock note / หมายเหตุการปลดล็อก:** The v1.39.0 central feature gate requires **Prestige 6 + Ascension 3**. The Ascension confirmation note says P3, but that note conflicts with the central gate. / เงื่อนไขหลักในโค้ด v1.39.0 กำหนด **Prestige 6 + Ascension 3** ส่วนข้อความยืนยัน Ascension ที่ระบุ P3 ขัดแย้งกับเงื่อนไขหลักในโค้ด.
+
 
 ## Rune items · ไอเทมรูน
 
