@@ -55,9 +55,21 @@ A system opens when **all** requirements are met. Level gates are remembered, so
 |---|---|---|
 | Augment | P1 | — |
 | Chorus | P2 | — |
-| Gem | P4 | A2 |
-| Rune | P6 | A3 |
+| Gem | P2 | A2 |
+| Rune | P3 | A3 |
 | Mastery | P1 | — |
+
+The requirements above distinguish **system access** from **item availability**. For example, the Gem system can unlock at P2/A2; Uncarved Gems begin dropping from bosses at A2. Geode mobs become another source at A4.
+
+### Suggested progression route
+
+1. **Level up:** earn XP and spend the 4 Stat Points gained per level in the Stats Book.
+2. **Prepare for Prestige:** reach the current level cap and collect the required Prestige Sigils.
+3. **Prestige:** raise your level cap by 20 and choose one available Perk. Your Level, XP, allocated Points, and invested stats are reset.
+4. **Raise world Ascension carefully:** Ascension affects the entire world, not just the player who activates it. Higher levels increase enemy difficulty.
+5. **Unlock systems by milestones:** Augment at P1, Chorus at P2, Gem at P2/A2, and Rune at P3/A3.
+
+Before activating a higher Ascension in a shared world, make sure the players are prepared for the stronger mobs and bosses.
 
 ## Prestige
 
@@ -210,9 +222,21 @@ XP ที่ต้องใช้เพื่อขึ้นเลเวลถ�
 |---|---|---|
 | Augment | P1 | — |
 | Chorus | P2 | — |
-| Gem | P4 | A2 |
-| Rune | P6 | A3 |
+| Gem | P2 | A2 |
+| Rune | P3 | A3 |
 | Mastery | P1 | — |
+
+เงื่อนไขข้างต้นแยก **การปลดล็อกระบบ** ออกจาก **การหาไอเทม** ตัวอย่างเช่น ระบบ Gem ปลดล็อกได้เมื่อถึง P2/A2 โดยบอสจะเริ่มดรอป Uncarved Gem ที่ A2 และมอนสเตอร์ Geode จะเป็นแหล่งดรอปเพิ่มเติมเมื่อถึง A4
+
+### เส้นทางความก้าวหน้าที่แนะนำ
+
+1. **เพิ่มเลเวล:** รับ XP และใช้ Stat Points 4 แต้มต่อเลเวลใน Stats Book
+2. **เตรียม Prestige:** ไปให้ถึงเลเวลสูงสุดปัจจุบันและรวบรวม Prestige Sigil ให้ครบ
+3. **ทำ Prestige:** เพิ่มเพดานเลเวลอีก 20 และเลือก Perk ที่มีให้ โดย Level, XP, แต้มที่จัดสรร และค่าสเตตัสที่ลงทุนไว้จะถูกรีเซ็ต
+4. **เพิ่ม Ascension อย่างระมัดระวัง:** Ascension มีผลกับทั้งโลก ไม่ใช่แค่ผู้เล่นที่กดเพิ่ม ระดับที่สูงขึ้นทำให้ศัตรูแข็งแกร่งขึ้น
+5. **ปลดล็อกระบบตามความก้าวหน้า:** Augment ที่ P1, Chorus ที่ P2, Gem ที่ P2/A2 และ Rune ที่ P3/A3
+
+ก่อนเพิ่ม Ascension ในโลกที่เล่นร่วมกัน ควรตรวจสอบให้แน่ใจว่าผู้เล่นพร้อมรับมือกับมอนสเตอร์และบอสที่แข็งแกร่งขึ้น
 
 ## Prestige
 
