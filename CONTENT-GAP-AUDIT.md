@@ -89,6 +89,20 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Reviewed `assets/wiki.css`: the article grid uses `minmax(0,1fr)`, article containers set `min-width:0`, and tables are block-level with `max-width:100%` and `overflow-x:auto`; mobile breakpoints reduce horizontal padding and table cell spacing.
 - [ ] Still required: test anchor fragments and generated HTML links, run the actual build, and inspect rendered pages at narrow viewport widths. Source-level CSS review does not substitute for browser screenshots or real-device testing.
 
+
+
+### Non-recipe item drops and durability spot-check
+
+- [x] Verified hammer and Engraver durability values against item JSON: Reforge Hammer 385, Diamond Reforge Hammer 762, Netherite Reforge Hammer 1252, Eternal Hammer 6192, Engraver 51.
+- [x] Verified Uncarved Gem acquisition details against source: Wither/Warden/Ender Dragon drop 1–7 from Ascension 2; Geode has a base 8% chance for 1; Awakened mobs have a base 6% chance for 1–2. Looting and Gem Mastery can affect evolved-mob drop chances.
+- [x] Clarified Core drop wording in both languages: a Core kill has a base 25% chance to drop exactly one of Augment Core or Stellar Core, chosen equally; Looting can increase the shared chance. This avoids implying each item separately has a 25% chance.
+- [ ] Remaining item verification: check every custom item's acquisition/use claims against its implementing script, including recipe-independent salvage behavior and any admin/creative-only restrictions.
+
+### Current navigation audit status
+
+- [x] Checked page-link targets in the wiki pages referenced by `SUMMARY.md`; no missing wiki-page targets were found in the checked Markdown links.
+- [ ] Generated HTML output and heading-fragment anchors still need build/browser validation. The repository's root does not contain a file named `build.py`, so the build entry point must be identified before claiming a successful build.
+
 ## Recipe audit outcome
 
 No ingredient, crafting-method, or output-count mismatch was found in the 35 recipe definitions against the recipe summaries currently in `Items.md`. This conclusion is limited to the recipe JSON definitions; it does not validate every drop source, durability value, or in-game interaction described on the item page.
