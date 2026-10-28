@@ -49,6 +49,28 @@ Mastery unlocks: Resonance at Chorus Lv 5, Transcend at 10, Awaken Fusion at 15,
 | [Fusion](Chorus-Fusion) | Awaken (4), Melodious (2), Genesis (1) |
 | [All elements](Chorus-Elements) | 25 elements |
 
+
+## Build-planning workflow · วิธีวางแผนบิลด์
+
+**EN**
+
+1. **Start with the armor set:** four armor pieces provide eight Chorus sockets in total; shields do not contribute sockets.
+2. **Pick a target element and tier:** higher tiers have different unlock and material requirements. Echo, Resonance and Transcend can be rolled directly once available; Awaken, Melodious and Genesis require fusion.
+3. **Roll, then lock:** duplicates are allowed. When one socket has the element you want, lock it and reroll the other socket. Locking binds that armor piece to the selected tier; unlocking is free.
+4. **Build toward thresholds:** matching sockets activate effects at 2, 4, 6 and 8 sockets. Count the whole armor set rather than planning each piece in isolation.
+5. **Consider hybrid effects:** two different elements of the same tier form a hybrid. Hybrids do not form across tiers and can be toggled in Status → Chorus.
+6. **Check cross-system synergy:** matching Chorus elements can improve Gem and Rune effects. See the Synergy section below before spending materials on a high-tier build.
+
+**TH**
+
+1. **เริ่มจากชุดเกราะ:** เกราะ 4 ชิ้นมีช่อง Chorus รวม 8 ช่อง ส่วนโล่ไม่มีช่อง
+2. **เลือกธาตุและระดับเป้าหมาย:** ระดับสูงมีเงื่อนไขปลดล็อกและใช้วัสดุต่างกัน ระดับ Echo, Resonance และ Transcend สุ่มได้เมื่อปลดล็อกแล้ว ส่วน Awaken, Melodious และ Genesis ต้องใช้การหลอม
+3. **สุ่มแล้วล็อก:** ธาตุซ้ำกันได้ หากได้ธาตุที่ต้องการในช่องหนึ่ง ให้ล็อกไว้แล้วสุ่มอีกช่อง การล็อกจะผูกเกราะชิ้นนั้นกับระดับที่เลือก ส่วนการปลดล็อกฟรี
+4. **วางแผนตามจำนวนช่อง:** ธาตุที่ตรงกันเปิดเอฟเฟกต์เมื่อมี 2, 4, 6 และ 8 ช่อง ให้นับรวมทั้งชุดเกราะ ไม่ใช่วางแผนแยกแต่ละชิ้น
+5. **พิจารณา Hybrid:** ธาตุต่างกัน 2 ธาตุในระดับเดียวกันจะกลายเป็น Hybrid ไม่สามารถผสมข้ามระดับ และเปิดหรือปิดได้ใน Status → Chorus
+6. **ตรวจ Synergy ระหว่างระบบ:** ธาตุ Chorus ที่ตรงกันสามารถเสริม Gem และ Rune ได้ ควรอ่านหัวข้อ Synergy ด้านล่างก่อนลงทุนกับบิลด์ระดับสูง
+
+
 ## Synergy · ซินเนอร์จี
 
 **EN:** Gems and Runes grow stronger when your armor carries a **matching element**. Matching sockets: 2 / 4 / 8 → +1 / +2 / +3 Rune Level (max Lv 8; Transcend +1, 4+ Genesis sockets +1). From **4 sockets** the strongest matching element adds a **rider effect** (×1 / ×1.25 / ×1.5 at 4 / 6 / 8 sockets, 1s cooldown, total Synergy damage bonus ≤ 25%). Fused elements count as their parents (Awaken = 2, Melodious = 4, Genesis = all 8).
