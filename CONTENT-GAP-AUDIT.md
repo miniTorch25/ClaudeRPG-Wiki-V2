@@ -161,7 +161,8 @@ Use these labels in editorial notes while drafting:
 
 - [x] Resolve the Gem/Rune unlock contradiction in the wiki using the central feature gate; the conflicting addon confirmation text remains an upstream issue.
 - [ ] Confirm formulas, costs, caps, and rounding rules. Initial source checks now confirm the stat caps and cap-rounding method; the full progression/XP and perk edge cases still need a dedicated pass.
-- [ ] Expand key pages with step-by-step player workflows.
+- [x] Added a bilingual pre-Prestige checklist to `Progression.md`, covering cap verification, Sigil preparation, reset expectations, Perk selection, and post-reset equipment requirements.
+- [ ] Expand remaining key pages with step-by-step player workflows.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compare all 35 recipe JSON definitions with the English and Thai item tables; no recipe ingredient/method/output mismatch found.
 - [x] Verify generated HTML cross-links and navigation targets with a static artifact audit (2,278 local links/assets and 48 anchors; no missing targets found).

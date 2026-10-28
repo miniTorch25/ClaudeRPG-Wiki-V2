@@ -71,6 +71,18 @@ The requirements above distinguish **system access** from **item availability**.
 
 Before activating a higher Ascension in a shared world, make sure the players are prepared for the stronger mobs and bosses.
 
+### Before you Prestige
+
+Use this checklist when you reach the current level cap:
+
+1. **Confirm the cap:** the base cap is 40, then increases by 20 per Prestige. Check your current Prestige before planning the next milestone.
+2. **Collect the required Sigils:** the cost is based on your current Prestige, not the Prestige level you are about to reach. The formula is shown below.
+3. **Plan for the reset:** Prestige resets Level, XP, allocated Points, and invested stats. Record your intended build or equipment requirements so you can reallocate after the reset.
+4. **Choose your Perk deliberately:** you receive one Perk per Prestige. Check its unlock requirement and effect before selecting; the choice is part of the Prestige reward.
+5. **Recheck equipment requirements afterward:** your previous stat allocation is not preserved, so items that require stats may no longer be usable until you spend points again.
+
+Prestige is a player progression action. Ascension is different: it changes the shared world's difficulty, so review the Ascension section before raising it.
+
 ## Prestige
 
 Prestige resets **Level, XP, Points, and stats** in exchange for a higher level cap, higher stat caps (Stat Limit Break), a permanent XP bonus, and one **Perk**. There is no maximum Prestige. It costs **Prestige Sigils**.
@@ -237,6 +249,18 @@ XP ที่ต้องใช้เพื่อขึ้นเลเวลถ�
 5. **ปลดล็อกระบบตามความก้าวหน้า:** Augment ที่ P1, Chorus ที่ P2, Gem ที่ P4/A2 และ Rune ที่ P6/A3
 
 ก่อนเพิ่ม Ascension ในโลกที่เล่นร่วมกัน ควรตรวจสอบให้แน่ใจว่าผู้เล่นพร้อมรับมือกับมอนสเตอร์และบอสที่แข็งแกร่งขึ้น
+
+### เช็กลิสต์ก่อนทำ Prestige
+
+เมื่อถึงเลเวลสูงสุดปัจจุบัน ให้ตรวจสอบตามรายการนี้:
+
+1. **ตรวจสอบเพดานเลเวล:** เริ่มต้นที่ 40 และเพิ่มอีก 20 ต่อ Prestige ตรวจระดับปัจจุบันก่อนวางแผนเป้าหมายถัดไป
+2. **เตรียม Sigil ให้พอ:** ค่าใช้จ่ายคำนวณจากระดับ Prestige ปัจจุบัน ไม่ใช่ระดับที่จะได้รับหลังทำสำเร็จ ดูสูตรได้ในหัวข้อด้านล่าง
+3. **เตรียมรับการรีเซ็ต:** Prestige จะรีเซ็ต Level, XP, Points และค่าสเตตัสที่ลงทุนไว้ จดบิลด์หรือเงื่อนไขอุปกรณ์ที่ต้องการไว้เพื่อจัดแต้มใหม่หลังรีเซ็ต
+4. **เลือก Perk อย่างตั้งใจ:** ได้ Perk หนึ่งอย่างต่อ Prestige ควรตรวจเงื่อนไขปลดล็อกและผลของ Perk ก่อนเลือก
+5. **ตรวจเงื่อนไขอุปกรณ์อีกครั้ง:** แต้มสเตตัสเดิมจะไม่คงอยู่หลังรีเซ็ต อุปกรณ์ที่ต้องใช้ค่าสเตตัสบางอย่างอาจใช้งานไม่ได้จนกว่าจะจัดแต้มใหม่
+
+Prestige เป็นความก้าวหน้าของผู้เล่น ส่วน Ascension แตกต่างกันตรงที่เปลี่ยนความยากของโลกที่ใช้ร่วมกัน โปรดอ่านหัวข้อ Ascension ก่อนเพิ่มระดับโลก
 
 ## Prestige
 
