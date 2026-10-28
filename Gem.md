@@ -27,13 +27,13 @@
 
 | Tier | Name / ชื่อ | Item | Carve chance | Mag needed | Gem Mastery Lv | Stacks |
 |---|---|---|---|---|---|---|
-| 1 | Common / ธรรมดา | Common Gem | 39% | 15 | — | Yes / ซ้อนได้ |
-| 2 | Uncommon / ไม่ธรรมดา | Uncommon Gem | 23% | 30 | 1 | Yes / ซ้อนได้ |
-| 3 | Rare / หายาก | Rare Gem | 14% | 45 | 2 | Yes / ซ้อนได้ |
-| 4 | Unique / เฉพาะตัว | Unique Gem | 5% | 60 | 3 | No / ไม่ซ้อน |
-| 5 | Legend / ตำนาน | Legend Gem | 7% | 75 | 4 | No / ไม่ซ้อน |
-| 6 | Epic / มหากาพย์ | Epic Gem | 9% | 90 | 5 | No / ไม่ซ้อน |
-| 7 | Mythical / เทพนิยาย | Myth Gem | 3% | 115 | 6 | No / ไม่ซ้อน |
+| 1 | Common / ธรรมดา | <img class="item-icon" src="{{ '/assets/images/items/common_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Common Gem | 39% | 15 | — | Yes / ซ้อนได้ |
+| 2 | Uncommon / ไม่ธรรมดา | <img class="item-icon" src="{{ '/assets/images/items/uncommon_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Uncommon Gem | 23% | 30 | 1 | Yes / ซ้อนได้ |
+| 3 | Rare / หายาก | <img class="item-icon" src="{{ '/assets/images/items/rare_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Rare Gem | 14% | 45 | 2 | Yes / ซ้อนได้ |
+| 4 | Unique / เฉพาะตัว | <img class="item-icon" src="{{ '/assets/images/items/unique_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Unique Gem | 5% | 60 | 3 | No / ไม่ซ้อน |
+| 5 | Legend / ตำนาน | <img class="item-icon" src="{{ '/assets/images/items/legend_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Legend Gem | 7% | 75 | 4 | No / ไม่ซ้อน |
+| 6 | Epic / มหากาพย์ | <img class="item-icon" src="{{ '/assets/images/items/epic_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Epic Gem | 9% | 90 | 5 | No / ไม่ซ้อน |
+| 7 | Mythical / เทพนิยาย | <img class="item-icon" src="{{ '/assets/images/items/myth_gem.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Myth Gem | 3% | 115 | 6 | No / ไม่ซ้อน |
 
 - **Engrave** a socket: **33%** success (+ Gemwright perk), costs 1 Engraver durability (free with Eternal Engraver) / เจาะช่อง: **33%** สำเร็จ ใช้ความทนทาน Engraver 1 (ฟรีถ้ามี Eternal Engraver)
 - **Perfect Carved:** 1% chance a carve gives **2 Gems** / โอกาส 1% ได้ Gem **2 เม็ด**

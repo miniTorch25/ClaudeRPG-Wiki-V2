@@ -26,13 +26,13 @@
 
 | Grade / เกรด | Tier | Chance / โอกาส |
 |---|---|---|
-| Gamma | T1 | 40% |
-| Delta | T2 | 25% |
-| Theta | T3 | 15% |
-| Sigma | T4 | 10% |
-| Phi | T5 | 6% |
-| Psi | T6 | 3% |
-| Omega | T7 | 1% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_gamma.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Gamma | T1 | 40% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_delta.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Delta | T2 | 25% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_theta.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Theta | T3 | 15% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_sigma.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Sigma | T4 | 10% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_phi.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Phi | T5 | 6% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_psi.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Psi | T6 | 3% |
+| <img class="item-icon" src="{{ '/assets/images/items/rune_omega.png' | relative_url }}" alt="" width="28" height="28" loading="lazy"> Omega | T7 | 1% |
 
 ## Anvil › Rune · เมนูรูนที่ทั่ง
 

@@ -55,6 +55,11 @@ Excluded: Vex, Silverfish, Endermite, Slime, Magma Cube. · ยกเว้น
 Types: Zombie, Skeleton, Spider.
 
 ## Sculk Potion & Stellar Core · ลัดวิวัฒนาการ
+
+<div class="material-strip material-strip--compact">
+  <div class="material-card"><img src="{{ '/assets/images/items/sculk_potion.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Sculk Potion</span><small>Instant Sculk evolution</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/stellar_core.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Stellar Core</span><small>Force mob evolution</small></div>
+</div>
 - **Sculk Potion:** hitting a monster turns it into a **Sculk Evolve** at once, ignoring Ascension. Mobs made this way drop no guaranteed Echo Shard (anti-farm). · ตีมอนสเตอร์ให้เป็น Sculk Evolve ทันที ไม่สนระดับ Ascension ไม่ดรอป Echo Shard ที่การันตี
 - **Stellar Core:** right-click a mob to force-evolve it (options depend on Ascension; no Core option; not on bosses). · คลิกขวาที่มอนเพื่อบังคับวิวัฒนาการ (ตัวเลือกตาม Ascension ไม่มี Core ใช้กับบอสไม่ได้)
 - Sculk Evolves and the vanilla **Warden** drop **1–3 Echo Shards** when killed by a player. · Sculk Evolve และ Warden ดรอป Echo Shard 1–3 เมื่อผู้เล่นฆ่า
