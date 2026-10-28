@@ -11,19 +11,19 @@
 <body>
   <a class="skip-link" href="#main-content"><span data-lang="en">Skip to content</span><span data-lang="th">ข้ามไปยังเนื้อหา</span></a>
   <header class="topbar">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="ClaudeRPG Wiki home">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="ClaudeRPG Wiki home" data-label-en="ClaudeRPG Wiki home" data-label-th="หน้าแรก ClaudeRPG Wiki">
       <span class="brand-mark">C</span>
       <span><strong>ClaudeRPG</strong><small><span data-lang="en">COMMUNITY WIKI</span><span data-lang="th">ชุมชนวิกิ</span></small></span>
     </a>
-    <div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="language-option is-active" data-language="en" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="th" aria-pressed="false">ไทย</button></div>
+    <div class="language-switch" role="group" aria-label="Choose language" data-label-en="Choose language" data-label-th="เลือกภาษา"><button type="button" class="language-option is-active" data-language="en" aria-pressed="true">EN</button><button type="button" class="language-option" data-language="th" aria-pressed="false">ไทย</button></div>
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar"><span data-lang="en">Menu</span><span data-lang="th">เมนู</span></button>
     <div class="topbar-meta"><span class="status-dot"></span> <span data-lang="en">Add-on reference</span><span data-lang="th">คู่มือแอดออน</span> <span class="version-tag">v1.39.0</span></div>
   </header>
   <div class="site-shell">
     <aside class="sidebar" id="sidebar">
       <label class="search-label" for="nav-search"><span data-lang="en">Find a page</span><span data-lang="th">ค้นหาหน้า</span></label>
-      <input id="nav-search" class="nav-search" type="search" placeholder="Search navigation…" data-placeholder-en="Search navigation…" data-placeholder-th="ค้นหาในเมนู…" autocomplete="off">
-      <nav class="side-nav" aria-label="Wiki navigation">
+      <input id="nav-search" class="nav-search" type="search" aria-label="Search navigation" data-label-en="Search navigation" data-label-th="ค้นหาในเมนู" placeholder="Search navigation…" data-placeholder-en="Search navigation…" data-placeholder-th="ค้นหาในเมนู…" autocomplete="off">
+      <nav class="side-nav" aria-label="Wiki navigation" data-label-en="Wiki navigation" data-label-th="เมนูนำทางวิกิ">
         <a class="nav-home" href="{{ '/' | relative_url }}">⌂ <span><span data-lang="en">Wiki Home</span><span data-lang="th">หน้าแรกวิกิ</span></span></a>
         <p class="nav-heading"><span data-lang="en">GETTING STARTED</span><span data-lang="th">เริ่มต้นใช้งาน</span></p>
         <a href="{{ '/Getting-Started' | relative_url }}"><span data-lang="en">Getting Started</span><span data-lang="th">เริ่มต้นใช้งาน</span></a>
@@ -78,6 +78,6 @@
       </footer>
     </main>
   </div>
-  <script src="{{ '/assets/wiki.js' | relative_url }}?v=5" defer></script>
+  <script src="{{ '/assets/wiki.js' | relative_url }}?v=6" defer></script>
 </body>
 </html>
