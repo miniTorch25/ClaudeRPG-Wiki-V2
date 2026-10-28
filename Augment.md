@@ -17,6 +17,15 @@
 **TH:** ค่าโบนัสสุ่มบนอุปกรณ์ พร้อมเครื่องมือ Reforge, Salvage และ Vanilla Enchant
 
 
+## Key materials · วัสดุสำคัญ
+
+<div class="material-strip">
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_crystal.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Augment Crystal</span><small>Reroll stats</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_core.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Augment Core</span><small>Max stat / salvage</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/stellar_core.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Stellar Core</span><small>Force evolution</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/enchant_essence.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Enchant Essence</span><small>Vanilla enchant</small></div>
+</div>
+
 ## Augment stats · ค่า Augment
 
 **EN:** Weapons, tools and armor can roll random **Augment stats**. Unlock: **Prestige 1**. Each item type has its own stat pool. High rolls are intentionally rare. Open **Augment Stats** (Stats Book) to see totals and toggle stats on/off. The **Eternal Hammer** and other hammers power the Reforge menu.
