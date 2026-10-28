@@ -25,8 +25,9 @@
     try { localStorage.setItem('clauderpg-wiki-language', language); } catch (_) {}
   }
 
-  languageButtons.forEach(button => {
-    button.addEventListener('click', () => applyLanguage(button.dataset.language));
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button[data-language]');
+    if (button) { event.preventDefault(); applyLanguage(button.dataset.language); }
   });
   let initialLanguage = 'en';
   try {
