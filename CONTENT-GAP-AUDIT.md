@@ -121,6 +121,7 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 
 - [x] Checked `exploration_config.js` and `waypoint_manager.js` against the documented Waypoint values: 1 Ender Pearl per 400 horizontal blocks (rounded up, min 1/max 8), 8 pearls across dimensions, 10-second stone cooldown, 30-second free special-point cooldown, 10 named stones per player, 150 named stones per world, 20 saved stones per player, 5 Orb special points, 6-block minimum spacing, and 24-character names. The values in `Exploration.md` match the source.
 - [x] Confirmed the Script Tool is granted by the `status:get_script_tool` script event. Updated `Items.md` to avoid implying every player can execute the command without the world's command permissions.
+- [x] Checked `script_tool_gui.js`: the Script Tool opens a Knowledge Book menu and can grant the Stats Book; it does not directly grant a Knowledge Book item. Corrected both language entries to distinguish menu access from item delivery.
 - [x] Verified Sculk Potion's successful-conversion behavior and updated both language entries. A successful conversion consumes one potion outside Creative and the converted mob does not drop loot; bosses, Enchanted mobs, and certain ineligible/locked mobs are refused.
 
 ## Recipe audit outcome
