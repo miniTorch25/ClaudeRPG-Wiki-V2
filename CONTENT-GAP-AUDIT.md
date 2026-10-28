@@ -67,7 +67,7 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - `ClaudeBP/scripts/managers/progression_manager.js`: `canUse` checks each configured Prestige and Ascension requirement.
 - `ClaudeBP/scripts/config/progression_config.js` also sets boss Uncarved Gem drops to Ascension 2; Ascension notes state Geode mobs can drop them at Ascension 4.
 - The same config's `ASCENSION.UNLOCK_NOTES` describes Gem at P2 and Rune at P3, conflicting with the feature gates above. Wiki copy now follows the central feature gate and explicitly documents the mismatch rather than hiding it.
-- The package contains **40 item JSON definitions, 4 block JSON definitions, and 35 recipe JSON definitions** under `ClaudeBP/items/`, `ClaudeBP/blocks/`, and `ClaudeBP/recipes/`; these match the inventory counts currently shown in `Items.md`. The recipe count is verified, but each recipe's ingredients and result still need a line-by-line comparison with the wiki table.
+- The package contains **40 item JSON definitions, 4 block JSON definitions, and 35 recipe JSON definitions** under `ClaudeBP/items/`, `ClaudeBP/blocks/`, and `ClaudeBP/recipes/`; these match the inventory counts currently shown in `Items.md`. The line-by-line recipe comparison is recorded below.
 
 
 
@@ -80,6 +80,14 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Confirmed the seven Gem-to-Uncarved-Gem recipes use one Gem of each listed rarity plus one Diorite; the Uncarved Rune recipe uses one Legend Gem plus one Amethyst Shard.
 - [x] Confirmed Sculk Potion crafts 2 per recipe from Echo Shard + 2 Soul Soil + 2 Glass Bottles.
 - [ ] Remaining item-page verification: check non-recipe acquisition claims, item behavior, durability values, and drop rates against their implementation; JSON recipe matching alone does not verify these mechanics.
+
+
+
+### Navigation and responsive-layout pass
+
+- [x] Checked Markdown link targets across the pages listed in `SUMMARY.md` (including Home, Systems, item/system references, achievements, runes, exploration, FAQ, and admin pages). No links to missing wiki page targets were found in the checked pages.
+- [x] Reviewed `assets/wiki.css`: the article grid uses `minmax(0,1fr)`, article containers set `min-width:0`, and tables are block-level with `max-width:100%` and `overflow-x:auto`; mobile breakpoints reduce horizontal padding and table cell spacing.
+- [ ] Still required: test anchor fragments and generated HTML links, run the actual build, and inspect rendered pages at narrow viewport widths. Source-level CSS review does not substitute for browser screenshots or real-device testing.
 
 ## Recipe audit outcome
 
