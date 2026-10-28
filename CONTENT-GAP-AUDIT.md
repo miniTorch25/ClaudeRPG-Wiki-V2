@@ -88,7 +88,9 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 
 - [x] Checked Markdown link targets across the pages listed in `SUMMARY.md` (including Home, Systems, item/system references, achievements, runes, exploration, FAQ, and admin pages). No links to missing wiki page targets were found in the checked pages.
 - [x] Reviewed `assets/wiki.css`: the article grid uses `minmax(0,1fr)`, article containers set `min-width:0`, and tables are block-level with `max-width:100%` and `overflow-x:auto`; mobile breakpoints reduce horizontal padding and table cell spacing.
-- [ ] Still required: test anchor fragments and generated HTML links, run the actual build, and inspect rendered pages at narrow viewport widths. Source-level CSS review does not substitute for browser screenshots or real-device testing.
+- [x] Ran the GitHub Actions Jekyll build for the draft PR commit; the build and artifact upload succeeded. The deploy job was correctly skipped for the pull-request event.
+- [x] Inspected the generated Pages artifact: 37 HTML pages were produced. A static audit checked 2,278 local links/assets and 48 anchor fragments; no missing local targets or anchors were found.
+- [ ] Still required: inspect rendered pages at narrow viewport widths in an actual browser/device. A successful build and static link check do not substitute for visual mobile testing.
 
 
 
@@ -103,7 +105,8 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 
 - [x] Checked page-link targets in the wiki pages referenced by `SUMMARY.md`; no missing wiki-page targets were found in the checked Markdown links.
 - [x] Identified the build pipeline in `.github/workflows/pages.yml`: GitHub Actions extracts image assets from `ClaudeRPG_v1_39_0.zip`, then runs `actions/jekyll-build-pages@v1` to build the site into `_site`.
-- [ ] Generated HTML output and heading-fragment anchors still need build/browser validation. The workflow has been inspected, but it has not been executed for this branch and no rendered output or narrow-viewport screenshot has been reviewed.
+- [x] Generated HTML and anchor audit completed from the GitHub Pages artifact: 37 HTML pages, 2,278 local links/assets checked, 48 anchors checked, and no missing local targets found.
+- [ ] Narrow-viewport/browser screenshots and real-device validation remain outstanding.
 
 
 
@@ -118,7 +121,9 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 
 - [x] Checked `exploration_config.js` and `waypoint_manager.js` against the documented Waypoint values: 1 Ender Pearl per 400 horizontal blocks (rounded up, min 1/max 8), 8 pearls across dimensions, 10-second stone cooldown, 30-second free special-point cooldown, 10 named stones per player, 150 named stones per world, 20 saved stones per player, 5 Orb special points, 6-block minimum spacing, and 24-character names. The values in `Exploration.md` match the source.
 - [x] Confirmed the Script Tool is granted by the `status:get_script_tool` script event. Updated `Items.md` to avoid implying every player can execute the command without the world's command permissions.
+- [x] Checked `script_tool_gui.js`: the Script Tool opens a Knowledge Book menu and can grant the Stats Book; it does not directly grant a Knowledge Book item. Corrected both language entries to distinguish menu access from item delivery.
 - [x] Verified Sculk Potion's successful-conversion behavior and updated both language entries. A successful conversion consumes one potion outside Creative and the converted mob does not drop loot; bosses, Enchanted mobs, and certain ineligible/locked mobs are refused.
+- [x] Clarified that Enchanted mobs guarantee 1–5 Enchant Essence and 1–5 Augment Crystals on player kill; updated the English and Thai item rows so the drop ranges are not mistaken for chance-based drops.
 
 ## Recipe audit outcome
 
@@ -159,6 +164,6 @@ Use these labels in editorial notes while drafting:
 - [ ] Expand key pages with step-by-step player workflows.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compare all 35 recipe JSON definitions with the English and Thai item tables; no recipe ingredient/method/output mismatch found.
-- [ ] Verify cross-links and navigation targets.
-- [ ] Check tables and item lists at mobile width.
+- [x] Verify generated HTML cross-links and navigation targets with a static artifact audit (2,278 local links/assets and 48 anchors; no missing targets found).
+- [ ] Check tables and item lists at mobile width in a rendered browser or on a real device.
 - [ ] Confirm every factual claim is tied to the documented v1.39.0 release or explicitly marked as unverified.
