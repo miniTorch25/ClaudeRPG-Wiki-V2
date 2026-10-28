@@ -8,6 +8,7 @@
   function applyLanguage(language) {
     if (language !== 'th') language = 'en';
     document.documentElement.lang = language;
+    if (search) search.placeholder = search.dataset[`placeholder${language === 'th' ? 'Th' : 'En'}`] || search.placeholder;
     document.body.classList.toggle('lang-en', language === 'en');
     document.body.classList.toggle('lang-th', language === 'th');
     document.querySelectorAll('[data-lang="en"], [data-lang="th"]').forEach(node => {
