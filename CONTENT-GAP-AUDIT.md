@@ -79,7 +79,8 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Confirmed the Uncarved Gem Block converts back to 9 Uncarved Gems, and 9 Uncarved Gems craft into 1 block. This is a storage conversion, not a net gain.
 - [x] Confirmed the seven Gem-to-Uncarved-Gem recipes use one Gem of each listed rarity plus one Diorite; the Uncarved Rune recipe uses one Legend Gem plus one Amethyst Shard.
 - [x] Confirmed Sculk Potion crafts 2 per recipe from Echo Shard + 2 Soul Soil + 2 Glass Bottles.
-- [ ] Remaining item-page verification: check non-recipe acquisition claims, item behavior, durability values, and drop rates against their implementation; JSON recipe matching alone does not verify these mechanics.
+- [x] Verified key non-recipe acquisition claims and durability values against source, including Uncarved Gem, Core drops, and five tool durability values. Updated the item table in both languages for these mechanics and Sculk Potion's successful-use cost, conversion restrictions, and no-loot behavior.
+- [ ] Remaining item verification: audit every remaining custom item's behavior and acquisition claim against its implementing script; this pass covers the key high-impact examples, not every item.
 
 
 
@@ -101,7 +102,15 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 ### Current navigation audit status
 
 - [x] Checked page-link targets in the wiki pages referenced by `SUMMARY.md`; no missing wiki-page targets were found in the checked Markdown links.
-- [ ] Generated HTML output and heading-fragment anchors still need build/browser validation. The repository's root does not contain a file named `build.py`, so the build entry point must be identified before claiming a successful build.
+- [x] Identified the build pipeline in `.github/workflows/pages.yml`: GitHub Actions extracts image assets from `ClaudeRPG_v1_39_0.zip`, then runs `actions/jekyll-build-pages@v1` to build the site into `_site`.
+- [ ] Generated HTML output and heading-fragment anchors still need build/browser validation. The workflow has been inspected, but it has not been executed for this branch and no rendered output or narrow-viewport screenshot has been reviewed.
+
+
+
+### Sculk Potion behavior check
+
+- [x] Inspected `sculk_potion.js` and the evolution handler: the potion works at any Ascension, consumes one potion only after a successful conversion outside Creative, and the converted mob drops no loot. Bosses, Enchanted mobs, and some ineligible/locked mobs cannot be converted.
+- [x] Updated the English and Thai `Items.md` entries to include the successful-use cost, restrictions, and no-loot behavior.
 
 ## Recipe audit outcome
 
