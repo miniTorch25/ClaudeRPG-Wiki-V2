@@ -44,3 +44,7 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
 .material-strip--compact{grid-template-columns:repeat(2,minmax(0,180px));justify-content:start}
 @media(max-width:850px){.article-content table[align="right"]{width:min(280px,48%);max-width:min(280px,48%);margin-left:16px}.material-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.article-content table[align="right"]{float:none;display:table;width:100%;max-width:100%;margin:0 0 18px}.material-strip{gap:8px}.material-card{padding:12px 7px}.material-card span{font-size:12px}.material-card small{font-size:10px}}
+
+
+/* Keep content tables below floated right-side infoboxes so they can use the full article width. */
+.article-content table:not([align="right"]){clear:both}
