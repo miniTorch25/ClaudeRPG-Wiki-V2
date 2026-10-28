@@ -58,3 +58,24 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
   .article-content table:not([align="right"]) td,
   .article-content table:not([align="right"]) th{padding:7px 8px}
 }
+
+/* Responsive data tables: keep wide tables inside the article instead of shrinking the page. */
+.article-content{min-width:0;max-width:100%;}
+.article-content table:not([align="right"]){
+  display:block;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+}
+.article-content table:not([align="right"]) th,
+.article-content table:not([align="right"]) td{overflow-wrap:normal;}
+@media(max-width:520px){
+  .main-panel,.article-content{min-width:0;}
+  .article-content table:not([align="right"]){font-size:12px;}
+  .article-content table:not([align="right"]) th,
+  .article-content table:not([align="right"]) td{padding:7px 8px;}
+}

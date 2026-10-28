@@ -165,5 +165,6 @@ Use these labels in editorial notes while drafting:
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compare all 35 recipe JSON definitions with the English and Thai item tables; no recipe ingredient/method/output mismatch found.
 - [x] Verify generated HTML cross-links and navigation targets with a static artifact audit (2,278 local links/assets and 48 anchors; no missing targets found).
-- [ ] Check tables and item lists at mobile width in a rendered browser or on a real device.
+- [x] Added a defensive responsive-table CSS pass: content tables are constrained to the article width, use horizontal scrolling on overflow, and receive tighter cell padding on narrow screens.
+- [ ] Check tables and item lists at mobile width in a rendered browser or on a real device; CSS source changes alone do not prove the rendered result.
 - [ ] Confirm every factual claim is tied to the documented v1.39.0 release or explicitly marked as unverified.
