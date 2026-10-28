@@ -17,3 +17,4 @@ exclude:
   - _Footer.md
   - Gemfile
   - Gemfile.lock
+  - ClaudeRPG_v1_39_0.zip
