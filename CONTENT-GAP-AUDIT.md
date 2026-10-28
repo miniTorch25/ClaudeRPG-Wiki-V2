@@ -69,6 +69,22 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - The same config's `ASCENSION.UNLOCK_NOTES` describes Gem at P2 and Rune at P3, conflicting with the feature gates above. Wiki copy now follows the central feature gate and explicitly documents the mismatch rather than hiding it.
 - The package contains **40 item JSON definitions, 4 block JSON definitions, and 35 recipe JSON definitions** under `ClaudeBP/items/`, `ClaudeBP/blocks/`, and `ClaudeBP/recipes/`; these match the inventory counts currently shown in `Items.md`. The recipe count is verified, but each recipe's ingredients and result still need a line-by-line comparison with the wiki table.
 
+
+
+### Recipe-by-recipe audit (v1.39.0)
+
+- [x] Parsed all 35 JSON recipes under `ClaudeBP/recipes/` and compared recipe inputs, crafting/brewing/smithing method, and output counts with the English and Thai `Items.md` summary.
+- [x] The listed recipe summaries match the source for the documented items: Stats Book, Knowledge Book, Insight Lens, Reforge Hammers, Engraver, Eternal tools, Stellar Upgrade and its duplicate recipe, Ultimate Enchanter, Uncarved Gem/Gem Block, Uncarved Rune, ink tiers, Prestige Sigil, Ascension Relic, Sculk Potion, Waypoints, and Waypoint Orb.
+- [x] Confirmed two separate brewing recipes create Transcendent Ink: Genesis Ink + Nether Star, and Genesis Ink + Stellar Core. The wiki's “or” wording accurately summarizes both recipes.
+- [x] Confirmed the Uncarved Gem Block converts back to 9 Uncarved Gems, and 9 Uncarved Gems craft into 1 block. This is a storage conversion, not a net gain.
+- [x] Confirmed the seven Gem-to-Uncarved-Gem recipes use one Gem of each listed rarity plus one Diorite; the Uncarved Rune recipe uses one Legend Gem plus one Amethyst Shard.
+- [x] Confirmed Sculk Potion crafts 2 per recipe from Echo Shard + 2 Soul Soil + 2 Glass Bottles.
+- [ ] Remaining item-page verification: check non-recipe acquisition claims, item behavior, durability values, and drop rates against their implementation; JSON recipe matching alone does not verify these mechanics.
+
+## Recipe audit outcome
+
+No ingredient, crafting-method, or output-count mismatch was found in the 35 recipe definitions against the recipe summaries currently in `Items.md`. This conclusion is limited to the recipe JSON definitions; it does not validate every drop source, durability value, or in-game interaction described on the item page.
+
 ## Recommended execution order
 
 1. Resolve factual contradictions and verify core progression rules.
@@ -89,10 +105,11 @@ Use these labels in editorial notes while drafting:
 
 ## Completion checklist
 
-- [ ] Resolve the Gem/Rune unlock contradiction against the addon source.
+- [x] Resolve the Gem/Rune unlock contradiction in the wiki using the central feature gate; the conflicting addon confirmation text remains an upstream issue.
 - [ ] Confirm formulas, costs, caps, and rounding rules.
 - [ ] Expand key pages with step-by-step player workflows.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
+- [x] Compare all 35 recipe JSON definitions with the English and Thai item tables; no recipe ingredient/method/output mismatch found.
 - [ ] Verify cross-links and navigation targets.
 - [ ] Check tables and item lists at mobile width.
 - [ ] Confirm every factual claim is tied to the documented v1.39.0 release or explicitly marked as unverified.
