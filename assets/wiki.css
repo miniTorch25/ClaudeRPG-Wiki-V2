@@ -19,3 +19,13 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
 
 /* Ensure hidden language sections stay hidden even when components define display styles. */
 [hidden] { display: none !important; }
+
+
+/* Homepage visual feature panel */
+.home-hero--split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);align-items:center;gap:20px;overflow:hidden}
+.home-hero-copy{min-width:0;position:relative;z-index:1}
+.home-hero-art{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.home-hero-art img{display:block;width:100%;max-width:460px;height:auto;filter:drop-shadow(0 16px 28px #0005)}
+.hero-art-caption{display:block;margin-top:3px;color:#9eb2c8;font-size:10px;font-weight:800;letter-spacing:.16em;text-align:center}
+@media(max-width:850px){.home-hero--split{grid-template-columns:1fr;gap:16px}.home-hero-art img{max-width:390px}.home-hero-art{margin-top:0}}
+@media(max-width:520px){.home-hero--split{gap:10px}.home-hero-art img{max-width:300px}.hero-art-caption{font-size:9px;letter-spacing:.1em}}
