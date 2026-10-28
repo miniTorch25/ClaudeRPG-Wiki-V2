@@ -13,7 +13,7 @@ This audit tracks missing explanations, shallow coverage, contradictions, and ve
 ### 1. Progression is detailed but needs consistency checks
 
 - The page documents Level, Prestige, Ascension, XP, costs, perks, and unlocks; it should be retained and expanded rather than rewritten from scratch.
-- **Potential contradiction to resolve:** the unlock table says Gem requires Prestige 4 + Ascension 2 and Rune requires Prestige 6 + Ascension 3, while the Ascension notes say A2/A3 can unlock the systems at Prestige 2/3. Verify the actual unlock predicates in v1.39.0 and make the table, explanatory text, FAQ, and item guidance agree.
+- **Source inconsistency confirmed:** `progression_config.js` and `ProgressionManager.canUse` enforce Gem at P4/A2 and Rune at P6/A3, but the Ascension confirmation notes say P2/P3. `Progression.md` now follows the central feature gate and explicitly documents the conflicting confirmation text; the addon UI text itself remains a potential upstream fix.
 - Add a practical reset checklist explaining what is reset by Prestige, what persists, and what players should prepare before confirming it. Verify each persistence detail from code.
 - Clarify that Ascension is shared world difficulty, including its effect on other players, before players increase it.
 - Verify the high-level XP formula and the Stat Limit Break diminishing-return formula against implementation, including rounding and edge cases.
@@ -55,6 +55,9 @@ This audit tracks missing explanations, shallow coverage, contradictions, and ve
 - [x] Expanded `Progression.md` with a practical progression route in English and Thai.
 - [x] Verified the Gem/Rune feature gates against `ClaudeBP/scripts/config/progression_config.js` and `ClaudeBP/scripts/managers/progression_manager.js`. The central gate requires Gem at P4/A2 and Rune at P6/A3. Corrected `Progression.md` accordingly and documented a genuine inconsistency in the addon: the Ascension confirmation notes say Gem can unlock with P2 and Rune with P3, while the central feature gate requires P4/P6. Boss Uncarved Gem drops still begin at A2, and Geode drops at A4; those drop milestones are not the same as unlocking the Gem system.
 - [x] Expanded `Stats.md` with point-allocation planning and equipment-requirement troubleshooting in English and Thai.
+- [x] Expanded `Mastery.md` with a practical guide to activity-based XP, exclusive paths, the switch cooldown, toggles, and XP beyond max level.
+- [x] Expanded `Augment.md` with a reroll/lock/max/salvage workflow and material-cost considerations.
+- [x] Expanded `Chorus.md` with a build-planning workflow covering sockets, tier rolling, locking, hybrid elements, thresholds, and cross-system Synergy.
 - [x] Updated `assets/wiki.css` so regular reference tables fill the article width, remain horizontally scrollable when wide, and use tighter cell spacing on small screens. This is a CSS-level fix; visual verification on a real phone/browser is still outstanding.
 
 ## Additional source verification
