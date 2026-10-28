@@ -34,7 +34,22 @@
 
 **EN:** Spend points in the **Stats Book** (Status menu). Caps are raised by Prestige (Stat Limit Break). Resetting returns every spent point.
 
-**TH:** ใช้แต้มในเมนู **Stats Book (Status)** เพดานเพิ่มตาม Prestige (Stat Limit Break) การรีเซ็ตคืนแต้มที่ใช้ทั้งหมด
+### How to plan your stats
+
+- **Check equipment first.** Read the item's Lore and identify every stat requirement before spending points.
+- **Prioritize your current goal.** Str, Agi, Def, Psi, and Exc mainly act as equipment gates in this reference; Mag, Wis, Con, and Vit directly improve Mana, Mana regeneration, Max HP, and HP regeneration respectively.
+- **Keep requirements in mind when changing gear.** A higher-tier item may need more stats than the item it replaces. If a requirement is not met, the equipment restrictions below apply.
+- **Use Prestige as a long-term reset point.** Prestige resets invested stats and points, so plan to reallocate points after the reset rather than expecting the previous build to remain.
+- **Do not confuse a stat's base cap with its current cap.** Prestige's Stat Limit Break raises the caps; the table above lists the starting caps.
+
+### If an item does not work
+
+1. Open the item's Lore and compare each listed requirement with your current stats.
+2. For a weapon, check both requirements if more than one stat is listed.
+3. For tools, check Excavation (Exc); for armor and shields, check Defense (Def).
+4. If the requirement is still unmet, use a suitable lower-tier item or allocate more points when available.
+
+
 
 
 ## Item requirements · เงื่อนไขของไอเทม
