@@ -1,0 +1,19 @@
+title: ClaudeRPG Wiki
+description: Bilingual English and Thai reference for the ClaudeRPG Minecraft Bedrock add-on.
+lang: en
+markdown: kramdown
+permalink: /:basename
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      lang: en
+exclude:
+  - README.md
+  - SUMMARY.md
+  - _Sidebar.md
+  - _Footer.md
+  - Gemfile
+  - Gemfile.lock
