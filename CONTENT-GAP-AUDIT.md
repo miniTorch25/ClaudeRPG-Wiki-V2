@@ -112,6 +112,14 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Inspected `sculk_potion.js` and the evolution handler: the potion works at any Ascension, consumes one potion only after a successful conversion outside Creative, and the converted mob drops no loot. Bosses, Enchanted mobs, and some ineligible/locked mobs cannot be converted.
 - [x] Updated the English and Thai `Items.md` entries to include the successful-use cost, restrictions, and no-loot behavior.
 
+
+
+### Exploration and command-permission cross-check
+
+- [x] Checked `exploration_config.js` and `waypoint_manager.js` against the documented Waypoint values: 1 Ender Pearl per 400 horizontal blocks (rounded up, min 1/max 8), 8 pearls across dimensions, 10-second stone cooldown, 30-second free special-point cooldown, 10 named stones per player, 150 named stones per world, 20 saved stones per player, 5 Orb special points, 6-block minimum spacing, and 24-character names. The values in `Exploration.md` match the source.
+- [x] Confirmed the Script Tool is granted by the `status:get_script_tool` script event. Updated `Items.md` to avoid implying every player can execute the command without the world's command permissions.
+- [x] Verified Sculk Potion's successful-conversion behavior and updated both language entries. A successful conversion consumes one potion outside Creative and the converted mob does not drop loot; bosses, Enchanted mobs, and certain ineligible/locked mobs are refused.
+
 ## Recipe audit outcome
 
 No ingredient, crafting-method, or output-count mismatch was found in the 35 recipe definitions against the recipe summaries currently in `Items.md`. This conclusion is limited to the recipe JSON definitions; it does not validate every drop source, durability value, or in-game interaction described on the item page.
