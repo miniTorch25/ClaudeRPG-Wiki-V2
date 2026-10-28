@@ -123,6 +123,7 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Confirmed the Script Tool is granted by the `status:get_script_tool` script event. Updated `Items.md` to avoid implying every player can execute the command without the world's command permissions.
 - [x] Checked `script_tool_gui.js`: the Script Tool opens a Knowledge Book menu and can grant the Stats Book; it does not directly grant a Knowledge Book item. Corrected both language entries to distinguish menu access from item delivery.
 - [x] Verified Sculk Potion's successful-conversion behavior and updated both language entries. A successful conversion consumes one potion outside Creative and the converted mob does not drop loot; bosses, Enchanted mobs, and certain ineligible/locked mobs are refused.
+- [x] Clarified that Enchanted mobs guarantee 1–5 Enchant Essence and 1–5 Augment Crystals on player kill; updated the English and Thai item rows so the drop ranges are not mistaken for chance-based drops.
 
 ## Recipe audit outcome
 
