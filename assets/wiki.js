@@ -4,6 +4,45 @@
   const search = document.getElementById('nav-search');
   const languageButtons = Array.from(document.querySelectorAll('[data-language]'));
 
+  // Split common inline English · Thai pairs so the selected language can be shown alone.
+  function splitInlineLanguagePairs() {
+    const root = document.querySelector('.article-content');
+    if (!root || root.dataset.inlineLanguageSplit === 'true') return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (!node.parentElement || node.parentElement.closest('script,style,code,pre,textarea')) continue;
+      if (/[ \u00b7|/]/.test(node.nodeValue) && /[\u0E00-\u0E7F]/.test(node.nodeValue)) nodes.push(node);
+    }
+    nodes.forEach(node => {
+      const value = node.nodeValue;
+      const delimiters = [' · ', ' | ', ' / '];
+      let splitAt = -1, splitLength = 0;
+      delimiters.forEach(delimiter => {
+        const at = value.lastIndexOf(delimiter);
+        if (at >= 0 && /[\u0E00-\u0E7F]/.test(value.slice(at + delimiter.length)) && at > splitAt) {
+          splitAt = at;
+          splitLength = delimiter.length;
+        }
+      });
+      if (splitAt < 1) return;
+      const english = value.slice(0, splitAt).trimEnd();
+      const thai = value.slice(splitAt + splitLength).trimStart();
+      if (!english || !thai || !/[\u0E00-\u0E7F]/.test(thai)) return;
+      const en = document.createElement('span');
+      en.dataset.lang = 'en';
+      en.textContent = english;
+      const th = document.createElement('span');
+      th.dataset.lang = 'th';
+      th.textContent = thai;
+      const fragment = document.createDocumentFragment();
+      fragment.append(en, document.createTextNode(' '), th);
+      node.parentNode.replaceChild(fragment, node);
+    });
+    root.dataset.inlineLanguageSplit = 'true';
+  }
+
   // The existing wiki uses explicit EN/TH lead-ins for paired explanations.
   // Hide the non-selected explanation without removing the source Markdown.
   function applyLanguage(language) {
@@ -34,6 +73,7 @@
     const saved = localStorage.getItem('clauderpg-wiki-language');
     if (saved === 'en' || saved === 'th') initialLanguage = saved;
   } catch (_) {}
+  splitInlineLanguagePairs();
   applyLanguage(initialLanguage);
 
   if (toggle && sidebar) {
