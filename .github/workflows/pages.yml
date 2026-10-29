@@ -34,7 +34,10 @@ jobs:
           import subprocess
           import tempfile
 
-          pages = [Path("Toast-Generator.html")]
+          pages = [
+              page for page in Path(".").rglob("*.html")
+              if ".git" not in page.parts and "_site" not in page.parts
+          ]
           with tempfile.TemporaryDirectory() as temp:
               for page in pages:
                   source = page.read_text(encoding="utf-8")
@@ -79,6 +82,25 @@ jobs:
                           copied += 1
                           break
           print(f"Extracted {copied} image assets for the wiki build")
+          PY
+      - name: Validate Toast textures and icon presets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          page = Path("Toast-Generator.html").read_text(encoding="utf-8")
+          frames = [Path("assets/images/ui/toast") / f"f{i}.png" for i in range(10)]
+          missing_frames = [str(path) for path in frames if not path.is_file()]
+          if missing_frames:
+              raise SystemExit("Missing Toast frame textures: " + ", ".join(missing_frames))
+
+          presets = set(re.findall(r'<option value="([A-Z0-9]{4})">', page))
+          icon_root = Path("assets/images/achievements")
+          missing_icons = [key for key in sorted(presets) if not (icon_root / f"{key}.png").is_file()]
+          if missing_icons:
+              raise SystemExit("Missing Toast icon preset textures: " + ", ".join(missing_icons))
+          print(f"Verified {len(frames)} Toast frame textures and {len(presets)} icon presets.")
           PY
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1
