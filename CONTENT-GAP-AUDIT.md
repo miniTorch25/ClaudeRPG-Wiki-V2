@@ -336,3 +336,14 @@ Use these labels in editorial notes while drafting:
 - [x] Verified action counters (for example melee/ranged hits, mob kills, mining, fishing and many item interactions) are driven by event hooks and are not reconstructed from world history. Their progress therefore depends on events observed by the Achievement system, rather than a universal historical scan.
 - [x] Documented this distinction in the audit to avoid claiming that all Achievement progress is backfilled. Existing stored counters/unlocks remain in the per-player `crpg:ach` dynamic property and are not reset by Prestige according to the manager comments.
 - [ ] Continue a targeted review of individual hooks for edge cases where the implemented event does not fully match the human-readable condition; no gameplay behavior was changed in this audit.
+
+
+### Follow-up pass: individual combat Achievement hooks (v1.39.0)
+
+- [x] Compared the catalogue conditions for Long Shot, Untouchable, Four Horsemen, By a Thread, and Second Wind with the implementation in `ClaudeBP/scripts/systems/achievement_hooks.js` and `ClaudeBP/scripts/config/mob_config.js`.
+- [x] Long Shot records the maximum floored 3D distance between a player and a non-player target when a damaging projectile hit is observed; this supports the documented 50+ block condition, with distance measured in 3D rather than horizontal blocks only.
+- [x] Untouchable increments the hit streak for successful player damage to non-player targets and resets it when the player receives applied damage. The counter is event-based and is not reconstructed from prior combat history.
+- [x] Four Horsemen counts distinct configured boss type IDs. The v1.39.0 boss tags cover Elder Guardian, Warden, Ender Dragon, and Wither, matching the catalogue's four-boss description.
+- [x] By a Thread increments when a player survives resolved damage with exactly 1 HP remaining. Second Wind records a below-10%-HP state after resolved non-lethal damage and awards the event when the player later returns to full HP; the low-HP state is cleared on death or leaving the world.
+- [x] No definite mismatch was found in these five reviewed conditions. This is a source-code comparison, not a live gameplay test; other achievement hooks and edge cases remain unreviewed.
+- [ ] Continue checking the remaining condition/counter pairs, especially multi-step interactions and counters whose wording implies a particular item, target, or game state.
