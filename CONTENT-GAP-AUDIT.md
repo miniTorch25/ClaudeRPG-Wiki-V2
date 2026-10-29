@@ -186,3 +186,14 @@ Use these labels in editorial notes while drafting:
 - [ ] Complete the remaining custom-item behavior/acquisition audit against implementing scripts, including salvage and admin/creative restrictions.
 - [ ] Run rendered narrow-screen/mobile checks; source CSS and successful build alone are not visual validation.
 - [ ] Re-run build, generated HTML/link/anchor audit, and bilingual parity review after this pass.
+
+
+### Follow-up pass: Boss mechanics and custom-item usability
+
+- [x] Expanded `Bosses-and-Special-Mobs.md` to distinguish HP thresholds from minimum World Ascension requirements and to separate boss effects from mob Evolution Tier.
+- [x] Documented uncertainty around the scope of the 10-minion cap instead of claiming it is shared globally or per boss without source verification.
+- [x] Added an item-family guide in both languages explaining grouped rows, major item categories, and key eligibility/restriction caveats.
+- [ ] Verify exact boss triggers, repeat behavior, effect durations, and minion-cap scope against the v1.39.0 implementation; the available Wiki repository view alone does not prove those details.
+- [ ] Compare all 40 item definitions, 4 block definitions, and 35 recipes against the package implementation for item-by-item acquisition, usage, and Creative/Admin restrictions. Existing recipe-count checks do not replace this behavior audit.
+- [ ] Run the repository's configured build and inspect its result; no workflow run was returned for the current documentation commit during this check.
+- [ ] Check rendered pages at narrow/mobile widths in an actual browser/device; source-level table/CSS inspection is not equivalent to visual testing.
