@@ -12,9 +12,9 @@ defaults:
       lang: en
 exclude:
   - README.md
-  - SUMMARY.md
-  - _Sidebar.md
-  - _Footer.md
+  - docs/SUMMARY.md
+  - docs/_Sidebar.md
+  - docs/_Footer.md
   - Gemfile
   - Gemfile.lock
-  - ClaudeRPG_v1_39_0.zip
+  - addon/ClaudeRPG_v1_39_0.zip

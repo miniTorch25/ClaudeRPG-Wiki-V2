@@ -10,28 +10,25 @@ ClaudeRPG adds character progression, equipment customization, elemental armor, 
 
 ## Start here
 
-- **[Wiki Home](Home.md)** — overview of the addon and the main topics.
-- **[Getting Started](Getting-Started.md)** — installation, first steps, and the progression roadmap.
-- **[Guide Quest](Guide-Quest.md)** — an in-game guided tour.
-- **[FAQ](FAQ.md)** — quick answers to common questions.
-- **[Systems Index](Systems.md)** — a map of the documented gameplay systems.
-- **[Download ClaudeRPG](Download.md)** — official release link and safe installation checklist.
-- **[Toast Generator](Toast-Generator.html)** — build, preview, and copy a source-verified Toast command.
+- **[Wiki Home](docs/Home.md)** — overview of the addon and the main topics.
+- **[Getting Started](docs/Getting-Started.md)** — installation, first steps, and the progression roadmap.
+- **[Guide Quest](docs/Guide-Quest.md)** — an in-game guided tour.
+- **[FAQ](docs/FAQ.md)** — quick answers to common questions.
+- **[Systems Index](docs/Systems.md)** — a map of the documented gameplay systems.
+- **[Download ClaudeRPG](docs/Download.md)** — official release link and safe installation checklist.
+- **[Toast Generator](https://miniTorch25.github.io/ClaudeRPG-Wiki-V2/Toast-Generator/)** — build, preview, and copy a source-verified Toast command.
 
-## Browse the wiki
+## Repository layout
 
-The wiki is organized into eight areas:
+- `addon/` — source add-on archive used to extract textures during the site build.
+- `docs/` — Markdown wiki pages, audits, status notes, contribution guide, and navigation metadata.
+- `tools/` — the Toast Generator page and the generated-site validation script.
+- `assets/` — shared website styles/scripts and image assets.
+- `.github/workflows/pages.yml` — GitHub Pages build, validation, and deployment workflow.
 
-1. **Getting Started** — installation, guided learning, FAQ, and terminology.
-2. **Character & Progression** — Level, Prestige, Ascension, Stats, Mastery, and Achievements.
-3. **Equipment & Item Reference** — items, categories, Augment & Reforge, Chorus, Gems, and Runes.
-4. **Mobs & Combat** — mob evolution, bosses, and special mobs.
-5. **Exploration & Quality of Life** — Waypoints, discovery, settings, stash, and display helpers.
-6. **Systems Reference** — system index and release history.
-7. **Admin & Maintenance** — administrator-only tools and commands.
-8. **Tools & Project Maintenance** — download guidance, Toast command builder, source audits, and contributor documentation.
+The wiki keeps its existing public page permalinks. Moving source Markdown into `docs/` therefore does not change the published URLs. Jekyll and the workflow use the new source paths explicitly.
 
-See [SUMMARY.md](SUMMARY.md) for the navigation tree. Current completed work and remaining validation are tracked in [WIKI-STATUS.md](WIKI-STATUS.md). Contribution and validation standards are in [CONTRIBUTING.md](CONTRIBUTING.md). The shared site shell and navigation live in `assets/wiki.css` and `assets/wiki.js`; the Toast Generator uses separate files at `assets/toast-generator.css` and `assets/toast-generator.js` so its page markup stays easier to maintain.
+See [docs/SUMMARY.md](docs/SUMMARY.md) for the navigation tree. Current completed work and remaining validation are tracked in [docs/WIKI-STATUS.md](docs/WIKI-STATUS.md). Contribution and validation standards are in [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
 
 ## Version and accuracy
 

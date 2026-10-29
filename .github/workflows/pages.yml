@@ -41,13 +41,13 @@ jobs:
               if ".git" not in page.parts and "_site" not in page.parts
           ]
           with tempfile.TemporaryDirectory() as temp:
-              for page in pages:
+              for index, page in enumerate(pages):
                   source = page.read_text(encoding="utf-8")
                   scripts = re.findall(r"<script\b[^>]*>(.*?)</script>", source, flags=re.IGNORECASE | re.DOTALL)
-                  for index, script in enumerate(scripts):
+                  for script_index, script in enumerate(scripts):
                       if not script.strip():
                           continue
-                      target = Path(temp) / f"{page.stem}-{index}.js"
+                      target = Path(temp) / f"inline-{index}-{script_index}.js"
                       target.write_text(script, encoding="utf-8")
                       subprocess.run(["node", "--check", str(target)], check=True)
           PY
@@ -58,9 +58,9 @@ jobs:
           from zipfile import ZipFile
           import shutil
 
-          archive = Path("ClaudeRPG_v1_39_0.zip")
+          archive = Path("addon/ClaudeRPG_v1_39_0.zip")
           if not archive.exists():
-              raise SystemExit("ClaudeRPG_v1_39_0.zip was not found in the repository root")
+              raise SystemExit("addon/ClaudeRPG_v1_39_0.zip was not found")
 
           routes = {
               "ClaudeRP/textures/icons/ach/": Path("assets/images/achievements"),
@@ -91,7 +91,7 @@ jobs:
           from pathlib import Path
           import re
 
-          page = Path("Toast-Generator.html").read_text(encoding="utf-8")
+          page = Path("tools/Toast-Generator.html").read_text(encoding="utf-8")
           frames = [Path("assets/images/ui/toast") / f"f{i}.png" for i in range(10)]
           missing_frames = [str(path) for path in frames if not path.is_file()]
           if missing_frames:
@@ -102,7 +102,7 @@ jobs:
           missing_icons = [key for key in sorted(presets) if not (icon_root / f"{key}.png").is_file()]
           if missing_icons:
               raise SystemExit("Missing Toast icon preset textures: " + ", ".join(missing_icons))
-          print(f"Verified {len(frames)} Toast frame textures and {len(presets)} icon presets.")
+          print(f"Verified {len(frames)} frames and {len(presets)} icon presets.")
           PY
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1
@@ -110,7 +110,7 @@ jobs:
           source: ./
           destination: ./_site
       - name: Validate generated local links, assets, and anchors
-        run: python scripts/validate_site.py ./_site
+        run: python tools/scripts/validate_site.py ./_site
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
