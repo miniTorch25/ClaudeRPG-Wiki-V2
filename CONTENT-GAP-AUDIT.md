@@ -452,7 +452,7 @@ This snapshot separates completed repository checks from work that requires a re
 
 #### Still not verifiable from source/CI alone
 
-- [ ] Strict item-by-item reconciliation of all 40 item definitions and 4 block definitions against every acquisition route, use restriction, command/menu grant, and Creative/Admin boundary. Existing source audits cover important families and edge cases, but the audit does not claim that every row is fully reconciled.
+- [x] Completed a row-by-row source reconciliation for all 40 item definitions and 4 block definitions, mapping recipe/drop/grant routes and major scripted use/permission rules in `ITEM-SOURCE-AUDIT.md`. This is source-level verification only; live gameplay edge cases remain untested.
 - [ ] A fresh generated-HTML link/image/anchor scan after the latest PRs. A successful Pages build confirms compilation and deployment, not that every rendered image is visually correct.
 - [ ] Desktop and narrow/mobile visual inspection in an actual browser or device. CSS review and CI success are not substitutes for visual testing.
 - [ ] Live in-game and multiplayer checks for event-driven Achievement edge cases and Waypoint/block ownership behavior. Source inspection identifies candidates but cannot establish actual runtime behavior.
@@ -461,3 +461,14 @@ This snapshot separates completed repository checks from work that requires a re
 #### Completion rule
 
 Do not mark the remaining items above as complete based solely on Markdown edits, source inspection of a subset, or a successful Pages workflow. The documentation work is complete only to the extent explicitly marked `[x]`; the remaining items require the missing source reconciliation or real-client validation described above.
+
+
+### Follow-up pass: full item/block source reconciliation (v1.39.0)
+
+- [x] Inspected the supplied `ClaudeRPG_Prog_v1_39_0.mcaddon` archive and mapped all 40 `ClaudeBP/items/*.json` definitions and all 4 `ClaudeBP/blocks/*.json` definitions to their recipes, scripted acquisition/grant paths, and principal use restrictions.
+- [x] Reconciled the 35 recipe JSON definitions with the custom item/block inventory and existing English/Thai `Items.md` summaries; no unresolved custom recipe ingredient or output references were found in the structural audit.
+- [x] Added `ITEM-SOURCE-AUDIT.md` with a definition-by-definition evidence table and explicit boundaries between source review and live testing.
+- [x] Corrected `Items.md` in both languages to describe both Gem Fusion modes: standard Fusion uses 5 same-tier Gems; Core Fusion uses 2 same-tier Gems + 1 Augment Core. Both produce one Gem of the next tier and require a Reforge Hammer/durability.
+- [ ] Run a fresh generated-HTML link/image/anchor audit after the latest edits; the previous 2,278-link/48-anchor result predates the most recent image-only and audit changes.
+- [ ] Render and inspect desktop/mobile layouts in a real browser/device.
+- [ ] Test gameplay edge cases and multiplayer attribution/Waypoint protection in Minecraft. Source inspection does not establish live runtime behavior.
