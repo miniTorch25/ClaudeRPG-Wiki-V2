@@ -281,3 +281,12 @@ Use these labels in editorial notes while drafting:
 - [x] Updated Guide Quest step 4.2 to include Awakened mobs as an Uncarved Gem source from Ascension 7+, matching step 6.2 and the v1.39.0 acquisition audit.
 - [x] Preserved the separate source thresholds: bosses at Ascension 2+, Geode mobs at Ascension 4+, and Awakened mobs at Ascension 7+.
 - [ ] Continue checking repeated acquisition summaries for omissions or inconsistent gates.
+
+
+### Follow-up pass: Chorus Fusion requirements and permanence (v1.39.0)
+
+- [x] Cross-checked the Fusion table, Guide Quest steps 8.5–8.7, Chorus overview, and Chorus Mastery unlock table against `chorus_config.js`, `chorus_manager.js`, `chorus_gui.js`, and `mastery_config.js` in the v1.39.0 package.
+- [x] Confirmed the documented gates and costs: Awaken = Prestige 3 + Chorus Mastery 15 + 3 Stellar Cores; Melodious = Prestige 6 + Chorus Mastery 20 + 6 Stellar Cores; Genesis = Prestige 10 + Chorus Mastery 25 + 12 Stellar Cores.
+- [x] Confirmed source behavior: Awaken fuses the exact two Transcend elements on one armor piece; Melodious and Genesis fuse two eligible source pieces, and both pieces become the result. Stellar Core cost is charged once per Fusion operation, not per source piece.
+- [x] Confirmed Fusion is permanent: fused pieces cannot be rolled or locked. No factual mismatch was found in the reviewed Fusion requirements.
+- [ ] Continue the strict item-by-item audit for remaining item/block acquisition paths, use restrictions, and Creative/Admin boundaries. Source review does not replace live gameplay or narrow-screen validation.
