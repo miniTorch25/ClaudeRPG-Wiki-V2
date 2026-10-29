@@ -20,6 +20,13 @@
 
 ## How Chorus works · หลักการ
 
+<div class="material-strip material-strip--compact">
+  <div class="material-card"><img src="{{ '/assets/images/items/resonant_ink.png' | relative_url }}" alt="Resonant Ink" width="64" height="64" loading="lazy"><span>Resonant Ink</span><small>Chorus material</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/genesis_ink.png' | relative_url }}" alt="Genesis Ink" width="64" height="64" loading="lazy"><span>Genesis Ink</span><small>Advanced Chorus crafting</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/transcendent_ink.png' | relative_url }}" alt="Transcendent Ink" width="64" height="64" loading="lazy"><span>Transcendent Ink</span><small>High-tier progression</small></div>
+</div>
+
+
 **EN:** Chorus turns armor into an **elemental build**. Each armor piece has **2 element sockets** (full set = 8; the shield has none). Matching elements unlock **set effects at 2 / 4 / 6 / 8 sockets**, and they stack. A locked element binds a piece to its tier. Unlock: **Prestige 2**.
 
 **TH:** Chorus เปลี่ยนเกราะเป็น **บิลด์ธาตุ** เกราะแต่ละชิ้นมี **ช่องธาตุ 2 ช่อง** (ครบชุด 8 ช่อง โล่ไม่มีช่อง) ธาตุที่ตรงกันปลดล็อก **เอฟเฟกต์ชุดที่ 2 / 4 / 6 / 8 ช่อง** และสะสมกัน ธาตุที่ล็อกจะผูกเกราะไว้กับระดับนั้น ปลดล็อกที่ **Prestige 2**
