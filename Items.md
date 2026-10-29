@@ -17,7 +17,7 @@ All custom ClaudeRPG items, blocks, and recipes.
 
 | Item | How to obtain | Use |
 |---|---|---|
-| <img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Stats Book | 1 Stick (shapeless) | Opens the Status menu: stats, Mastery, Prestige, Ascension, Chorus, Augment totals, and Achievements. |
+| <img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Stats Book | 4 Sticks (shapeless) | Opens the Status menu: stats, Mastery, Prestige, Ascension, Chorus, Augment totals, and Achievements. |
 | <img src="{{ '/assets/images/items/knowledge_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Knowledge Book | 1 Dirt (shapeless) | In-game encyclopedia in 6 categories (English and Thai). |
 | Script Tool | Command `/scriptevent status:get_script_tool` (requires permission to run commands) | Opens 5 menu categories: Character & Logs, Gear & Enchanting, Utilities, Guides & Items, Creative & Admin (Creative mode or Admin only). Includes a Knowledge Book menu and can give the Stats Book. |
 | <img src="{{ '/assets/images/items/insight_lens.png' | relative_url }}" alt="" width="28" loading="lazy"> Insight Lens | Stellar Upgrade + Glass + Legend Gem (shapeless) | Use on another player to view their status; sneak-use to view your own. |
@@ -75,7 +75,7 @@ All custom ClaudeRPG items, blocks, and recipes.
 
 | ไอเทม | วิธีได้รับ | การใช้งาน |
 |---|---|---|
-| <img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Stats Book | Stick 1 ชิ้น (คราฟต์แบบไม่กำหนดรูปแบบ) | เปิดเมนู Status ซึ่งรวมค่าสเตตัส, Mastery, Prestige, Ascension, ยอด Augment และ Achievements |
+| <img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Stats Book | Stick 4 ชิ้น (คราฟต์แบบไม่กำหนดรูปแบบ) | เปิดเมนู Status ซึ่งรวมค่าสเตตัส, Mastery, Prestige, Ascension, ยอด Augment และ Achievements |
 | <img src="{{ '/assets/images/items/knowledge_book.png' | relative_url }}" alt="" width="28" loading="lazy"> Knowledge Book | Dirt 1 ชิ้น (คราฟต์แบบไม่กำหนดรูปแบบ) | สารานุกรมในเกม 6 หมวดหมู่ รองรับภาษาอังกฤษและไทย |
 | Script Tool | ใช้คำสั่ง `/scriptevent status:get_script_tool` (ต้องมีสิทธิ์ใช้คำสั่งในโลกนั้น) | เปิดเมนู 5 หมวด ได้แก่ Character & Logs, Gear & Enchanting, Utilities, Guides & Items และ Creative & Admin (หมวดสุดท้ายใช้ได้เฉพาะ Creative หรือ Admin) มีเมนู Knowledge Book และสามารถรับ Stats Book ได้ |
 | <img src="{{ '/assets/images/items/insight_lens.png' | relative_url }}" alt="" width="28" loading="lazy"> Insight Lens | Stellar Upgrade + Glass + Legend Gem (คราฟต์แบบไม่กำหนดรูปแบบ) | ใช้กับผู้เล่นอื่นเพื่อดูสถานะ หรือย่อตัวขณะใช้เพื่อดูสถานะของตนเอง |
