@@ -30,7 +30,7 @@ The wiki is organized into seven areas:
 6. **Systems Reference** — system index and release history.
 7. **Admin & Maintenance** — administrator-only tools and commands.
 
-See [SUMMARY.md](SUMMARY.md) for the navigation tree. Contribution and validation standards are in [CONTRIBUTING.md](CONTRIBUTING.md).
+See [SUMMARY.md](SUMMARY.md) for the navigation tree. Current completed work and remaining validation are tracked in [WIKI-STATUS.md](WIKI-STATUS.md). Contribution and validation standards are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Version and accuracy
 
