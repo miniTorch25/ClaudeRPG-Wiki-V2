@@ -33,7 +33,7 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 - [Exploration](Exploration) — Waypoints and Discovery Log · [Quality of Life](Quality-of-Life)
 
 ## 🧰 Tools
-[Download ClaudeRPG](Download) · [Toast Generator](Toast-Generator)
+[Download ClaudeRPG](Download/) · [Toast Generator](Toast-Generator/)
 
 ## 🛠️ For admins
 [Admin Tools](Admin)
@@ -73,7 +73,7 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 - [การสำรวจ](Exploration) — จุดนำทางและบันทึกการค้นพบ · [ระบบอำนวยความสะดวก](Quality-of-Life)
 
 ## 🧰 เครื่องมือ
-[ดาวน์โหลด ClaudeRPG](Download) · [เครื่องมือสร้าง Toast](Toast-Generator)
+[ดาวน์โหลด ClaudeRPG](Download/) · [เครื่องมือสร้าง Toast](Toast-Generator/)
 
 ## 🛠️ สำหรับผู้ดูแล
 [เครื่องมือผู้ดูแล](Admin)
