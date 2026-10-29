@@ -117,7 +117,9 @@ description: Build and preview a ClaudeRPG Toast command using the v1.39.0 Toast
     const validBody = !body.includes('|');
     const validSound = ['default','none','toast','levelup','orb'].includes(sound);
 
-    $('toast-preview-header').textContent = header || ' ';
+    // The game strips Minecraft formatting codes from the fixed-width header; mirror that in the preview.
+    const previewHeader = header.replace(/&[0-9a-fk-or]/gi, '');
+    $('toast-preview-header').textContent = previewHeader || ' ';
     $('toast-preview-body').textContent = body || ' ';
     $('toast-frame-name').textContent = frame[0].toUpperCase()+frame.slice(1)+' · frame '+frames[frame];
     $('toast-preview').style.borderImageSource = 'url("' + frameBase + 'f' + frames[frame] + '.png")';
