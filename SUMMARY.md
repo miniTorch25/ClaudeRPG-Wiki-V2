@@ -59,3 +59,4 @@
 * [Content Gap Audit](CONTENT-GAP-AUDIT.md)
 * [Item & Block Source Audit](ITEM-SOURCE-AUDIT.md)
 * [Contributing Guidelines](CONTRIBUTING.md)
+  * Source files: `assets/wiki.js`, `assets/wiki.css`, `assets/toast-generator.js`, and `assets/toast-generator.css`
