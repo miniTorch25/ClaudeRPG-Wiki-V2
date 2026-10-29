@@ -440,7 +440,7 @@ Use these labels in editorial notes while drafting:
 
 ### Final validation snapshot — 2026-10-29
 
-This snapshot separates completed repository checks from work that requires a real Minecraft client or an accessible current add-on source package.
+This snapshot separates completed source/repository checks from work that requires a real Minecraft client or a rendered browser/device.
 
 #### Verified in the repository / CI
 
