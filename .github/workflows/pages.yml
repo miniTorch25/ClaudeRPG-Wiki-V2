@@ -25,7 +25,9 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Validate wiki JavaScript syntax
-        run: node --check assets/wiki.js
+        run: |
+          node --check assets/wiki.js
+          node --check assets/toast-generator.js
       - name: Validate inline JavaScript in wiki tools
         run: |
           python - <<'PY'
