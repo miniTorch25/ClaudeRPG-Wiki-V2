@@ -64,6 +64,7 @@ jobs:
 
           routes = {
               "ClaudeRP/textures/icons/ach/": Path("assets/images/achievements"),
+              "ClaudeRP/textures/icons/": Path("assets/images/icons"),
               "ClaudeRP/textures/items/": Path("assets/images/items"),
               "ClaudeRP/textures/blocks/": Path("assets/images/blocks"),
               "ClaudeRP/textures/entity/": Path("assets/images/mobs"),
