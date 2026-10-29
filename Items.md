@@ -77,7 +77,7 @@ Checked against `evolution_config.js`, `progression_config.js`, and `evolution_m
 - **Ultimate Picker:** block pickup is restricted by a configured blacklist outside Creative. Waypoint Stones additionally enforce owner/Admin break permissions. Do not describe it as able to pick up every block in Survival.
 - **Sculk Potion:** conversion is attempted when the player hits a mob while holding the potion; the potion is consumed only after a successful conversion outside Creative. Bosses, Enchanted mobs, and other ineligible/locked targets are refused.
 
-These notes confirm code paths in the v1.39.0 package; they do not replace the remaining item-by-item audit or live gameplay testing.
+These notes confirm code paths in the v1.39.0 package. The complete definition-by-definition source map is in [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT); live gameplay and multiplayer testing remain outstanding.
 
 ## Additional behavior notes verified from v1.39.0 scripts
 
@@ -90,7 +90,7 @@ These notes confirm code paths in the v1.39.0 package; they do not replace the r
 - **Other salvage rewards:** each installed Gem that is neither locked nor empty gives a separate 1–10 Gem Dust roll; each rolled non-max Augment stat returns one Augment Crystal, while each maxed stat returns three; vanilla enchantments return Enchant Essence based on enchantment rarity and level. Salvage removes the whole item, so check the preview before confirming.
 - **Augment material costs:** Reroll costs one Augment Crystal and Lock costs two; Unlock is crystal-free. Max Augment costs one Augment Core. Gem Fusion has two paths: standard Fusion uses 5 Gems of the same tier; Core Fusion uses 2 Gems of the same tier + 1 Augment Core. Both paths yield 1 Gem of the next tier and require a Reforge Hammer plus durability. These are source-level rules; gameplay edge cases still need in-game validation.
 
-These details were checked against `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js`, and `reforge.js` in the v1.39.0 package. They are not a substitute for the remaining item-by-item audit or live gameplay testing.
+These details were checked against `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js`, and `reforge.js` in the v1.39.0 package. The complete item/block source matrix is in [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT); live gameplay testing remains outstanding.
 
 ## Quick item audit guide
 
@@ -102,7 +102,7 @@ The inventory groups several item families into single rows (for example, seven 
 - **Player utility items:** Stats Book, Knowledge Book, Script Tool, Insight Lens, Sculk Potion, and Waypoint items have distinct access, targeting, or eligibility rules. In particular, Sculk Potion conversion can consume a potion on successful use and the converted mob gives no loot.
 - **Restrictions:** Some tools/actions require progression unlocks, command permission, Creative mode, or Admin access. Check the relevant system page before assuming an item can be used by every player at every stage.
 
-The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) are package inventory counts, not 40 separate visible rows. This page is a quick reference; use each linked system page for full behavior. Remaining item-by-item acquisition and restriction verification should be recorded in the audit rather than inferred from the item name.
+The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) are package inventory counts, not 40 separate visible rows. This page is a quick reference; use each linked system page for full behavior. The definition-by-definition acquisition and restriction review is recorded in [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT); do not treat source review as proof of live gameplay behavior.
 
 ---
 
@@ -201,7 +201,7 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 - **Ultimate Picker:** การเก็บบล็อกถูกจำกัดด้วยรายการบล็อกที่ห้ามเก็บนอก Creative นอกจากนี้ Waypoint Stone ยังตรวจสิทธิ์เจ้าของหรือ Admin จึงไม่ควรอธิบายว่าเก็บบล็อกทุกชนิดได้ใน Survival
 - **Sculk Potion:** ระบบตรวจเมื่อผู้เล่นตีมอนสเตอร์ขณะถือยา และจะใช้ยาเมื่อแปลงสำเร็จเท่านั้นในโหมดที่ไม่ใช่ Creative บอส มอน Enchanted และเป้าหมายที่ไม่รองรับหรือถูกล็อกจะถูกปฏิเสธ
 
-หมายเหตุเหล่านี้ยืนยันจากเส้นทางการทำงานในโค้ด v1.39.0 แต่ยังไม่ใช่การตรวจไอเทมครบทั้ง 40 รายการหรือการทดสอบจริงในเกม
+หมายเหตุเหล่านี้ยืนยันจากเส้นทางการทำงานในโค้ด v1.39.0 ตารางตรวจไอเทมและบล็อกครบทุกนิยามอยู่ใน [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT) ส่วนการทดสอบจริงในเกมและ Multiplayer ยังต้องทำ
 
 ## หมายเหตุพฤติกรรมเพิ่มเติมที่ยืนยันจาก Script v1.39.0
 
@@ -214,7 +214,7 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 - **รางวัลอื่นจาก Salvage:** Gem ที่ติดตั้งอยู่แต่ไม่ใช่ช่องล็อกหรือช่องว่างแต่ละช่องจะสุ่ม Gem Dust 1–10 ชิ้น; Augment ที่สุ่มแล้วและไม่เต็มค่าสูงสุดคืน Augment Crystal 1 ชิ้นต่อค่าสเตตัส ส่วนค่าสเตตัสที่เต็มแล้วคืน 3 ชิ้น; เอนชานต์ปกติคืน Enchant Essence ตามความหายากและระดับของเอนชานต์ การ Salvage จะทำลายไอเทมทั้งชิ้น จึงควรตรวจรายการรางวัลก่อนยืนยัน
 - **ค่าใช้จ่ายวัสดุ Augment:** Reroll ใช้ Augment Crystal 1 ชิ้น และ Lock ใช้ 2 ชิ้น ส่วน Unlock ไม่ใช้ Crystal; Max Augment ใช้ Augment Core 1 ชิ้น; Gem Fusion มี 2 วิธี: แบบปกติใช้ Gem ระดับเดียวกัน 5 ชิ้น; Core Fusion ใช้ Gem ระดับเดียวกัน 2 ชิ้น + Augment Core 1 ชิ้น ทั้งสองแบบได้ Gem ระดับถัดไป 1 ชิ้น และต้องมี Reforge Hammer พร้อมเสียความทนทาน ข้อมูลเหล่านี้ตรวจจากซอร์สโค้ด แต่กรณีการใช้งานจริงยังต้องทดสอบในเกม
 
-ตรวจข้อมูลเหล่านี้จาก `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js` และ `reforge.js` ในแพ็กเกจ v1.39.0 แล้ว แต่ยังไม่ถือว่าตรวจไอเทมครบทุกชิ้นหรือทดสอบการเล่นจริงแล้ว
+ตรวจข้อมูลเหล่านี้จาก `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js` และ `reforge.js` ในแพ็กเกจ v1.39.0 แล้ว ตารางตรวจครบทุกนิยามอยู่ใน [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT) แต่ยังไม่ได้ทดสอบการเล่นจริง
 
 ## แนวทางตรวจสอบไอเทมแบบย่อ
 
@@ -226,7 +226,7 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 - **ไอเทมอำนวยความสะดวก:** Stats Book, Knowledge Book, Script Tool, Insight Lens, Sculk Potion และไอเทม Waypoint มีข้อกำหนดการเข้าถึง เป้าหมาย หรือสิทธิ์ต่างกัน โดยเฉพาะ Sculk Potion ที่ใช้ยาเมื่อแปลงสำเร็จ และมอนที่ถูกแปลงจะไม่ดรอปของ
 - **ข้อจำกัด:** เครื่องมือหรือการกระทำบางอย่างต้องปลดล็อกระบบก่อน ต้องมีสิทธิ์ใช้คำสั่ง อยู่ใน Creative หรือเป็น Admin ควรอ่านหน้าระบบที่เกี่ยวข้องก่อนสรุปว่าใครก็ใช้ได้ทุกช่วงความก้าวหน้า
 
-จำนวนที่ระบุ (นิยามไอเทม 40 รายการ นิยามบล็อก 4 รายการ และสูตร 35 รายการ) คือจำนวนไฟล์ในแพ็ก ไม่ใช่จำนวนแถวที่แสดงแยกกัน หน้านี้เป็นคู่มืออ้างอิงย่อ ส่วนรายละเอียดการทำงานให้อ่านหน้าระบบที่เกี่ยวข้อง งานตรวจสอบแหล่งที่มาและข้อจำกัดของไอเทมแต่ละรายการที่เหลือควรบันทึกไว้ใน Audit ไม่ควรเดาจากชื่อไอเทม
+จำนวนที่ระบุ (นิยามไอเทม 40 รายการ นิยามบล็อก 4 รายการ และสูตร 35 รายการ) คือจำนวนไฟล์ในแพ็ก ไม่ใช่จำนวนแถวที่แสดงแยกกัน หน้านี้เป็นคู่มืออ้างอิงย่อ ส่วนรายละเอียดการทำงานให้อ่านหน้าระบบที่เกี่ยวข้อง ตารางตรวจแหล่งที่มาและข้อจำกัดครบทุกนิยามอยู่ใน [ITEM-SOURCE-AUDIT](ITEM-SOURCE-AUDIT) และไม่ควรเดาพฤติกรรมจากชื่อไอเทมเพียงอย่างเดียว.
 
 ---
 
