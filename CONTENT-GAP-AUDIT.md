@@ -231,3 +231,11 @@ Use these labels in editorial notes while drafting:
 - [x] Checked `ultimate_picker_blacklist.js` and `event_router.js`: the Survival restriction is an explicit configured blacklist (command/structure and related protected blocks), not a blanket Creative-only rule for all custom blocks. Named Waypoint Stones use a separate owner/Admin permission check. Updated both language rows to reflect this distinction.
 - [x] Kept the wording bounded to source-confirmed behavior and supported block data; no live gameplay test was performed.
 - [ ] Continue strict row-by-row checks for remaining custom items and blocks, then rerun generated-page/link and English/Thai parity checks.
+
+
+### Follow-up pass: missing item icon assets
+
+- [x] Compared the repository's recursive Git tree with image references in `Items.md`. The only committed file under `assets/images` is the hero SVG; the item/block PNGs referenced by the item table are absent from the repository tree.
+- [x] Removed 58 broken inline image tags from `Items.md` (English and Thai tables). Item names, acquisition recipes, and behavior descriptions remain as text, avoiding broken-image placeholders while the icon artwork is unavailable.
+- [ ] Add and verify the intended item/block icon assets in a future artwork pass; this change does not generate replacement artwork.
+- [ ] Run the configured site build and check generated HTML and mobile rendering after the asset fix.
