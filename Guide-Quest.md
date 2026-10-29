@@ -67,7 +67,7 @@
 | 5.2 | Level up a Mastery line<br><i>เลเวลอัพสาย Mastery</i> | Mastery lines level from what you do: fight (Melee, Ranged, Defense), mine (Gathering), travel (Travel), fish (Fishing), use Mana (Magic). Get any line to Level 1. |
 | 5.3 | Craft an Ascension Relic<br><i>คราฟต์ Ascension Relic</i> | Resonant Ink x2 + Nether Star + Netherite Ingot. Ascension raises the difficulty of the whole world. |
 | 5.4 | World reaches Ascension 1<br><i>โลกถึง Ascension 1</i> | Status Menu > Progression > Ascension. It affects every player and cannot be lowered. Mobs get tougher, but XP and loot improve. Anyone with Prestige 1 can do it. |
-| 5.5 | World reaches Ascension 2<br><i>โลกถึง Ascension 2</i> | Ascension 2 needs a player with Prestige 2 and Ascension Relics. With Prestige 4 it unlocks the Gem system, and it makes bosses drop Uncarved Gems. The world must reach this level; any player can do it. |
+| 5.5 | World reaches Ascension 2<br><i>โลกถึง Ascension 2</i> | Ascension 2 needs a player with Prestige 2 and Ascension Relics. Bosses begin dropping Uncarved Gems at this level. **This does not unlock the Gem system by itself**: system access requires both Prestige 4 and Ascension 2. The world must reach this level; any eligible player can do it. |
 
 ## Chapter 6 · Gem / Gem
 
