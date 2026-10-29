@@ -1,9 +1,6 @@
 # ClaudeRPG Addon Wiki
 
-<style>
-.home-actions { display: flex; flex-direction: column; gap: .65rem; margin: 1rem 0 1.5rem; }
-.home-actions .home-action { display: block; width: 100%; box-sizing: border-box; text-align: center; margin: 0; }
-</style>
+
 
 <div data-lang="en" markdown="1">
 
@@ -20,11 +17,11 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 
 ## 🚀 Start here
 <div class="home-actions">
-<a class="md-button md-button--primary home-action" href="Getting-Started/">Getting Started</a>
-<a class="md-button home-action" href="Guide-Quest/">Guide Quest</a>
-<a class="md-button home-action" href="FAQ/">FAQ</a>
-<a class="md-button home-action" href="Glossary/">Glossary</a>
-<a class="md-button home-action" href="Changelog/">Changelog</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">Getting Started</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">Guide Quest</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">FAQ</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">Glossary</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">Changelog</a>
 </div>
 
 ## ⚔️ Character
@@ -45,8 +42,8 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 
 ## 🧰 Tools
 <div class="home-actions">
-<a class="md-button md-button--primary home-action" href="Download/">Download ClaudeRPG</a>
-<a class="md-button home-action" href="Toast-Generator/">Toast Generator</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">Download ClaudeRPG</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">Toast Generator</a>
 </div>
 
 ## 🛠️ For admins
@@ -69,11 +66,11 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 
 ## 🚀 เริ่มต้นที่นี่
 <div class="home-actions">
-<a class="md-button md-button--primary home-action" href="Getting-Started/">เริ่มต้นเล่น</a>
-<a class="md-button home-action" href="Guide-Quest/">คู่มือเควสต์</a>
-<a class="md-button home-action" href="FAQ/">คำถามที่พบบ่อย</a>
-<a class="md-button home-action" href="Glossary/">อภิธานศัพท์</a>
-<a class="md-button home-action" href="Changelog/">บันทึกการอัปเดต</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">เริ่มต้นเล่น</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">คู่มือเควสต์</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">คำถามที่พบบ่อย</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">อภิธานศัพท์</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">บันทึกการอัปเดต</a>
 </div>
 
 ## ⚔️ ตัวละคร
@@ -94,8 +91,8 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 
 ## 🧰 เครื่องมือ
 <div class="home-actions">
-<a class="md-button md-button--primary home-action" href="Download/">ดาวน์โหลด ClaudeRPG</a>
-<a class="md-button home-action" href="Toast-Generator/">เครื่องมือสร้าง Toast</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">ดาวน์โหลด ClaudeRPG</a>
+<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">เครื่องมือสร้าง Toast</a>
 </div>
 
 ## 🛠️ สำหรับผู้ดูแล
