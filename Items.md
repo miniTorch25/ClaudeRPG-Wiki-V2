@@ -51,6 +51,17 @@ All custom ClaudeRPG items, blocks, and recipes.
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | Shaped: 4 Netherite Ingot, 2 Echo Shard, Ender Eye, Nether Star, Myth Gem | Portable teleport menu with special points. |
 
 
+## Behavior notes verified from v1.39.0 scripts
+
+- **Insight Lens:** normal use on another player opens a read-only Status view; sneak-use opens your own Status menu.
+- **Script Tool:** opens the central menu. Its Creative & Admin category is filtered by game mode and the add-on's Admin tag; the category is not available to every player.
+- **Waypoint Orb:** opens the portable Waypoint menu only while Waypoint travel is enabled. Its special points are free, capped at five per player, and use a separate 30-second cooldown; travel to ordinary saved stones follows the normal Ender Pearl cost and 10-second cooldown rules.
+- **Stellar Core:** interacting with an eligible non-player mob opens force-evolution choices limited by World Ascension and costs one Stellar Core. Bosses and ineligible mobs are refused; a Core mob cannot be force-evolved.
+- **Ultimate Picker:** block pickup is restricted by a configured blacklist outside Creative. Waypoint Stones additionally enforce owner/Admin break permissions. Do not describe it as able to pick up every block in Survival.
+- **Sculk Potion:** conversion is attempted when the player hits a mob while holding the potion; the potion is consumed only after a successful conversion outside Creative. Bosses, Enchanted mobs, and other ineligible/locked targets are refused.
+
+These notes confirm code paths in the v1.39.0 package; they do not replace the remaining item-by-item audit or live gameplay testing.
+
 ## Quick item audit guide
 
 The inventory groups several item families into single rows (for example, seven Gem rarities and seven Rune types), so the row count is not the same as the number of individual item definitions.
@@ -121,6 +132,17 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 | <img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Stone (Blank) | คราฟต์ตามรูปแบบ: Stone Bricks 4 + Ender Pearl วางเป็นรูปกากบาท | ใช้วาร์ปอย่างเดียว ไม่มีชื่อ และผู้เล่นทุกคนทุบได้ |
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | คราฟต์ตามรูปแบบ: Netherite Ingot 4, Echo Shard 2, Ender Eye, Nether Star และ Myth Gem | เมนูวาร์ปแบบพกพาที่มีจุดพิเศษ |
 
+
+## หมายเหตุพฤติกรรมที่ยืนยันจาก Script v1.39.0
+
+- **Insight Lens:** ใช้ตามปกติกับผู้เล่นอื่นเพื่อเปิดหน้า Status แบบอ่านอย่างเดียว; กดใช้ขณะย่อตัวเพื่อเปิด Status ของตัวเอง
+- **Script Tool:** เปิดเมนูรวม โดยหมวด Creative & Admin จะแสดงตามโหมดเกมและแท็ก Admin ของแอดออน ผู้เล่นทั่วไปจึงไม่ได้เห็นหมวดนี้ทุกคน
+- **Waypoint Orb:** เปิดเมนู Waypoint แบบพกพาได้เมื่อระบบวาร์ปเปิดใช้งาน จุดพิเศษใช้ฟรี จำกัด 5 จุดต่อผู้เล่น และมีคูลดาวน์แยก 30 วินาที ส่วนการวาร์ปไปยัง Waypoint ที่บันทึกไว้ยังใช้กฎค่า Ender Pearl และคูลดาวน์ปกติ 10 วินาที
+- **Stellar Core:** ใช้โต้ตอบกับมอนสเตอร์ที่รองรับและไม่ใช่ผู้เล่น เพื่อเลือกบังคับวิวัฒนาการตามระดับ World Ascension โดยเสีย Stellar Core 1 ชิ้น บอสและมอนที่ไม่รองรับจะถูกปฏิเสธ และมอนประเภท Core ไม่สามารถบังคับวิวัฒนาการได้
+- **Ultimate Picker:** การเก็บบล็อกถูกจำกัดด้วยรายการบล็อกที่ห้ามเก็บนอก Creative นอกจากนี้ Waypoint Stone ยังตรวจสิทธิ์เจ้าของหรือ Admin จึงไม่ควรอธิบายว่าเก็บบล็อกทุกชนิดได้ใน Survival
+- **Sculk Potion:** ระบบตรวจเมื่อผู้เล่นตีมอนสเตอร์ขณะถือยา และจะใช้ยาเมื่อแปลงสำเร็จเท่านั้นในโหมดที่ไม่ใช่ Creative บอส มอน Enchanted และเป้าหมายที่ไม่รองรับหรือถูกล็อกจะถูกปฏิเสธ
+
+หมายเหตุเหล่านี้ยืนยันจากเส้นทางการทำงานในโค้ด v1.39.0 แต่ยังไม่ใช่การตรวจไอเทมครบทั้ง 40 รายการหรือการทดสอบจริงในเกม
 
 ## แนวทางตรวจสอบไอเทมแบบย่อ
 
