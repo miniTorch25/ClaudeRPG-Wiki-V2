@@ -429,3 +429,10 @@ Use these labels in editorial notes while drafting:
 - [x] Standardized the inline Gem-tier and Rune-grade icons to 40px attributes to match the shared CSS presentation.
 - [x] Added original Resonant Ink, Genesis Ink, and Transcendent Ink textures to the Chorus overview, using filenames verified in the v1.39.0 image manifest and supported by the Pages extraction workflow.
 - [ ] Confirm visual balance and image readability on narrow/mobile screens in an actual browser/device.
+
+
+### Follow-up pass: custom block visual reference
+
+- [x] Added a visual reference gallery for all four custom block families in both English and Thai sections of `Items.md`: Waypoint Stone, Blank Waypoint Stone, Ultimate Enchanter, and Uncarved Gem Block.
+- [x] Checked the four texture filenames against the v1.39.0 image manifest; the existing Pages build extracts them from the add-on archive into `assets/images/blocks`.
+- [ ] Confirm the rendered block images and card layout at desktop and mobile widths; source manifest/build checks do not replace visual inspection.

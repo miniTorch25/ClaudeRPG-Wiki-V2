@@ -15,6 +15,13 @@
 
 All custom ClaudeRPG items, blocks, and recipes.
 
+<div class="material-strip">
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_top.png' | relative_url }}" alt="Waypoint Stone" width="64" height="64" loading="lazy"><span>Waypoint Stone</span><small>Named teleport point</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="Blank Waypoint Stone" width="64" height="64" loading="lazy"><span>Waypoint Stone (Blank)</span><small>Unnamed teleport point</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/ultench_top.png' | relative_url }}" alt="Ultimate Enchanter" width="64" height="64" loading="lazy"><span>Ultimate Enchanter</span><small>Equipment workstation</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/uncarved_gem_block.png' | relative_url }}" alt="Uncarved Gem Block" width="64" height="64" loading="lazy"><span>Uncarved Gem Block</span><small>Gem-related crafting</small></div>
+</div>
+
 | Item | How to obtain | Use |
 |---|---|---|
 | <img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="" width="40" loading="lazy"> Stats Book | 4 Sticks (shapeless) | Opens the Status menu: stats, Mastery, Prestige, Ascension, Chorus, Augment totals, and Achievements. |
@@ -131,6 +138,13 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 </table>
 
 รวมไอเทม บล็อก และสูตรคราฟต์ที่เพิ่มเข้ามาใน ClaudeRPG
+
+<div class="material-strip">
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_top.png' | relative_url }}" alt="Waypoint Stone" width="64" height="64" loading="lazy"><span>Waypoint Stone / หินวาร์ป</span><small>จุดวาร์ปแบบตั้งชื่อ</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="Blank Waypoint Stone" width="64" height="64" loading="lazy"><span>Waypoint Stone (Blank)</span><small>จุดวาร์ปไม่มีชื่อ</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/ultench_top.png' | relative_url }}" alt="Ultimate Enchanter" width="64" height="64" loading="lazy"><span>Ultimate Enchanter</span><small>บล็อกสำหรับจัดการอุปกรณ์</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/uncarved_gem_block.png' | relative_url }}" alt="Uncarved Gem Block" width="64" height="64" loading="lazy"><span>Uncarved Gem Block</span><small>ใช้ในสูตรเกี่ยวกับ Gem</small></div>
+</div>
 
 | ไอเทม | วิธีได้รับ | การใช้งาน |
 |---|---|---|
