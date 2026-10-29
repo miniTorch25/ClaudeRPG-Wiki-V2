@@ -1,4 +1,7 @@
 (() => {
+  const tool = document.querySelector('.toast-tool[data-frame-base][data-icon-base]');
+  if (!tool) return;
+
   const $ = id => document.getElementById(id);
   const frames = {grey:0, blue:1, yellow:2, bronze:3, silver:4, gold:5, platinum:6, mythic:7, ascension:8, discovery:9};
   const frameBase = tool.dataset.frameBase;
