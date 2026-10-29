@@ -43,7 +43,7 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 ## 🧰 Tools
 <p><a class="button primary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">Download ClaudeRPG</a></p>
 
-<p><a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">Toast Generator</a></p>
+<p><a class="button secondary" href="https://minitorch25.github.io/ClaudeRPG-Wiki-V2/Toast-Generator/">Toast Generator</a></p>
 
 ## 🛠️ For admins
 [Admin Tools](Admin)
@@ -92,7 +92,7 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 ## 🧰 เครื่องมือ
 <p><a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">ดาวน์โหลด ClaudeRPG</a></p>
 
-<p><a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">เครื่องมือสร้าง Toast</a></p>
+<p><a class="button secondary" href="https://minitorch25.github.io/ClaudeRPG-Wiki-V2/Toast-Generator/">เครื่องมือสร้าง Toast</a></p>
 
 ## 🛠️ สำหรับผู้ดูแล
 [เครื่องมือผู้ดูแล](Admin)
