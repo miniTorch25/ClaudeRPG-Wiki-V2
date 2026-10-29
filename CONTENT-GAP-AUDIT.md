@@ -290,3 +290,10 @@ Use these labels in editorial notes while drafting:
 - [x] Confirmed source behavior: Awaken fuses the exact two Transcend elements on one armor piece; Melodious and Genesis fuse two eligible source pieces, and both pieces become the result. Stellar Core cost is charged once per Fusion operation, not per source piece.
 - [x] Confirmed Fusion is permanent: fused pieces cannot be rolled or locked. No factual mismatch was found in the reviewed Fusion requirements.
 - [ ] Continue the strict item-by-item audit for remaining item/block acquisition paths, use restrictions, and Creative/Admin boundaries. Source review does not replace live gameplay or narrow-screen validation.
+
+
+### Follow-up pass: Stellar Upgrade recipe-use coverage (v1.39.0)
+
+- [x] Cross-checked all recipe references to `crpg:stellar_upgrade`: Eternal Hammer, Eternal Engraver, Insight Lens, Ultimate Picker, and the duplicate recipe that yields two Stellar Upgrades.
+- [x] Corrected the English and Thai `Items.md` use descriptions so Stellar Upgrade is not described as serving only as a Smithing template for Eternal items.
+- [ ] Continue the remaining item-by-item audit for acquisition routes and use restrictions; this source check does not establish live gameplay behavior.
