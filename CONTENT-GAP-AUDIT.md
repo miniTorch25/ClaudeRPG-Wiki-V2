@@ -487,3 +487,14 @@ Do not mark the remaining items above as complete based solely on Markdown edits
 - [ ] Still required: inspect the published language toggle and Toast preview in a real browser at desktop and narrow/mobile widths.
 - [ ] Still required: test generated Toast commands and visual behavior inside Minecraft Bedrock. The command format and constraints were checked against `toast_command.js`, `toast_send.js`, `toast_manager.js`, and `toast_config.js` in the v1.39.0 add-on, but live runtime behavior has not been tested in this pass.
 - [x] Added repository contribution and formatting guidance in `CONTRIBUTING.md` and `.editorconfig`.
+
+
+### Final static-audit pass (2026-10-29, after PR #65)
+
+- [x] Completed the row-by-row source inventory for all 40 custom item definitions and all 4 custom block definitions, mapping acquisition, use/restrictions, and relevant source files in [ITEM-SOURCE-AUDIT.md](ITEM-SOURCE-AUDIT.md). Earlier unchecked item-audit lines above are historical work-log entries superseded by this audit; they do not mean the source inventory is still absent.
+- [x] Revalidated the Toast tool's 10 frame textures and 7 configured icon presets against the v1.39.0 package; all referenced preset textures exist.
+- [x] Expanded CI to syntax-check inline JavaScript in every repository HTML file, then build Jekyll and validate generated local links, assets, and anchors. [Workflow run #40835325446](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835325446) passed.
+- [x] Added Download, Toast Generator, current status, source audit, and contribution pages to SUMMARY.md.
+- [ ] Visual inspection of the published site at desktop and narrow/mobile sizes still requires an actual browser/device.
+- [ ] Toast command behavior, achievement counter edge cases, and Waypoint ownership/protection still require a real Minecraft Bedrock test world; source inspection cannot establish runtime behavior.
+- [ ] The Gem/Rune Ascension confirmation-text mismatch is an upstream add-on issue and has not been changed here.
