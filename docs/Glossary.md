@@ -1,3 +1,7 @@
+---
+permalink: /Glossary
+---
+
 [🏠 Home](Home) · [📖 Systems / ระบบ](Systems) · [👾 Mobs / มอนสเตอร์](Mob-Evolution) · [🎒 Items / ไอเทม](Items) · [❓ FAQ](FAQ)
 
 ---

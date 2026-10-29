@@ -1,3 +1,7 @@
+---
+permalink: /FAQ
+---
+
 <div data-lang="en" markdown="1">
 
 [🏠 Home](Home) · [📖 Systems](Systems) · [👾 Mobs](Mob-Evolution) · [🎒 Items](Items) · [❓ FAQ](FAQ)
