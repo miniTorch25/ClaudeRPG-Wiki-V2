@@ -6,8 +6,8 @@
 .toast-field textarea{min-height:86px;resize:vertical}
 .toast-wide{grid-column:1/-1}
 .toast-stage{min-height:210px;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at center,#27374a,#111720 70%);border-radius:10px}
-.toast-preview{display:flex;align-items:center;gap:12px;width:min(100%,480px);min-height:100px;padding:12px 16px;background:#252932;border:10px solid transparent;border-image-slice:4 fill;border-image-width:10px;border-image-repeat:stretch;image-rendering:pixelated;color:#f4f5f6;box-sizing:border-box;overflow:hidden}
-.toast-preview-icon{width:48px;height:48px;flex:0 0 48px;object-fit:contain;image-rendering:pixelated}
+.toast-preview{display:flex;align-items:center;gap:12px;width:min(100%,480px);min-height:124px;padding:12px 16px;background:#252932;border:10px solid transparent;border-image-slice:4 fill;border-image-width:10px;border-image-repeat:stretch;image-rendering:pixelated;color:#f4f5f6;box-sizing:border-box;overflow:hidden}
+.toast-preview-icon{width:96px;height:96px;flex:0 0 96px;object-fit:contain;image-rendering:pixelated}
 .toast-preview-copy{min-width:0;flex:1}
 .toast-preview-header{display:block;font-size:15px;font-weight:800;line-height:1.3;overflow-wrap:anywhere}
 .toast-preview-body{display:block;font-size:13px;line-height:1.35;overflow-wrap:anywhere;margin-top:4px;white-space:pre-wrap}
@@ -19,4 +19,4 @@
 .toast-warning{color:#ffd166}
 .toast-error{color:#ff9292}
 .toast-frame-name{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:6px;font-size:11px;color:var(--muted)}
-@media(max-width:780px){.toast-tool{grid-template-columns:1fr}.toast-form{grid-template-columns:1fr}.toast-wide{grid-column:auto}.toast-stage{padding:12px}.toast-preview{width:100%;min-height:88px;padding:9px 10px;gap:9px}.toast-preview-icon{width:40px;height:40px;flex-basis:40px}}
+@media(max-width:780px){.toast-tool{grid-template-columns:1fr}.toast-form{grid-template-columns:1fr}.toast-wide{grid-column:auto}.toast-stage{padding:12px}.toast-preview{width:100%;min-height:104px;padding:9px 10px;gap:9px}.toast-preview-icon{width:80px;height:80px;flex-basis:80px}}
