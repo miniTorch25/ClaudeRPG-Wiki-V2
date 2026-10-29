@@ -23,7 +23,7 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 - [Achievements](Achievements) — 248 achievements
 
 ## 🛡️ Equipment
-- [Augment & Reforge](Augment) · [Item Categories](Item-Categories) · [Items](Items)
+- [Augment & Reforge](Augment) · [Item Categories](Item-Categories) · [Items](Items) · [Ultimate Enchanter](Ultimate-Enchanter)
 - [Chorus](Chorus) — [Echo](Chorus-Echo) · [Resonance](Chorus-Resonance) · [Transcend](Chorus-Transcend) · [Fusion](Chorus-Fusion) · [Elements](Chorus-Elements)
 - [Gem](Gem) — [Abilities](Gem-Abilities)
 - [Rune](Rune) — [Weapon](Runes-Weapon-Types) · [All-Weapon](Runes-All-Weapon) · [Tool](Runes-Tool) · [Curse](Runes-Curse)
