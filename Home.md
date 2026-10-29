@@ -1,5 +1,10 @@
 # ClaudeRPG Addon Wiki
 
+<style>
+.home-actions { display: flex; flex-direction: column; gap: .65rem; margin: 1rem 0 1.5rem; }
+.home-actions .home-action { display: block; width: 100%; box-sizing: border-box; text-align: center; margin: 0; }
+</style>
+
 <div data-lang="en" markdown="1">
 
 <table align="right" width="280">
@@ -14,7 +19,13 @@
 ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Prestige and Ascension, Mastery lines, Augmented gear, elemental Chorus armor, Gems, Runes, evolving mobs, achievements, and more.
 
 ## 🚀 Start here
-[Getting Started](Getting-Started) · [Guide Quest](Guide-Quest) · [FAQ](FAQ) · [Glossary](Glossary) · [Changelog](Changelog)
+<div class="home-actions">
+<a class="md-button md-button--primary home-action" href="Getting-Started/">Getting Started</a>
+<a class="md-button home-action" href="Guide-Quest/">Guide Quest</a>
+<a class="md-button home-action" href="FAQ/">FAQ</a>
+<a class="md-button home-action" href="Glossary/">Glossary</a>
+<a class="md-button home-action" href="Changelog/">Changelog</a>
+</div>
 
 ## ⚔️ Character
 - [Progression](Progression) — Level, Prestige, Ascension
@@ -33,7 +44,10 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 - [Exploration](Exploration) — Waypoints and Discovery Log · [Quality of Life](Quality-of-Life)
 
 ## 🧰 Tools
-[Download ClaudeRPG](Download/) · [Toast Generator](Toast-Generator/)
+<div class="home-actions">
+<a class="md-button md-button--primary home-action" href="Download/">Download ClaudeRPG</a>
+<a class="md-button home-action" href="Toast-Generator/">Toast Generator</a>
+</div>
 
 ## 🛠️ For admins
 [Admin Tools](Admin)
@@ -54,7 +68,13 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม RPG ที่มีเลเวลและค่าสเตตัส ระบบ Prestige และ Ascension สาย Mastery อุปกรณ์ Augment เกราะธาตุ Chorus อัญมณี รูน มอนสเตอร์วิวัฒนาการ ระบบความสำเร็จ และอื่น ๆ
 
 ## 🚀 เริ่มต้นที่นี่
-[เริ่มต้นเล่น](Getting-Started) · [คู่มือเควสต์](Guide-Quest) · [คำถามที่พบบ่อย](FAQ) · [อภิธานศัพท์](Glossary) · [บันทึกการอัปเดต](Changelog)
+<div class="home-actions">
+<a class="md-button md-button--primary home-action" href="Getting-Started/">เริ่มต้นเล่น</a>
+<a class="md-button home-action" href="Guide-Quest/">คู่มือเควสต์</a>
+<a class="md-button home-action" href="FAQ/">คำถามที่พบบ่อย</a>
+<a class="md-button home-action" href="Glossary/">อภิธานศัพท์</a>
+<a class="md-button home-action" href="Changelog/">บันทึกการอัปเดต</a>
+</div>
 
 ## ⚔️ ตัวละคร
 - [ความก้าวหน้า](Progression) — เลเวล, Prestige และ Ascension
@@ -73,7 +93,10 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 - [การสำรวจ](Exploration) — จุดนำทางและบันทึกการค้นพบ · [ระบบอำนวยความสะดวก](Quality-of-Life)
 
 ## 🧰 เครื่องมือ
-[ดาวน์โหลด ClaudeRPG](Download/) · [เครื่องมือสร้าง Toast](Toast-Generator/)
+<div class="home-actions">
+<a class="md-button md-button--primary home-action" href="Download/">ดาวน์โหลด ClaudeRPG</a>
+<a class="md-button home-action" href="Toast-Generator/">เครื่องมือสร้าง Toast</a>
+</div>
 
 ## 🛠️ สำหรับผู้ดูแล
 [เครื่องมือผู้ดูแล](Admin)
