@@ -47,6 +47,28 @@
 - **EN:** Do not confuse a Rune item's grade with a guaranteed specific effect; do not spend Resonant Ink before checking the action's tier-based cost; and do not assume every weapon or tool accepts every rune type.
 - **TH:** อย่าสับสนระหว่างเกรดของไอเทมรูนกับเอฟเฟกต์เฉพาะที่รับประกัน อย่าใช้ Resonant Ink โดยไม่ตรวจราคาที่คูณตาม Tier และอย่าคิดว่าอาวุธหรือเครื่องมือทุกชนิดใส่รูนทุกประเภทได้
 
+### Insert troubleshooting checklist · ตรวจสอบก่อนติดตั้งรูน
+
+**EN — If Insert is unavailable or does not install the Rune, check these conditions in order:**
+
+1. **Progression:** the Rune feature requires **Prestige 6 + Ascension 3** in the central feature gate.
+2. **Correct item in main hand:** hold the target weapon or supported tool in your main hand, then choose **Insert** in the Anvil's Rune menu. The Rune item is consumed into the held item when installation succeeds.
+3. **Compatible item type:** weapon-specific runes only fit their matching weapon family; All-Weapon runes fit supported weapons; tool runes fit pickaxe, axe, shovel, and hoe. Armor, Shears, food, and consumables are not valid hosts. The Magic pool is currently disabled.
+4. **Empty Rune slot:** each weapon/tool item can hold only one Rune. Remove the current Rune before inserting a replacement.
+5. **Mastery tier:** the Rune's tier must be unlocked by Rune Mastery. Tier 2 unlocks at Mastery Lv 5, then one tier every five levels through Tier 7 at Lv 30.
+6. **Off-hand conflict:** check whether the Rune conflicts with an exclusive Rune currently held in the other hand. Some combinations are rejected even when the item type and tier are otherwise valid.
+
+**TH — หากกด Insert ไม่ได้หรือรูนไม่ติดตั้ง ให้ตรวจสอบตามลำดับนี้:**
+
+1. **ความก้าวหน้า:** เงื่อนไขหลักของระบบ Rune คือ **Prestige 6 + Ascension 3**
+2. **ถือไอเทมให้ถูกช่อง:** ถืออาวุธหรือเครื่องมือเป้าหมายไว้ในมือหลัก แล้วเลือก **Insert** ในเมนู Rune ที่ทั่ง เมื่อติดตั้งสำเร็จ ไอเทม Rune จะถูกนำไปติดตั้งกับไอเทมที่ถือ
+3. **ชนิดไอเทมรองรับ:** รูนอาวุธเฉพาะประเภทใส่ได้กับอาวุธประเภทนั้นเท่านั้น รูน All-Weapon ใส่ได้กับอาวุธที่รองรับ ส่วนรูนเครื่องมือใช้ได้กับพิกแอกซ์ ขวาน พลั่ว และจอบ เกราะ กรรไกร อาหาร และของใช้สิ้นเปลืองไม่ใช่ไอเทมสำหรับติดตั้งรูน ขณะนี้พูล Magic ถูกปิดใช้งาน
+4. **ช่อง Rune ต้องว่าง:** อาวุธหรือเครื่องมือหนึ่งชิ้นติดตั้งได้เพียงหนึ่งรูน ต้องถอดรูนเดิมก่อนติดตั้งรูนใหม่
+5. **ระดับ Mastery:** ต้องปลดล็อก Tier ของรูนด้วย Rune Mastery ก่อน Tier 2 ปลดล็อกที่ Mastery Lv 5 และเพิ่มทีละ Tier ทุก 5 เลเวลจนถึง Tier 7 ที่ Lv 30
+6. **รูนขัดแย้งในมืออีกข้าง:** ตรวจว่ารูนขัดแย้งกับรูนประเภท Exclusive ที่ถืออยู่อีกมือหรือไม่ บางคู่ไม่สามารถใช้ร่วมกันได้ แม้ชนิดไอเทมและ Tier จะถูกต้องก็ตาม
+
+**Cost note / หมายเหตุค่าใช้จ่าย:** Insert and Remove currently have a listed Resonant Ink cost of **0**. Reroll costs **5 × Rune tier**, Selective Reroll costs **8 × Rune tier**, and Recarved costs **30 Ink**. Check the menu's displayed requirements before confirming. / ปัจจุบัน Insert และ Remove ระบุค่า Resonant Ink เป็น **0** ส่วน Reroll ใช้ **5 × Tier ของรูน**, Selective Reroll ใช้ **8 × Tier ของรูน** และ Recarved ใช้ **30 Ink** ควรตรวจสอบเงื่อนไขที่เมนูแสดงก่อนยืนยัน
+
 
 ## Rune items · ไอเทมรูน
 
