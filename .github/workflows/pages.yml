@@ -24,6 +24,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Validate wiki JavaScript syntax
+        run: node --check assets/wiki.js
       - name: Extract ClaudeRPG images from the add-on archive
         run: |
           python - <<'PY'
