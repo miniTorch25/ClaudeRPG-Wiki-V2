@@ -246,3 +246,10 @@ Use these labels in editorial notes while drafting:
 - [x] Compared the Stats Book crafting note in `Getting-Started.md` against the recipe verification already recorded for `Items.md` and `Guide-Quest.md`. Corrected both English and Thai instructions from 1 Stick to 4 Sticks (shapeless).
 - [x] Confirmed this was a documentation inconsistency; no addon recipe or gameplay behavior was changed.
 - [ ] Continue the cross-page consistency pass for other repeated recipes, unlock requirements, and item-use instructions.
+
+
+### Follow-up pass: Guide Quest hammer recipe consistency
+
+- [x] Found a mismatch in `Guide-Quest.md` step 3.1: it listed one Iron Block and one Dark Oak Log for the Reforge Hammer, while `Items.md` and the verified v1.39.0 recipe summary specify 2 Iron Blocks and 3 Dark Oak Logs.
+- [x] Corrected the Guide Quest instruction to match the documented recipe.
+- [ ] Continue cross-page checks for repeated crafting costs, progression gates, and item-use descriptions.
