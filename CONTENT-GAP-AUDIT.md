@@ -239,3 +239,10 @@ Use these labels in editorial notes while drafting:
 - [x] Restored the 58 inline item/block image tags in `Items.md` (English and Thai tables), using the existing texture filenames from the add-on archive and the build's extraction destinations.
 - [x] Confirmed the main-branch Pages workflow completed successfully after the prior changes. This verifies the build/deploy workflow, but does not by itself visually verify every image in a browser or mobile layout.
 - [ ] Inspect the published page and confirm all restored icons render correctly on desktop and mobile.
+
+
+### Follow-up pass: Getting Started recipe consistency
+
+- [x] Compared the Stats Book crafting note in `Getting-Started.md` against the recipe verification already recorded for `Items.md` and `Guide-Quest.md`. Corrected both English and Thai instructions from 1 Stick to 4 Sticks (shapeless).
+- [x] Confirmed this was a documentation inconsistency; no addon recipe or gameplay behavior was changed.
+- [ ] Continue the cross-page consistency pass for other repeated recipes, unlock requirements, and item-use instructions.

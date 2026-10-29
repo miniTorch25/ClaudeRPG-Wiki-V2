@@ -19,7 +19,7 @@ Install the add-on, follow the first steps, and use the progression roadmap to l
 Import **ClaudeRPG BP** and **ClaudeRPG RP** (both are required; BP depends on RP) and enable them in your world. Requires Minecraft Bedrock **1.26.30 or later**.
 
 ## First steps
-1. Craft a **Stats Book** (1 Stick, shapeless) and a **Knowledge Book** (1 Dirt).
+1. Craft a **Stats Book** (4 Sticks, shapeless) and a **Knowledge Book** (1 Dirt).
 2. Get the **Script Tool**: `/scriptevent status:get_script_tool`.
 3. Right-click the Stats Book to open the **Status menu**.
 4. Earn XP by killing mobs, mining ores, fishing, and eating. Spend the **4 points per level** on [stats](Stats). Equipment has minimum stat requirements.
@@ -64,7 +64,7 @@ Ascension requirements: A1 → P1, A2 → P2, and A3 or higher → P3.
 นำเข้า **ClaudeRPG BP** และ **ClaudeRPG RP** (จำเป็นต้องใช้ทั้งคู่ โดย BP ต้องใช้ RP) แล้วเปิดใช้งานในโลกของคุณ ต้องใช้ Minecraft Bedrock **เวอร์ชัน 1.26.30 ขึ้นไป**
 
 ## ก้าวแรก
-1. คราฟต์ **Stats Book** (Stick 1 ชิ้น ไม่ต้องจัดรูปแบบ) และ **Knowledge Book** (Dirt 1 ชิ้น)
+1. คราฟต์ **Stats Book** (Stick 4 ชิ้น ไม่ต้องจัดรูปแบบ) และ **Knowledge Book** (Dirt 1 ชิ้น)
 2. รับ **Script Tool** ด้วยคำสั่ง `/scriptevent status:get_script_tool`
 3. คลิกขวาที่ Stats Book เพื่อเปิด **เมนู Status**
 4. หา XP จากการกำจัดมอนสเตอร์ ขุดแร่ ตกปลา และกินอาหาร จากนั้นใช้ **4 แต้มต่อเลเวล** กับ [ค่าสเตตัส](Stats) อุปกรณ์มีเงื่อนไขค่าสเตตัสขั้นต่ำ
