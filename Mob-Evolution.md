@@ -75,3 +75,24 @@ Types: Zombie, Skeleton, Spider.
 
 ---
 **See also / ดูเพิ่มเติม:** [Progression (Ascension)](Progression) · [Bosses & special mobs](Bosses-and-Special-Mobs) · [Items](Items)
+
+
+## Reading Ascension, evolution tiers, and bosses correctly · แยก Ascension ระดับวิวัฒนาการ และบอส
+
+**EN**
+These terms describe different layers of difficulty and should not be used interchangeably:
+
+- **World Ascension** is the shared world-progression setting. It affects the evolution system's unlocks and scaling; changing it is not the same as upgrading one mob.
+- **Evolution tier** is the individual variant assigned to an eligible hostile mob. The tier table above lists its unlock Ascension, stat multipliers, weight, and special behavior. Use the tier name when describing a mob's variant.
+- **Bosses and special mobs** have their own behaviors and should be documented on [Bosses & Special Mobs](Bosses-and-Special-Mobs). Do not assume every evolved-mob rule or tier ability applies to a boss.
+
+When documenting a combat encounter, record the world's Ascension, the mob's displayed evolution tier, and any boss/special-mob phase or ability as separate details. The values above describe configured mechanics; in-game testing is still needed to confirm presentation and edge cases.
+
+**TH**
+คำเหล่านี้เป็นความยากคนละระดับ ไม่ควรใช้แทนกัน:
+
+- **World Ascension** คือระดับความก้าวหน้าของโลกที่ใช้ร่วมกัน มีผลต่อการปลดล็อกและการปรับสเกลของระบบวิวัฒนาการ การเปลี่ยนค่านี้ไม่ใช่การอัปเกรดมอนสเตอร์ตัวใดตัวหนึ่ง
+- **Evolution tier** คือระดับของมอนสเตอร์วิวัฒนาการแต่ละตัว ตารางด้านบนระบุ Ascension ที่ปลดล็อก ตัวคูณค่าสถานะ น้ำหนักการสุ่ม และความสามารถพิเศษ ให้ใช้ชื่อ Tier เพื่ออธิบายรูปแบบของมอนสเตอร์
+- **บอสและมอนสเตอร์พิเศษ** มีกลไกเฉพาะ ให้อ้างอิงหน้า [Bosses & Special Mobs](Bosses-and-Special-Mobs) และอย่าสมมติว่ากฎหรือความสามารถของมอนสเตอร์วิวัฒนาการทุกข้อใช้กับบอสด้วย
+
+เมื่อบันทึกรายละเอียดการต่อสู้ ให้แยก World Ascension, Tier ที่แสดงบนมอนสเตอร์ และ Phase/ความสามารถของบอสหรือมอนสเตอร์พิเศษออกจากกัน ข้อมูลในตารางอ้างอิงค่าที่ตั้งไว้ แต่ยังต้องทดสอบในเกมเพื่อยืนยันการแสดงผลและกรณีพิเศษ
