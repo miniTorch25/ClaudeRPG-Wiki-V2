@@ -1,0 +1,167 @@
+---
+layout: default
+title: Toast Generator
+permalink: /Toast-Generator/
+description: Build and preview a ClaudeRPG Toast command using the v1.39.0 Toast format.
+---
+
+<style>
+.toast-tool{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin:18px 0}
+.toast-panel{min-width:0;border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:16px}
+.toast-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.toast-field{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:13px;color:var(--muted)}
+.toast-field input,.toast-field select,.toast-field textarea{width:100%;min-width:0;background:#10151d;border:1px solid var(--line);border-radius:8px;padding:9px 10px;color:var(--text);font:inherit}
+.toast-field textarea{min-height:86px;resize:vertical}
+.toast-wide{grid-column:1/-1}
+.toast-stage{min-height:210px;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at center,#27374a,#111720 70%);border-radius:10px}
+.toast-preview{display:flex;align-items:center;gap:12px;width:min(100%,480px);min-height:100px;padding:12px 16px;background:#252932;border:10px solid transparent;border-image-slice:4 fill;border-image-width:10px;border-image-repeat:stretch;image-rendering:pixelated;color:#f4f5f6;box-sizing:border-box;overflow:hidden}
+.toast-preview-icon{width:48px;height:48px;flex:0 0 48px;object-fit:contain;image-rendering:pixelated}
+.toast-preview-copy{min-width:0;flex:1}
+.toast-preview-header{display:block;font-size:15px;font-weight:800;line-height:1.3;overflow-wrap:anywhere}
+.toast-preview-body{display:block;font-size:13px;line-height:1.35;overflow-wrap:anywhere;margin-top:4px;white-space:pre-wrap}
+.toast-output{display:block;white-space:pre-wrap;overflow-wrap:anywhere;background:#0c1118;border:1px solid var(--line);border-radius:8px;padding:12px;font-family:ui-monospace,monospace;font-size:13px}
+.toast-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.toast-actions button{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--panel2);color:var(--text);font:inherit;cursor:pointer}
+.toast-actions button:hover{border-color:var(--blue)}
+.toast-note{font-size:13px;color:var(--muted)}
+.toast-warning{color:#ffd166}
+.toast-error{color:#ff9292}
+.toast-frame-name{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:6px;font-size:11px;color:var(--muted)}
+@media(max-width:780px){.toast-tool{grid-template-columns:1fr}.toast-form{grid-template-columns:1fr}.toast-wide{grid-column:auto}.toast-stage{padding:12px}.toast-preview{width:100%;min-height:88px;padding:9px 10px;gap:9px}.toast-preview-icon{width:40px;height:40px;flex-basis:40px}}
+</style>
+
+<div data-lang="en">
+  <h1>Toast Generator</h1>
+  <p>Configure a Toast notification, preview it using the add-on's original frame and achievement-icon textures, then copy the command for Minecraft Bedrock.</p>
+</div>
+<div data-lang="th">
+  <h1>เครื่องมือสร้าง Toast</h1>
+  <p>ตั้งค่าการแจ้งเตือน Toast ดูตัวอย่างจากภาพกรอบและไอคอนจริงของแอดออน แล้วคัดลอกคำสั่งไปใช้ใน Minecraft Bedrock</p>
+</div>
+
+<div class="notice">
+  <strong data-lang="en">Source-verified format · ClaudeRPG v1.39.0</strong>
+  <strong data-lang="th">รูปแบบคำสั่งตรวจสอบจากซอร์สแล้ว · ClaudeRPG v1.39.0</strong>
+  <p data-lang="en">This tool uses the command implemented in the add-on: <code>/scriptevent toast:send target | frame | icon | header | body | sound</code>. The preview is a browser approximation of the in-game 160×40 UI card; exact rendering still depends on Minecraft's UI renderer.</p>
+  <p data-lang="th">เครื่องมือนี้ใช้คำสั่งที่พบในแอดออนจริง: <code>/scriptevent toast:send target | frame | icon | header | body | sound</code> ตัวอย่างบนเว็บเป็นการจำลองการ์ด UI ขนาด 160×40 ในเกม การแสดงผลจริงยังขึ้นกับตัวเรนเดอร์ UI ของ Minecraft</p>
+</div>
+
+<div class="toast-tool">
+  <section class="toast-panel">
+    <h2 data-lang="en">Options</h2><h2 data-lang="th">ตัวเลือก</h2>
+    <div class="toast-form">
+      <label class="toast-field"><span data-lang="en">Target</span><span data-lang="th">ผู้รับ</span><input id="toast-target" value="@s" maxlength="40" autocomplete="off"><small data-lang="en">Use @s for yourself or enter a player name. @a, @p and @r require Admin / command-block privileges.</small><small data-lang="th">ใช้ @s เพื่อส่งให้ตัวเอง หรือใส่ชื่อผู้เล่น @a, @p และ @r ต้องใช้สิทธิ์ Admin หรือ Command Block</small></label>
+      <label class="toast-field"><span data-lang="en">Frame style</span><span data-lang="th">รูปแบบกรอบ</span><select id="toast-frame"><option value="grey">Grey (0)</option><option value="blue">Blue (1)</option><option value="yellow">Yellow (2)</option><option value="bronze">Bronze (3)</option><option value="silver">Silver (4)</option><option value="gold" selected>Gold (5)</option><option value="platinum">Platinum (6)</option><option value="mythic">Mythic (7)</option><option value="ascension">Ascension (8)</option><option value="discovery">Discovery (9)</option></select></label>
+      <label class="toast-field"><span data-lang="en">Icon key</span><span data-lang="th">รหัสไอคอน</span><select id="toast-icon-preset"><option value="TDSC">TDSC — Toast / discovery</option><option value="TASC">TASC — Ascension</option><option value="CB01">CB01 — Combat</option><option value="TR01">TR01 — Progress</option><option value="GM01">GM01 — Gem</option><option value="RN01">RN01 — Rune</option><option value="MS01">MS01 — Mastery</option><option value="-">No icon</option><option value="custom">Custom key…</option></select><input id="toast-icon" value="TDSC" maxlength="4" pattern="[A-Za-z0-9]{4}" aria-label="4-character icon key"><small data-lang="en">Use a 4-character key from the add-on, or “-” for no icon.</small><small data-lang="th">ใช้รหัสไอคอน 4 ตัวจากแอดออน หรือ “-” หากไม่ต้องการไอคอน</small></label>
+      <label class="toast-field"><span data-lang="en">Sound</span><span data-lang="th">เสียง</span><select id="toast-sound"><option value="default">Default (random.toast)</option><option value="none">None</option><option value="toast">Toast</option><option value="levelup">Level up</option><option value="orb">Orb</option></select></label>
+      <label class="toast-field"><span data-lang="en">Header (max 28 ASCII characters)</span><span data-lang="th">หัวข้อ (ASCII ไม่เกิน 28 ตัว)</span><input id="toast-header" value="Welcome" maxlength="28" autocomplete="off"></label>
+      <label class="toast-field toast-wide"><span data-lang="en">Body (22 visible characters fit best)</span><span data-lang="th">ข้อความ (แสดงได้พอดีประมาณ 22 ตัวอักษร)</span><textarea id="toast-body" maxlength="120">Welcome back!</textarea><small data-lang="en">Minecraft colour codes such as &amp;e or &amp;a are supported. Do not use the pipe character | inside a field; it separates command arguments.</small><small data-lang="th">รองรับรหัสสี Minecraft เช่น &amp;e หรือ &amp;a ห้ามใช้เครื่องหมาย | ภายในช่อง เพราะใช้คั่นอาร์กิวเมนต์ของคำสั่ง</small></label>
+    </div>
+  </section>
+  <section class="toast-panel">
+    <h2 data-lang="en">Live preview</h2><h2 data-lang="th">ตัวอย่างทันที</h2>
+    <div class="toast-stage">
+      <div id="toast-preview" class="toast-preview">
+        <img id="toast-preview-icon" class="toast-preview-icon" alt="">
+        <div class="toast-preview-copy"><span id="toast-preview-header" class="toast-preview-header">Welcome</span><span id="toast-preview-body" class="toast-preview-body">Welcome back!</span></div>
+      </div>
+    </div>
+    <p><span class="toast-frame-name" id="toast-frame-name">Gold · frame 5</span></p>
+    <p id="toast-validation" class="toast-note" aria-live="polite"></p>
+    <h2 data-lang="en">Generated command</h2><h2 data-lang="th">คำสั่งที่สร้าง</h2>
+    <code id="toast-command" class="toast-output">/scriptevent toast:send @s | gold | TDSC | Welcome | Welcome back! | default</code>
+    <div class="toast-actions"><button type="button" id="toast-copy" data-lang="en">Copy command</button><button type="button" id="toast-copy-th" data-lang="th">คัดลอกคำสั่ง</button><button type="button" id="toast-select" data-lang="en">Select command</button><button type="button" id="toast-select-th" data-lang="th">เลือกข้อความ</button></div>
+    <p id="toast-copy-status" class="toast-note" aria-live="polite"></p>
+  </section>
+</div>
+
+<div class="notice">
+  <strong data-lang="en">Usage and limits</strong><strong data-lang="th">ข้อควรรู้ก่อนใช้</strong>
+  <ul data-lang="en">
+    <li>Sending to yourself with <code>@s</code> is free. A normal player sending to another player pays 10 Common Gems and has a 3-second cooldown.</li>
+    <li>Admin, command-block, and console sends are free; only privileged sources may use <code>@a</code>, <code>@p</code>, or <code>@r</code>.</li>
+    <li>The header accepts English ASCII characters only and is limited to 28 characters. The body can use Minecraft colour codes; the card displays about 22 visible characters before truncation.</li>
+    <li>The target player must be online. If their Toast setting is off, the message falls back to chat.</li>
+  </ul>
+  <ul data-lang="th">
+    <li>ส่งให้ตัวเองด้วย <code>@s</code> ฟรี ผู้เล่นทั่วไปที่ส่งให้คนอื่นเสีย Common Gem 10 ชิ้น และมีคูลดาวน์ 3 วินาที</li>
+    <li>คำสั่งจาก Admin, Command Block และ Console ฟรี เฉพาะแหล่งที่มีสิทธิ์เท่านั้นที่ใช้ <code>@a</code>, <code>@p</code> หรือ <code>@r</code> ได้</li>
+    <li>หัวข้อรับเฉพาะอักขระ ASCII ภาษาอังกฤษ ไม่เกิน 28 ตัว ข้อความรองรับรหัสสี Minecraft และการ์ดแสดงผลได้ประมาณ 22 ตัวก่อนถูกตัด</li>
+    <li>ผู้รับต้องออนไลน์ หากปิด Toast ไว้ ข้อความจะถูกส่งผ่านแชตแทน</li>
+  </ul>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const frames = {grey:0, blue:1, yellow:2, bronze:3, silver:4, gold:5, platinum:6, mythic:7, ascension:8, discovery:9};
+  const frameBase = "{{ '/assets/images/ui/toast/' | relative_url }}";
+  const iconBase = "{{ '/assets/images/achievements/' | relative_url }}";
+  const fields = ['toast-target','toast-frame','toast-icon','toast-sound','toast-header','toast-body'];
+  const controls = fields.map($);
+  const cleanText = value => String(value ?? '').replace(/[\r\n]+/g, ' ').trim();
+  const visibleBody = value => value.replace(/&[0-9a-fk-or]/gi, '').length;
+  const setStatus = (message, error = false) => { $('toast-validation').textContent = message; $('toast-validation').className = error ? 'toast-note toast-error' : 'toast-note'; };
+
+  function render() {
+    const target = cleanText($('toast-target').value);
+    const frame = $('toast-frame').value;
+    const icon = cleanText($('toast-icon').value).toUpperCase();
+    const sound = $('toast-sound').value;
+    const header = cleanText($('toast-header').value);
+    const body = cleanText($('toast-body').value);
+    const validTarget = !!target && !target.includes('|');
+    const validFrame = Object.prototype.hasOwnProperty.call(frames, frame);
+    const validIcon = icon === '-' || /^[A-Z0-9]{4}$/.test(icon);
+    const validHeader = /^[\x20-\x7E]{1,28}$/.test(header) && !header.includes('|');
+    const validBody = !body.includes('|');
+    const validSound = ['default','none','toast','levelup','orb'].includes(sound);
+
+    $('toast-preview-header').textContent = header || ' ';
+    $('toast-preview-body').textContent = body || ' ';
+    $('toast-frame-name').textContent = frame[0].toUpperCase()+frame.slice(1)+' · frame '+frames[frame];
+    $('toast-preview').style.borderImageSource = 'url("' + frameBase + 'f' + frames[frame] + '.png")';
+    const iconImg = $('toast-preview-icon');
+    if (icon === '-' || !/^[A-Z0-9]{4}$/.test(icon)) { iconImg.hidden = true; iconImg.removeAttribute('src'); }
+    else { iconImg.hidden = false; iconImg.src = iconBase + icon + '.png'; iconImg.onerror = () => { iconImg.hidden = true; }; }
+
+    const errors = [];
+    if (!validTarget) errors.push('Target is required and cannot contain |.');
+    if (!validFrame) errors.push('Choose a valid frame.');
+    if (!validIcon) errors.push('Icon must be a 4-character key or -.');
+    if (!validHeader) errors.push('Header must be 1–28 ASCII characters.');
+    if (!validBody) errors.push('Body cannot contain |.');
+    if (!validSound) errors.push('Choose a valid sound.');
+    if (validBody && visibleBody(body) > 22) errors.push('Body exceeds the 22-character visible area and may be truncated.');
+    setStatus(errors.join(' '), errors.some(e => !e.startsWith('Body exceeds')));
+
+    const iconArg = icon === '-' ? '-' : icon;
+    const command = '/scriptevent toast:send ' + target + ' | ' + frame + ' | ' + iconArg + ' | ' + header + ' | ' + body + ' | ' + sound;
+    $('toast-command').textContent = command;
+    const invalid = !validTarget || !validFrame || !validIcon || !validHeader || !validBody || !validSound;
+    $('toast-copy').disabled = invalid;
+    $('toast-copy-th').disabled = invalid;
+    $('toast-select').disabled = invalid;
+    $('toast-select-th').disabled = invalid;
+  }
+  controls.forEach(control => control.addEventListener('input', render));
+  $('toast-icon-preset').addEventListener('change', () => {
+    if ($('toast-icon-preset').value !== 'custom') $('toast-icon').value = $('toast-icon-preset').value;
+    render();
+  });
+  const copy = async () => {
+    try { await navigator.clipboard.writeText($('toast-command').textContent); $('toast-copy-status').textContent = 'Copied / คัดลอกแล้ว'; }
+    catch (_) { $('toast-copy-status').textContent = 'Clipboard unavailable. Use Select command. / คัดลอกอัตโนมัติไม่ได้ ให้ใช้ Select command'; }
+  };
+  const select = () => {
+    const range = document.createRange(); range.selectNodeContents($('toast-command'));
+    const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+    $('toast-copy-status').textContent = 'Command selected / เลือกคำสั่งแล้ว';
+  };
+  $('toast-copy').addEventListener('click', copy);
+  $('toast-copy-th').addEventListener('click', copy);
+  $('toast-select').addEventListener('click', select);
+  $('toast-select-th').addEventListener('click', select);
+  render();
+})();
+</script>
