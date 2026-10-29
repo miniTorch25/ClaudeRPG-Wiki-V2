@@ -185,7 +185,8 @@ Use these labels in editorial notes while drafting:
 - [ ] Verify detailed Bosses/phase behavior against the v1.39.0 scripts and ensure boss-specific rules are not inferred from regular evolution tiers.
 - [x] Source-audited key utility-item paths in v1.39.0: Insight Lens self/other-player behavior, Script Tool Creative/Admin category filtering, Waypoint Orb enablement/cost/cooldown/special-point limits, Stellar Core force-evolution eligibility and cost, Ultimate Picker blacklist/Waypoint ownership checks, and Sculk Potion success-only consumption/refusal cases. Added bilingual notes to `Items.md`.
 - [x] Source-audited Gem carving/crushing, Rune carving and tier/compatibility gates, Rune Anvil costs, Salvage eligibility/rewards, and Augment Crystal/Core costs against the v1.39.0 implementation; added bilingual notes to `Items.md`.
-- [ ] Complete the remaining item-by-item behavior/acquisition audit for all 40 item definitions, especially acquisition/drop claims and Creative/Admin restrictions not covered by this focused Gem/Rune/Salvage pass. Live gameplay edge cases remain untested.
+- [x] Cross-checked key scripted acquisition/drop rules against `evolution_config.js`, `progression_config.js`, and `evolution_manager.js`: corrected Geode/Awakened Gem-drop Ascension gates, added the separate Awakened Gem Dust drop, and clarified player-kill attribution, Core shared chance, and Enchanted-mob reward bonus behavior.
+- [ ] Complete the remaining item-by-item behavior/acquisition audit for all 40 item definitions, especially recipe-independent sources and Creative/Admin restrictions not covered by the focused passes. Live gameplay edge cases remain untested.
 - [ ] Run rendered narrow-screen/mobile checks; source CSS and successful build alone are not visual validation.
 - [ ] Re-run build, generated HTML/link/anchor audit, and bilingual parity review after this pass.
 
