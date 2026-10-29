@@ -34,7 +34,7 @@
   * [Weapon Types](Runes-Weapon-Types.md)
   * [All-Weapon Runes](Runes-All-Weapon.md)
   * [Tool Runes](Runes-Tool.md)
-  * [Curse Runes](Runes-Curse.md)
+  * [Curse runes](Runes-Curse.md)
 
 ## 4. Mobs & Combat
 * [Mob Evolution](Mob-Evolution.md)
@@ -53,9 +53,10 @@
 
 ## 8. Tools & Project Maintenance
 * [Download ClaudeRPG](Download.md)
-* [Toast Generator](Toast-Generator.html)
+* [Toast Generator](../tools/Toast-Generator.html)
 * [Current Wiki Status](WIKI-STATUS.md)
 * [Content Gap Audit](CONTENT-GAP-AUDIT.md)
 * [Item & Block Source Audit](ITEM-SOURCE-AUDIT.md)
 * [Contributing Guidelines](CONTRIBUTING.md)
-  * Source files: `assets/wiki.js`, `assets/wiki.css`, `assets/toast-generator.js`, and `assets/toast-generator.css`
+
+Source directories: `addon/`, `docs/`, `tools/`, and `assets/`.
