@@ -54,5 +54,25 @@
 | End City | the_end | purpur_pillar |
 
 
+## Quick-start workflow · วิธีใช้งานแบบย่อ
+
+### Set up a waypoint · ตั้งหินวาร์ป
+1. Place a **Waypoint Stone** and enter a name when prompted. Keep in mind that named stones have per-player and world limits.
+2. To use another player's named stone, interact with it and choose to save it to your own list if prompted.
+3. Open the stone's menu and choose **Teleport**. Check the displayed destination and remember that travel costs Ender Pearls based on horizontal distance; cross-dimension travel costs 8.
+4. If a destination is no longer usable because its stone was destroyed, remove the stale entry through the manager.
+5. For a portable destination, use a **Waypoint Orb** and add a special point while standing at the desired location. Special points are free, but limited to five per Orb list.
+
+### Find Discovery rewards · รับรางวัลการค้นพบ
+1. Open **Discovery Log** from the Status menu or Script Tool.
+2. Explore a biome, structure, or dimension that has not yet been recorded for the player.
+3. Watch for the discovery Toast. Each eligible discovery grants Travel Mastery XP only once; revisiting the same recorded location does not repeat the reward.
+4. If a structure is not detected, move close to its signature blocks listed in the table above. Detection is based on nearby blocks, so it may not identify every structure layout.
+
+**Troubleshooting / แก้ปัญหาเบื้องต้น**
+- **Teleport is unavailable:** confirm that the destination stone still exists, that you have enough Ender Pearls, and that the 10-second stone cooldown has elapsed.
+- **Can't place or save another point:** check the 10 named stones per player, 150 named stones per world, 20 saved points per player, and six-block minimum spacing limits.
+- **Discovery XP did not appear:** the location may already be recorded, or the structure's signature block may not be within detection range.
+
 ---
 **See also / ดูเพิ่มเติม:** [Items](Items) · [Mastery (Travel)](Mastery) · [Quality of Life](Quality-of-Life)
