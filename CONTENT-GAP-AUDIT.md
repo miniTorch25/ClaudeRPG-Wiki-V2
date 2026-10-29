@@ -6,6 +6,8 @@
 
 ## Purpose
 
+> **Current status:** See [WIKI-STATUS.md](WIKI-STATUS.md) for the latest completed work and remaining validation. This file is a chronological work log. Older unchecked boxes below may have been addressed by later follow-up sections; do not interpret them as a current checklist without checking the latest entries and source audit.
+
 This audit tracks missing explanations, shallow coverage, contradictions, and verification work. It is an editorial worklist, not a claim that every mechanic below is broken.
 
 ## Initial findings
