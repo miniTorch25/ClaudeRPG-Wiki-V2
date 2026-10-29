@@ -101,6 +101,18 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 
 **See also:** [Augment](Augment) · [Gem](Gem) · [Rune](Rune) · [Waypoint](Exploration)
 
+
+
+## Additional acquisition and access checks (v1.39.0 source audit)
+
+- **Stats Book:** craftable from 4 Sticks and also obtainable from the Script Tool's Guides & Items menu. **Knowledge Book:** craftable from 1 Dirt; the Script Tool also opens its in-game guide menu, which is distinct from giving the physical book.
+- **Prestige Sigil / Ascension Relic:** their recipes are present in the pack; the progression system consumes them as progression costs. Do not describe either as a guaranteed mob drop based on the current source paths reviewed.
+- **Augment Crystal:** obtainable from player-killed Enchanted mobs (base 1–5) and Salvage; a recipe duplicates 1 into 2. **Augment Core / Stellar Core:** Core evolved mobs have a shared base 25% chance to drop one randomly selected Core item on player kill; Perfect Salvage can consume an Augment Core, so the item also functions as a material cost.
+- **Enchant Essence:** obtained from player-killed Enchanted mobs and Salvage; Looting's extra-count behavior applies to Essence, not to Augment Crystal.
+- **Resonant / Genesis / Transcendent Ink:** recipe chains exist in the pack; Resonant Ink is brewed from Dragon's Breath + Echo Shard, Genesis Ink from Resonant Ink + Uncarved Gem Block, and Transcendent Ink has a Resonant Ink + Genesis Ink route plus a Stellar Upgrade route. These are crafting/brewing routes, not mob-drop claims.
+- **Waypoint Stone (Blank):** craftable and intentionally has no owner/name requirement like a named stone; regular named Waypoint Stone and Waypoint Orb have separate recipes. Teleport use still depends on the Waypoint system being enabled, costs/cooldowns, and saved-point rules.
+- **Creative/Admin boundary:** Script Tool's Creative & Admin category is conditional: Creative-only Rune tools require Creative mode, while Admin controls check the addon's Admin tag. A visible menu entry is not proof that every action is available to every player. Ultimate Picker additionally has a Creative-only block blacklist and checks Waypoint Stone owner/Admin permission.
+- **Evidence boundary:** these points were checked against v1.39.0 recipe JSON and relevant progression, event-router, Script Tool, evolution, and salvage source paths. They do not establish multiplayer balance, every edge case, or rendered mobile behavior.
 </div>
 
 <div data-lang="th" markdown="1">
@@ -207,3 +219,14 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 **ดูเพิ่มเติม:** [Augment](Augment) · [Gem](Gem) · [Rune](Rune) · [Waypoint](Exploration)
 
 </div>
+
+## ตรวจแหล่งได้รับไอเทมและสิทธิ์เพิ่มเติมจากซอร์ส v1.39.0
+
+- **Stats Book:** คราฟต์จาก Stick 4 ชิ้น และรับได้จากเมนู Guides & Items ของ Script Tool ส่วน **Knowledge Book:** คราฟต์จาก Dirt 1 ชิ้น; Script Tool ยังเปิดเมนูคู่มือในเกมได้ ซึ่งไม่ใช่สิ่งเดียวกับการมอบไอเทมหนังสือจริง
+- **Prestige Sigil / Ascension Relic:** มีสูตรคราฟต์ในแพ็ก และระบบความก้าวหน้าใช้เป็นค่าใช้จ่ายของการดำเนินขั้นต่อไป จากเส้นทางซอร์สที่ตรวจในรอบนี้ ยังไม่มีหลักฐานให้ระบุว่าเป็นของดรอปรับประกันจากมอนสเตอร์
+- **Augment Crystal:** ได้จากมอน Enchanted ที่ผู้เล่นฆ่า (ค่าพื้นฐาน 1–5 ชิ้น) และ Salvage; มีสูตรคราฟต์เปลี่ยน 1 ชิ้นเป็น 2 ชิ้น **Augment Core / Stellar Core:** มอนวิวัฒนาการ Core มีโอกาสพื้นฐานรวม 25% ที่จะดรอป Core แบบสุ่มหนึ่งชนิดเมื่อผู้เล่นฆ่า ส่วน Perfect Salvage ใช้ Augment Core เป็นวัสดุ
+- **Enchant Essence:** ได้จากมอน Enchanted ที่ผู้เล่นฆ่าและจาก Salvage; โบนัสจำนวนเพิ่มเติมจาก Looting ใช้กับ Essence ไม่ใช่ Augment Crystal
+- **Resonant / Genesis / Transcendent Ink:** มีสายสูตรในแพ็ก โดย Resonant Ink ได้จากการ Brewing Dragon's Breath + Echo Shard, Genesis Ink จาก Resonant Ink + Uncarved Gem Block และ Transcendent Ink มีทั้งเส้นทาง Resonant Ink + Genesis Ink และเส้นทางที่ใช้ Stellar Upgrade ข้อมูลนี้เป็นแหล่งคราฟต์/ต้มยา ไม่ใช่ข้อยืนยันว่าดรอปจากมอน
+- **Waypoint Stone (Blank):** คราฟต์ได้และไม่ต้องตั้งชื่อ/เจ้าของแบบหิน Waypoint ปกติ; Waypoint Stone แบบตั้งชื่อและ Waypoint Orb มีสูตรแยกกัน การวาร์ปยังขึ้นกับการเปิดระบบ ค่าใช้จ่าย คูลดาวน์ และกฎการบันทึกจุด
+- **ขอบเขต Creative/Admin:** หมวด Creative & Admin ของ Script Tool จะแสดงตามเงื่อนไข: เครื่องมือ Rune แบบ Creative ต้องอยู่ในโหมด Creative ส่วนเครื่องมือ Admin ตรวจแท็ก Admin ของแอดออน การเห็นเมนูไม่ได้แปลว่าผู้เล่นทุกคนใช้ทุกคำสั่งได้ Ultimate Picker ยังมีรายการบล็อกที่เก็บได้เฉพาะ Creative และตรวจสิทธิ์เจ้าของ/Admin สำหรับ Waypoint Stone
+- **ขอบเขตหลักฐาน:** ตรวจจากสูตร JSON v1.39.0 และเส้นทางโค้ดที่เกี่ยวกับ progression, event router, Script Tool, evolution และ salvage แล้ว แต่ไม่ได้ยืนยันสมดุลใน Multiplayer ทุกกรณี หรือการแสดงผลจริงบนมือถือ
