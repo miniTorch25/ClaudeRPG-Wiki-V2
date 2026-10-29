@@ -160,7 +160,7 @@ Use these labels in editorial notes while drafting:
 ## Completion checklist
 
 - [x] Resolve the Gem/Rune unlock contradiction in the wiki using the central feature gate; the conflicting addon confirmation text remains an upstream issue.
-- [ ] Confirm formulas, costs, caps, and rounding rules. Initial source checks now confirm the stat caps and cap-rounding method; the full progression/XP and perk edge cases still need a dedicated pass.
+- [x] Verified progression formulas against v1.39.0 source: XP thresholds use the normal +25 step through Level 100 and 60% of that step afterward; awarded XP is rounded to a whole number (minimum 1); Prestige/Ascension costs use `floor` before applying caps; stat caps use `Math.round(base × capMultiplier)`; Perk values are rounded to two decimals and each pick keeps its pick-time strength.
 - [x] Added a bilingual pre-Prestige checklist to `Progression.md`, covering cap verification, Sigil preparation, reset expectations, Perk selection, and post-reset equipment requirements.
 - [ ] Expand remaining key pages with step-by-step player workflows.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.

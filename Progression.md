@@ -21,7 +21,7 @@ The long-term progression loop: Level → Prestige → Ascension.
 
 The level cap is **40 + 20 per Prestige**. Every level-up grants **4 Stat Points** (plus any Leveling Mastery bonus). At max level, XP stops accumulating, but Leveling Mastery continues to gain XP.
 
-XP needed for the next level = `50 + 25 × level`. Above level 100, each extra level counts at ×0.6.
+XP needed for the next level follows `50 + 25 × level` through Level 100. Above Level 100, only the increase beyond Level 100 uses 60% of the normal +25 step. XP thresholds are rounded to whole numbers; XP awarded after bonuses is also rounded to a whole number, with a minimum award of 1 XP.
 
 | Level | XP to next level |
 |---|---:|
@@ -123,7 +123,7 @@ Prestige resets **Level, XP, Points, and stats** in exchange for a higher level 
 
 ### Perks
 
-Pick **1 Perk per Prestige**. A perk keeps the strength it had when selected; perks from later Prestiges are weaker due to diminishing returns.
+Pick **1 Perk per Prestige**. A perk keeps the strength it had when selected; perks chosen at later Prestiges are weaker due to diminishing returns. P1–P3 picks have full strength; each later Prestige applies a ×0.85 factor to the new pick, down to a minimum factor of ×0.25. The combined value of a perk is rounded to two decimal places.
 
 | Perk | Available from | Effect |
 |---|---|---|
@@ -200,7 +200,7 @@ Ascension is the **world difficulty**. One player activates it and the whole wor
 
 เลเวลสูงสุดคำนวณจาก **40 + 20 ต่อ Prestige** เมื่อเลเวลเพิ่มจะได้รับ **Stat Points 4 แต้ม** (และอาจได้โบนัสจาก Leveling Mastery) เมื่อถึงเลเวลสูงสุด XP จะหยุดสะสม แต่ Leveling Mastery ยังได้รับ XP ต่อไป
 
-XP ที่ต้องใช้เพื่อขึ้นเลเวลถัดไป = `50 + 25 × เลเวล` หากเลเวลเกิน 100 จะนับ XP ของเลเวลส่วนที่เกินด้วยตัวคูณ ×0.6
+XP ที่ต้องใช้เพื่อขึ้นเลเวลถัดไปใช้สูตร `50 + 25 × เลเวล` จนถึงเลเวล 100 หลังจากนั้นเฉพาะส่วนที่เกินเลเวล 100 จะเพิ่มด้วย 60% ของขั้นปกติ +25 เท่านั้น ค่า XP ที่ต้องใช้จะปัดเป็นจำนวนเต็ม และ XP ที่ได้รับหลังรวมโบนัสจะปัดเป็นจำนวนเต็มเช่นกัน โดยได้รับอย่างน้อย 1 XP
 
 | เลเวล | XP ที่ต้องใช้เพื่อเลเวลถัดไป |
 |---|---:|
@@ -302,7 +302,7 @@ Prestige จะรีเซ็ต **Level, XP, Points และค่าสเ�
 
 ### Perk (พลังพิเศษ)
 
-เลือก **Perk 1 อย่างต่อ Prestige** โดยพลังของ Perk จะคงตามระดับที่ได้รับตอนเลือก ส่วน Prestige ที่สูงขึ้นจะมีผลลดลงตาม diminishing returns
+เลือก **Perk 1 อย่างต่อ Prestige** โดยพลังของ Perk จะคงตามระดับที่ได้รับตอนเลือก ส่วน Perk ที่เลือกใน Prestige ระดับสูงขึ้นจะอ่อนลงตาม diminishing returns โดย P1–P3 ได้พลังเต็ม หลังจากนั้น Perk ที่เลือกใหม่จะคูณด้วย ×0.85 ต่อระดับ แต่ไม่ต่ำกว่า ×0.25 ค่ารวมของ Perk จะปัดเป็นทศนิยม 2 ตำแหน่ง
 
 | Perk | เริ่มปลดล็อก | ผล |
 |---|---|---|
