@@ -62,6 +62,19 @@ All custom ClaudeRPG items, blocks, and recipes.
 
 These notes confirm code paths in the v1.39.0 package; they do not replace the remaining item-by-item audit or live gameplay testing.
 
+## Additional behavior notes verified from v1.39.0 scripts
+
+- **Gem carving:** hold an Uncarved Gem in the main hand and an Engraver in the offhand. A normal use consumes one blank Gem and yields one random Gem from the tiers currently unlocked by Gem Mastery; each carve has a 1% chance to yield two Gems. Sneak-use processes up to 16 blanks at once.
+- **Gem crushing:** hold an Uncarved Gem in the main hand and one of the four Reforge Hammer variants in the offhand. Each blank Gem consumed yields 1–10 Gem Dust; sneak-use processes up to 16 at once.
+- **Rune carving:** hold an Uncarved Rune in the main hand and an Engraver in the offhand. Normal use carves one Rune item; sneak-use processes up to 16. The resulting grade is weighted from Gamma (40) through Omega (1), and each Rune item receives a random effect at its grade's tier. Disabled Rune pools do not roll.
+- **Rune grade and Mastery:** Gamma, Delta, Theta, Sigma, Phi, Psi, and Omega correspond to tiers 1–7. Installing a Rune requires a compatible weapon/tool, an empty Rune slot on that item, the Rune Mastery tier to be unlocked, and no conflicting exclusive Rune on the other hand. Armor, shears, and consumables cannot hold Runes.
+- **Rune Anvil costs:** Recarved costs 30 Resonant Ink; ordinary Reroll costs 5 Ink per Rune tier; Selective Reroll costs 8 Ink per tier. The Selective option chooses a Rune type, but Curse is not selectable. The source currently sets Insert and Remove Ink costs to 0, although the removal flow still returns the Rune as an item.
+- **Salvage:** eligible items must be listed in both the item-requirement and salvage-material tables. Each salvage costs 12 Reforge Hammer durability. Normal salvage returns half the listed recipe materials (rounded down, minimum one per material), with a 33% chance to return the full listed materials instead. Perfect Salvage guarantees full listed materials for one Augment Core.
+- **Other salvage rewards:** each installed Gem that is neither locked nor empty gives a separate 1–10 Gem Dust roll; each rolled non-max Augment stat returns one Augment Crystal, while each maxed stat returns three; vanilla enchantments return Enchant Essence based on enchantment rarity and level. Salvage removes the whole item, so check the preview before confirming.
+- **Augment material costs:** Reroll costs one Augment Crystal and Lock costs two; Unlock is crystal-free. Max Augment costs one Augment Core. Gem Fusion combines two Gems of one tier and one Augment Core into one Gem of the next tier. These are source-level rules; gameplay edge cases still need in-game validation.
+
+These details were checked against `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js`, and `reforge.js` in the v1.39.0 package. They are not a substitute for the remaining item-by-item audit or live gameplay testing.
+
 ## Quick item audit guide
 
 The inventory groups several item families into single rows (for example, seven Gem rarities and seven Rune types), so the row count is not the same as the number of individual item definitions.
@@ -143,6 +156,19 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 - **Sculk Potion:** ระบบตรวจเมื่อผู้เล่นตีมอนสเตอร์ขณะถือยา และจะใช้ยาเมื่อแปลงสำเร็จเท่านั้นในโหมดที่ไม่ใช่ Creative บอส มอน Enchanted และเป้าหมายที่ไม่รองรับหรือถูกล็อกจะถูกปฏิเสธ
 
 หมายเหตุเหล่านี้ยืนยันจากเส้นทางการทำงานในโค้ด v1.39.0 แต่ยังไม่ใช่การตรวจไอเทมครบทั้ง 40 รายการหรือการทดสอบจริงในเกม
+
+## หมายเหตุพฤติกรรมเพิ่มเติมที่ยืนยันจาก Script v1.39.0
+
+- **การแกะ Gem:** ถือ Uncarved Gem ในมือหลักและ Engraver ในมือรอง การใช้ปกติจะใช้ Gem เปล่า 1 ชิ้นและสุ่ม Gem จากระดับที่ปลดล็อกผ่าน Gem Mastery แล้ว โดยมีโอกาส 1% ที่จะได้ Gem 2 ชิ้นต่อการแกะหนึ่งครั้ง หากย่อตัวจะทำได้สูงสุด 16 ชิ้นต่อครั้ง
+- **การบด Gem:** ถือ Uncarved Gem ในมือหลักและ Reforge Hammer รุ่นใดรุ่นหนึ่งจาก 4 รุ่นในมือรอง จะใช้ Gem เปล่าแต่ละชิ้นเพื่อสุ่ม Gem Dust 1–10 ชิ้น และเมื่อย่อตัวจะบดได้สูงสุด 16 ชิ้นต่อครั้ง
+- **การแกะ Rune:** ถือ Uncarved Rune ในมือหลักและ Engraver ในมือรอง การใช้ปกติแกะได้หนึ่งชิ้น หากย่อตัวจะแกะได้สูงสุด 16 ชิ้น ระดับ Rune สุ่มตามน้ำหนักตั้งแต่ Gamma (40) ไปจนถึง Omega (1) และแต่ละชิ้นจะได้รับเอฟเฟกต์สุ่มตาม Tier ของตนเอง กลุ่ม Rune ที่ถูกปิดใช้งานจะไม่ถูกสุ่ม
+- **ระดับ Rune และ Mastery:** Gamma, Delta, Theta, Sigma, Phi, Psi และ Omega ตรงกับ Tier 1–7 การติดตั้งต้องใช้อาวุธหรือเครื่องมือที่รองรับ ไอเทมเป้าหมายต้องยังไม่มี Rune, ผู้เล่นต้องปลดล็อก Tier นั้นผ่าน Rune Mastery และต้องไม่ขัดกับ Rune แบบ Exclusive ในมืออีกข้าง Armor, Shears และไอเทมสิ้นเปลืองไม่สามารถติด Rune ได้
+- **ค่าใช้จ่าย Rune Anvil:** Recarved ใช้ Resonant Ink 30 ชิ้น; Reroll ปกติใช้ Ink 5 ชิ้นต่อ Tier ของ Rune; Selective Reroll ใช้ Ink 8 ชิ้นต่อ Tier โดยเลือกประเภท Rune ได้ แต่เลือก Curse ไม่ได้ โค้ดกำหนดค่า Ink สำหรับ Insert และ Remove เป็น 0 ในปัจจุบัน และการถอดจะคืน Rune เป็นไอเทม
+- **Salvage:** ไอเทมต้องอยู่ในทั้งตารางข้อกำหนดไอเทมและตารางวัสดุ Salvage แต่ละครั้งใช้ความทนทาน Reforge Hammer 12 หน่วย การ Salvage ปกติคืนวัสดุตามสูตรครึ่งหนึ่ง (ปัดลง แต่ขั้นต่ำวัสดุละ 1 ชิ้น) และมีโอกาส 33% ที่จะคืนวัสดุเต็มจำนวน ส่วน Perfect Salvage รับประกันวัสดุเต็มจำนวนโดยใช้ Augment Core 1 ชิ้น
+- **รางวัลอื่นจาก Salvage:** Gem ที่ติดตั้งอยู่แต่ไม่ใช่ช่องล็อกหรือช่องว่างแต่ละช่องจะสุ่ม Gem Dust 1–10 ชิ้น; Augment ที่สุ่มแล้วและไม่เต็มค่าสูงสุดคืน Augment Crystal 1 ชิ้นต่อค่าสเตตัส ส่วนค่าสเตตัสที่เต็มแล้วคืน 3 ชิ้น; เอนชานต์ปกติคืน Enchant Essence ตามความหายากและระดับของเอนชานต์ การ Salvage จะทำลายไอเทมทั้งชิ้น จึงควรตรวจรายการรางวัลก่อนยืนยัน
+- **ค่าใช้จ่ายวัสดุ Augment:** Reroll ใช้ Augment Crystal 1 ชิ้น และ Lock ใช้ 2 ชิ้น ส่วน Unlock ไม่ใช้ Crystal; Max Augment ใช้ Augment Core 1 ชิ้น; Gem Fusion รวม Gem ระดับเดียวกัน 2 ชิ้นกับ Augment Core 1 ชิ้นเพื่อสร้าง Gem ระดับถัดไป ข้อมูลเหล่านี้ตรวจจากซอร์สโค้ด แต่กรณีการใช้งานจริงยังต้องทดสอบในเกม
+
+ตรวจข้อมูลเหล่านี้จาก `gem_manager.js`, `rune_item.js`, `rune_item_config.js`, `rune_anvil_gui.js`, `salvage.js`, `salvage_config.js` และ `reforge.js` ในแพ็กเกจ v1.39.0 แล้ว แต่ยังไม่ถือว่าตรวจไอเทมครบทุกชิ้นหรือทดสอบการเล่นจริงแล้ว
 
 ## แนวทางตรวจสอบไอเทมแบบย่อ
 
