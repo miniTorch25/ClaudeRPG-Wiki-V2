@@ -357,3 +357,12 @@ Use these labels in editorial notes while drafting:
 - [x] Stellar Upgrade creation increments its Achievement counter in the Stellar Core system. Mana Drain is recorded when a successful mana consumption leaves the player's mana at zero; a failed consume does not count. The synergy Achievement increments when the combat pipeline receives a positive synergy damage bonus.
 - [x] No definite mismatch was found in these selected call sites. One wording nuance is that the synergy counter specifically observes a positive damage bonus, so this check does not prove it tracks every possible non-damage synergy effect.
 - [ ] Continue the remaining Achievement condition/counter audit and, where possible, validate edge cases in-game; this pass is source inspection only.
+
+
+### Follow-up pass: Misc Achievement interaction-counter mismatch (v1.39.0)
+
+- [x] Compared selected Misc & Silly catalogue conditions with `achievement_hooks.js` event subscriptions.
+- [x] **Confirmed implementation mismatch — Haggler (MC56):** the catalogue condition says “Trade with villagers 100 times,” but the `trades` counter is incremented by `beforeEvents.playerInteractWithEntity` when the player interacts with a non-baby villager, with a 60-tick cooldown. The hook does not observe a completed trade or a trade transaction; opening/interacting with a villager can therefore advance the counter without completing a trade.
+- [x] Kept the published catalogue wording unchanged because it mirrors the in-game achievement text. This audit records the discrepancy rather than rewriting the condition to conceal it.
+- [ ] Upstream gameplay fix candidate: increment `trades` from a reliable completed-trade signal, if supported by the target Bedrock Script API, or revise the in-game condition text to describe what the implementation can actually observe. Verify API availability and multiplayer behavior before changing gameplay code.
+- [ ] Continue the remaining Work & Support and Misc & Silly condition/counter comparisons. This finding comes from source inspection; it has not been reproduced in-game.
