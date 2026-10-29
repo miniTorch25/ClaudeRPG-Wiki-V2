@@ -54,5 +54,23 @@
 - **Boss / บอส:** Elder Guardian, Warden, Ender Dragon, Wither
 
 
+
+
+## How to read boss thresholds · วิธีอ่านเงื่อนไขเฟสบอส
+
+**EN**
+- The listed percentages are **HP thresholds**, while A2/A4/A6 are **minimum World Ascension requirements**. Both conditions must be met for the listed effect to be available.
+- The thresholds describe effects that trigger as a boss loses health; they are not the mob's Evolution Tier. Ascension changes world difficulty/unlocks, while the boss's current HP determines when an available phase effect can trigger.
+- **Aura** effects apply within the listed radius; **summon** entries state how many minions are created by that trigger. The general minion cap is 10, but this page does not establish whether the cap is shared across every boss encounter or scoped to an individual boss—verify that detail in-game before documenting it more precisely.
+- Special abilities listed in the first table are separate from boss phases and do not imply that the mob has evolved.
+- The table summarizes the wiki's documented configuration. Confirm exact trigger timing, repeat behavior, effect duration, and multiplayer edge cases against the matching v1.39.0 scripts before treating them as verified implementation details.
+
+**TH**
+- เปอร์เซ็นต์ที่ระบุคือ **เกณฑ์ HP** ส่วน A2/A4/A6 คือ **ระดับ World Ascension ขั้นต่ำ** โดยต้องผ่านเงื่อนไขทั้งสองอย่างจึงจะใช้เอฟเฟกต์นั้นได้
+- เกณฑ์เหล่านี้อธิบายเอฟเฟกต์ที่ทำงานเมื่อ HP ของบอสลดลง ไม่ใช่ Evolution Tier ของมอนสเตอร์ Ascension ใช้กำหนดความยาก/การปลดล็อกของโลก ส่วน HP ปัจจุบันของบอสเป็นตัวกำหนดว่าเอฟเฟกต์เฟสที่ปลดล็อกแล้วจะทำงานเมื่อใด
+- เอฟเฟกต์ **Aura** มีผลในรัศมีที่ระบุ ส่วนรายการ **summon** ระบุจำนวนลูกสมุนที่เกิดจากการทำงานนั้น มีเพดานลูกสมุนทั่วไป 10 ตัว แต่หน้านี้ยังไม่ได้ยืนยันว่าเพดานดังกล่าวใช้ร่วมกันระหว่างบอสทุกตัวหรือแยกตามบอส จึงควรตรวจสอบในเกมก่อนระบุให้ละเอียดกว่านี้
+- ความสามารถพิเศษในตารางแรกแยกจากเฟสบอส และไม่ได้หมายความว่ามอนสเตอร์ตัวนั้นวิวัฒนาการแล้ว
+- ตารางนี้สรุปข้อมูลที่ Wiki ระบุไว้ ควรตรวจจังหวะการทำงาน การทำซ้ำ ระยะเวลาเอฟเฟกต์ และกรณีผู้เล่นหลายคนกับ Script v1.39.0 ที่ตรงกันก่อนถือว่าเป็นรายละเอียดที่ยืนยันจากโค้ดแล้ว
+
 ---
 **See also / ดูเพิ่มเติม:** [Mob Evolution](Mob-Evolution) · [Progression](Progression)
