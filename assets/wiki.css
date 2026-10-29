@@ -86,3 +86,9 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
 
 /* Ensure language switching and search filtering override component display rules. */
 [hidden] { display: none !important; }
+
+/* Keep wiki content images square while preserving rounded UI containers. */
+.article-content img,
+.article-content img.item-icon {
+  border-radius: 0;
+}
