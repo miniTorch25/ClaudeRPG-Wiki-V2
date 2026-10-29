@@ -399,3 +399,9 @@ Use these labels in editorial notes while drafting:
 - [x] Added a bilingual preflight checklist to `Augment.md`: review target stats/material/durability, distinguish Reroll/Max/Remove, and choose Salvage vs Perfect Salvage deliberately.
 - [ ] Run the Pages build and generated-link/image audit after this change; rendered mobile/device visual validation remains outstanding and must not be inferred from a successful build.
 - [ ] Continue the remaining row-by-row source audit for all custom items and blocks; this pass improves presentation and decision guidance but does not claim that every item has been live-tested.
+
+
+### Follow-up pass: Achievement icon readability
+
+- [x] Increased all 248 catalogue icon images across Combat (76), Work & Support (92), and Misc & Silly (80) from 28px to 40px while preserving the original source textures and catalogue rows.
+- [ ] Verify the rendered achievement tables on desktop and narrow/mobile screens; the successful Pages build checks asset extraction and compilation, not visual readability on a real device.
