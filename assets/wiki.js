@@ -5,18 +5,6 @@
   const buttons = Array.from(document.querySelectorAll('button[data-language]'));
   const key = 'clauderpg-wiki-language';
 
-  // Detect both inline labels ("**EN:** text") and standalone language
-  // markers ("**EN**" followed by one or more blocks of English content).
-  function languageMarker(node) {
-    if (!node || node.nodeType !== Node.ELEMENT_NODE || node.tagName !== 'P') return null;
-    const strong = node.querySelector(':scope > strong');
-    if (!strong) return null;
-    const label = strong.textContent.trim().replace(/:$/, '').trim().toLowerCase();
-    if (label !== 'en' && label !== 'th') return null;
-    const rest = node.textContent.replace(strong.textContent, '').trim();
-    return { language: label, standalone: !rest };
-  }
-
   function applyArticleLanguage(language) {
     const article = document.querySelector('.article-content');
     if (!article) return;
