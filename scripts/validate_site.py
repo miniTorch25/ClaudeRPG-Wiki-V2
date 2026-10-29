@@ -6,6 +6,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import sys
+import os
 
 
 class PageParser(HTMLParser):
@@ -35,11 +36,13 @@ def is_html_file(path: Path) -> bool:
     return prefix.startswith(b"<!doctype html") or b"<html" in prefix
 
 
-def resolve_target(site: Path, current: Path, raw_url: str) -> Path | None:
+def resolve_target(site: Path, current: Path, raw_url: str, baseurl: str) -> Path | None:
     parsed = urlsplit(raw_url)
     if parsed.scheme or parsed.netloc:
         return None
     raw_path = unquote(parsed.path)
+    if baseurl and (raw_path == baseurl or raw_path.startswith(baseurl + "/")):
+        raw_path = raw_path[len(baseurl):] or "/"
     if not raw_path:
         return current
 
@@ -74,6 +77,8 @@ def main() -> int:
             return 2
         pages[path.resolve()] = parser
 
+    repo_name = os.environ.get("GITHUB_REPOSITORY", "").split("/")[-1]
+    baseurl = f"/{repo_name}" if repo_name else ""
     errors: list[str] = []
     checked = 0
     checked_fragments = 0
@@ -85,7 +90,7 @@ def main() -> int:
             if raw_url.startswith("#"):
                 target = page
             else:
-                target = resolve_target(site, page, raw_url)
+                target = resolve_target(site, page, raw_url, baseurl)
                 if target is None:
                     continue
             checked += 1
