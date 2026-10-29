@@ -253,3 +253,10 @@ Use these labels in editorial notes while drafting:
 - [x] Found a mismatch in `Guide-Quest.md` step 3.1: it listed one Iron Block and one Dark Oak Log for the Reforge Hammer, while `Items.md` and the verified v1.39.0 recipe summary specify 2 Iron Blocks and 3 Dark Oak Logs.
 - [x] Corrected the Guide Quest instruction to match the documented recipe.
 - [ ] Continue cross-page checks for repeated crafting costs, progression gates, and item-use descriptions.
+
+
+### Follow-up pass: Guide Quest Gem unlock clarity
+
+- [x] Cross-checked Guide Quest steps 5.5 and 6.1 against `Progression.md` and `Gem.md`. Clarified that Ascension 2 enables boss Uncarved Gem drops, but Gem system access requires both Prestige 4 and Ascension 2.
+- [x] Kept the distinction between world Ascension eligibility (a Prestige 2 player can raise it to A2) and the separate Gem feature gate (P4/A2).
+- [ ] Continue checking other progression steps for cases where an item/drop milestone could be mistaken for system unlock access.
