@@ -36,11 +36,11 @@
       const raw = (strong ? strong.textContent : node.textContent).trim();
       const label = raw.replace(/[:：]$/, '').trim().toLowerCase();
       if (label === 'en' || label === 'english') {
-        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\\s*[:：]?\\s*/, '').trim() : '';
+        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\s*[:：]?\s*/, '').trim() : '';
         return { language: 'en', standalone: !rest };
       }
       if (label === 'th' || label === 'thai' || label === 'ไทย') {
-        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\\s*[:：]?\\s*/, '').trim() : '';
+        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\s*[:：]?\s*/, '').trim() : '';
         return { language: 'th', standalone: !rest };
       }
       return null;
