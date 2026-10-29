@@ -405,3 +405,11 @@ Use these labels in editorial notes while drafting:
 
 - [x] Increased all 248 catalogue icon images across Combat (76), Work & Support (92), and Misc & Silly (80) from 28px to 40px while preserving the original source textures and catalogue rows.
 - [ ] Verify the rendered achievement tables on desktop and narrow/mobile screens; the successful Pages build checks asset extraction and compilation, not visual readability on a real device.
+
+
+### Follow-up pass: evolution-page artwork and guide status reconciliation
+
+- [x] Increased the Sculk Potion and Stellar Core artwork in `Mob-Evolution.md` from 48px to 64px so the item illustrations are easier to distinguish.
+- [x] Rechecked the current `Mastery.md` page and confirmed that it already contains a bilingual practical guide covering unlock, activity-based XP, exclusive paths, the 60-second switching cooldown, effect toggles, per-level variance, and XP after max level. The older gap note about adding this quick-start guide is therefore satisfied by the current page.
+- [ ] Remaining visual validation: inspect the published item and achievement artwork at narrow/mobile widths in an actual browser or device.
+- [ ] Remaining source audit: finish the row-by-row custom item/block acquisition and restriction review where source details are available; do not mark untested in-game interactions as verified.
