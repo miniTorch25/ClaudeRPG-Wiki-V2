@@ -83,3 +83,6 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
 
 /* Keep small resource-pack pixel-art icons crisp when enlarged in tables. */
 .article-content table img{image-rendering:pixelated;object-fit:contain;}
+
+/* Ensure language switching and search filtering override component display rules. */
+[hidden] { display: none !important; }
