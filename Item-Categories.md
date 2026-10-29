@@ -15,6 +15,19 @@
 **TH:** การแบ่งไอเทมของ ClaudeRPG เป็น 4 กลุ่ม 21 ชนิด
 
 
+## Visual item guide · ภาพตัวอย่างไอเทม
+
+ภาพต่อไปนี้ดึงจาก Texture ของ ClaudeRPG v1.39.0 โดยตรง ใช้เป็นภาพอ้างอิงไอเทมสำคัญในระบบอุปกรณ์
+
+<div class="material-strip">
+  <div class="material-card"><img src="{{ '/assets/images/items/stats_book.png' | relative_url }}" alt="Stats Book" width="64" height="64" loading="lazy"><span>Stats Book</span><small>Character menus</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_crystal.png' | relative_url }}" alt="Augment Crystal" width="64" height="64" loading="lazy"><span>Augment Crystal</span><small>Reroll stats</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_core.png' | relative_url }}" alt="Augment Core" width="64" height="64" loading="lazy"><span>Augment Core</span><small>Max stat / salvage</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/reforge_hammer.png' | relative_url }}" alt="Reforge Hammer" width="64" height="64" loading="lazy"><span>Reforge Hammer</span><small>Reforge / Salvage</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/uncarved_gem.png' | relative_url }}" alt="Uncarved Gem" width="64" height="64" loading="lazy"><span>Uncarved Gem</span><small>Gem crafting</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/stellar_upgrade.png' | relative_url }}" alt="Stellar Upgrade" width="64" height="64" loading="lazy"><span>Stellar Upgrade</span><small>Eternal-item recipes</small></div>
+</div>
+
 ## Categories · หมวดหมู่
 
 **EN:** Every item belongs to a group and a kind. The kind decides which Runes it can hold and which Augment pool it uses.
