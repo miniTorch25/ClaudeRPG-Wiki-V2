@@ -23,10 +23,12 @@ Thank you for helping improve the bilingual English–Thai reference.
 ## Code and layout
 
 - Keep JavaScript progressive and defensive: a missing optional element should not break unrelated wiki functionality.
+- Keep shared navigation and language behavior in `assets/wiki.js` and `assets/wiki.css`. Keep Toast Generator styles and behavior in `assets/toast-generator.css` and `assets/toast-generator.js`; avoid reintroducing large inline `<style>` or `<script>` blocks.
+- For page-specific assets that need Jekyll paths, pass generated paths through HTML `data-*` attributes rather than embedding Liquid templates in external JavaScript.
 - Keep controls keyboard-accessible and give buttons descriptive labels.
 - Preserve responsive table behavior and avoid fixed-width article content that overflows on phones.
 - Use the shared layout and stylesheet for common navigation and design rather than duplicating the site shell in individual pages.
-- Run `node --check assets/wiki.js` and the GitHub Pages workflow before merging JavaScript or layout changes.
+- Run `node --check assets/wiki.js`, `node --check assets/toast-generator.js`, and the GitHub Pages workflow before merging JavaScript or layout changes.
 
 ## Validation checklist
 
