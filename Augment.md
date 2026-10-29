@@ -20,10 +20,12 @@
 ## Key materials · วัสดุสำคัญ
 
 <div class="material-strip">
-  <div class="material-card"><img src="{{ '/assets/images/items/augment_crystal.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Augment Crystal</span><small>Reroll stats</small></div>
-  <div class="material-card"><img src="{{ '/assets/images/items/augment_core.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Augment Core</span><small>Max stat / salvage</small></div>
-  <div class="material-card"><img src="{{ '/assets/images/items/stellar_core.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Stellar Core</span><small>Force evolution</small></div>
-  <div class="material-card"><img src="{{ '/assets/images/items/enchant_essence.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><span>Enchant Essence</span><small>Vanilla enchant</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_crystal.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Augment Crystal</span><small>Reroll stats</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/augment_core.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Augment Core</span><small>Max stat / salvage</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/stellar_core.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Stellar Core</span><small>Force evolution</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/enchant_essence.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Enchant Essence</span><small>Vanilla enchant</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/reforge_hammer.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Reforge Hammer</span><small>Reforge / Salvage</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/eternal_hammer.png' | relative_url }}" alt="" width="64" height="64" loading="lazy"><span>Eternal Hammer</span><small>Half durability costs</small></div>
 </div>
 
 ## Augment stats · ค่า Augment
@@ -62,6 +64,12 @@
 5. **ตรวจสอบเอฟเฟกต์ที่ใช้งาน:** เปิด **Augment Stats** ใน Stats Book เพื่อดูค่ารวมและเปิดหรือปิดค่า
 6. **พิจารณาก่อนย่อย:** การย่อยทั่วไปอาจคืนวัสดุเพียง 50%; Perfect Salvage ใช้ Augment Core แต่รับประกันการคืนวัสดุ 100%
 
+
+## Before you Reforge or Salvage · ก่อน Reforge หรือ Salvage
+
+**EN:** Check the target item, its current stats, the hammer durability, and the required material before confirming an action. Reroll changes every unlocked stat, while locked stats are preserved. Max commits one stat to its cap. Remove clears all Augment stats, so treat it as a destructive reset. Salvage breaks down the item rather than improving it; use Perfect Salvage when recovering the full crafting-material return matters. These actions are documented from the v1.39.0 source; exact outcomes should still be verified in-game when testing edge cases.
+
+**TH:** ก่อนยืนยัน ให้ตรวจไอเทม ค่า Augment ปัจจุบัน ความทนทานของ Hammer และวัสดุที่ต้องใช้ก่อน Reroll จะสุ่มค่า Augment ที่ไม่ได้ล็อกใหม่ ส่วนค่าที่ล็อกไว้จะถูกเก็บไว้ Max ตั้งค่าสเตตัสหนึ่งตัวให้เต็ม และ Remove จะล้างค่า Augment ทั้งหมด จึงควรมองเป็นการรีเซ็ตที่ย้อนกลับไม่ได้ ส่วน Salvage คือการแยกไอเทมเป็นวัสดุ ไม่ใช่การอัปเกรด หากต้องการคืนวัสดุคราฟต์เต็มจำนวน ให้พิจารณา Perfect Salvage ข้อมูลนี้อ้างอิงซอร์ส v1.39.0 แต่กรณีขอบยังต้องทดสอบในเกม
 
 ## Reforge menu · เมนู Reforge
 
