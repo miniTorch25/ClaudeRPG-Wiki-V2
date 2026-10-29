@@ -163,6 +163,7 @@ Use these labels in editorial notes while drafting:
 - [x] Verified progression formulas against v1.39.0 source: XP thresholds use the normal +25 step through Level 100 and 60% of that step afterward; awarded XP is rounded to a whole number (minimum 1); Prestige/Ascension costs use `floor` before applying caps; stat caps use `Math.round(base × capMultiplier)`; Perk values are rounded to two decimals and each pick keeps its pick-time strength.
 - [x] Added a bilingual pre-Prestige checklist to `Progression.md`, covering cap verification, Sigil preparation, reset expectations, Perk selection, and post-reset equipment requirements.
 - [ ] Expand remaining key pages with step-by-step player workflows.
+- [x] Added bilingual step-by-step workflows to the Chorus Echo, Resonance, Transcend, and Fusion pages; broader player workflow coverage remains incomplete.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compared all 35 recipe JSON definitions with the English and Thai item tables. Found and corrected one recipe-count mismatch: Stats Book requires 4 Sticks (not 1). Remaining recipe summaries matched the JSON ingredient/method/output definitions.
 - [x] Verify generated HTML cross-links and navigation targets with a static artifact audit (2,278 local links/assets and 48 anchors; no missing targets found).
