@@ -16,6 +16,22 @@
 
 > ℹ️ Effect descriptions are shown in English, exactly as written in the game. / คำอธิบายเอฟเฟกต์เป็นภาษาอังกฤษตามที่เขียนในเกม
 
+## Quick workflow · วิธีใช้งาน
+
+**EN**
+1. Reach Chorus Mastery Lv 10 to unlock Transcend rolling; Chorus itself unlocks at Prestige 2.
+2. Prepare for the higher roll cost: the overview lists 30 Resonant Ink plus 1 Stellar Core for both sockets, or 20 Resonant Ink to lock one socket.
+3. Choose Transcend, roll, and inspect both results. If one socket matches your plan, lock it before rerolling the other.
+4. Use the tables below to compare the eight elements and their hybrids. Two different elements form a hybrid only when they belong to the same tier.
+5. Count matching sockets across the full armor set. Transcend also contributes to Gem/Rune Synergy as described on the Chorus overview.
+
+**TH**
+1. ทำ Chorus Mastery Lv 10 เพื่อปลดล็อกการสุ่ม Transcend; ตัวระบบ Chorus ปลดล็อกที่ Prestige 2
+2. เตรียมวัสดุสำหรับการสุ่มระดับสูง: หน้า Chorus หลักระบุ 30 Resonant Ink และ Stellar Core 1 ชิ้นสำหรับสุ่มสองช่อง หรือ 20 Resonant Ink เพื่อล็อกหนึ่งช่อง
+3. เลือก Transcend แล้วสุ่ม ตรวจผลทั้งสองช่อง หากช่องหนึ่งตรงกับแผน ให้ล็อกไว้ก่อนสุ่มอีกช่อง
+4. ใช้ตารางด้านล่างเปรียบเทียบธาตุทั้ง 8 และ Hybrid ธาตุต่างกันสองชนิดจะเป็น Hybrid ได้เมื่ออยู่ Tier เดียวกันเท่านั้น
+5. นับช่องที่ตรงกันจากเกราะทั้งชุด Transcend ยังมีผลต่อ Gem/Rune Synergy ตามหน้า Chorus หลัก
+
 
 ## Elements · ธาตุ
 
