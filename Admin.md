@@ -66,3 +66,20 @@ Live-editable numbers (overrides are saved in the world; `*` marks changed value
 
 ---
 **See also / ดูเพิ่มเติม:** [Quality of Life](Quality-of-Life)
+
+
+## Player features vs Admin tools · แยกฟีเจอร์ผู้เล่นกับเครื่องมือ Admin
+
+**EN**
+- **Player-facing features:** use the normal Status menu, Achievement menu, Guide Quest, Waypoint/Discovery menus, and personal settings through their documented entry points. These do not require giving a player the Admin tag merely to read the wiki or use ordinary supported menus.
+- **Admin-only controls:** the status:admin Script Event commands, Admin Panel, Config Editor, audit log, world Ascension changes, progression/stat edits, feature overrides, and administrative spawn/purge tools are privileged operations.
+- **Permission boundary:** an operator should grant the Admin tag intentionally with /tag <player> add Admin. Do not give the tag to a player just to help them open a normal player menu. Script events and commands may also depend on the world's command/cheat permissions.
+- **Safe practice:** check the target player and argument values before running a command; use help/info to understand available operations and log to review recorded changes. World-wide Ascension and configuration changes can affect other players.
+- This is a documentation distinction, not a security audit. Permission enforcement and every command's edge cases should still be verified against the v1.39.0 implementation and in-game behavior.
+
+**TH**
+- **ฟีเจอร์ผู้เล่นทั่วไป:** ใช้ Status menu, Achievement menu, Guide Quest, เมนู Waypoint/Discovery และการตั้งค่าส่วนตัวผ่านช่องทางที่ระบุไว้ ไม่จำเป็นต้องให้แท็ก Admin เพียงเพื่ออ่าน Wiki หรือใช้เมนูผู้เล่นทั่วไปที่รองรับ
+- **เครื่องมือเฉพาะ Admin:** คำสั่ง Script Event status:admin, Admin Panel, Config Editor, audit log, การเปลี่ยน World Ascension, การแก้ค่าสถานะ/ความก้าวหน้า, การบังคับปลดล็อกฟีเจอร์ และเครื่องมือ spawn/purge เป็นการทำงานที่ต้องมีสิทธิ์
+- **ขอบเขตสิทธิ์:** Operator ควรให้แท็ก Admin โดยตั้งใจผ่าน /tag <ชื่อผู้เล่น> add Admin อย่าให้แท็กนี้เพียงเพื่อเปิดเมนูผู้เล่นทั่วไป และ Script Event/คำสั่งอาจยังขึ้นกับสิทธิ์คำสั่งหรือการตั้งค่า cheats ของโลก
+- **แนวทางปลอดภัย:** ตรวจผู้เล่นเป้าหมายและค่าพารามิเตอร์ก่อนใช้คำสั่ง ใช้ help/info เพื่อดูการทำงาน และ log เพื่อตรวจรายการเปลี่ยนแปลง การแก้ World Ascension หรือ Config อาจส่งผลต่อผู้เล่นคนอื่น
+- เนื้อหานี้เป็นการแยกหมวดเอกสาร ไม่ใช่ผลตรวจสอบความปลอดภัยทั้งหมด ต้องตรวจการบังคับใช้สิทธิ์และกรณีพิเศษของแต่ละคำสั่งกับโค้ด v1.39.0 และทดสอบในเกมอีกครั้ง
