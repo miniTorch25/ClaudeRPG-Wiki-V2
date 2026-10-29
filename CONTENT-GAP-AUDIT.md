@@ -366,3 +366,14 @@ Use these labels in editorial notes while drafting:
 - [x] Kept the published catalogue wording unchanged because it mirrors the in-game achievement text. This audit records the discrepancy rather than rewriting the condition to conceal it.
 - [ ] Upstream gameplay fix candidate: increment `trades` from a reliable completed-trade signal, if supported by the target Bedrock Script API, or revise the in-game condition text to describe what the implementation can actually observe. Verify API availability and multiplayer behavior before changing gameplay code.
 - [ ] Continue the remaining Work & Support and Misc & Silly condition/counter comparisons. This finding comes from source inspection; it has not been reproduced in-game.
+
+
+### Follow-up pass: Work & Support Achievement counters (v1.39.0)
+
+- [x] Compared selected mining, woodcutting, farming, and travel counters with the hooks in `ClaudeBP/scripts/systems/achievement_hooks.js`.
+- [x] Mining counters are incremented through the add-on's player-attributed block-break helper; Vein breaks are added separately because they do not emit normal block-break events. The general mined-block counter also includes blocks tracked by that helper, not only ores.
+- [x] Crop harvest counters distinguish mature growth-state crops from unripe crops; the gourd path is counted separately. Sapling/seed counters are based on successfully observed block-placement events, and bone-meal use is based on the after-interaction event.
+- [x] Travel distance counters use horizontal X/Z displacement, accumulate whole blocks over time, and discard very small movements and large jumps/teleports. Nether distance is tracked separately; boat, mount, foot, sprint, and Elytra counters use different movement categories.
+- [ ] **Needs test / attribution edge case:** animal-breeding credit is assigned to the nearest player within 12 blocks when a newborn entity spawns, rather than from a direct breeder-to-birth attribution. In multiplayer, the nearest player may not be the player who bred the animal.
+- [ ] **Needs test / interaction edge cases:** sheep-shearing and honey-collection counters are scheduled from pre-interaction checks (eligible adult unsheared sheep with shears; honey-level-5 hive/nest with bottle or shears). The hook does not verify the resulting entity/block state after the interaction, so cancelled or otherwise unsuccessful interactions should be tested before treating these counters as exact successful-action counts.
+- [x] No definite mismatch was confirmed in the sampled mining/travel counters. The multiplayer attribution and pre-interaction cases are recorded as test candidates, not proven defects. No gameplay code changed.
