@@ -311,3 +311,13 @@ Use these labels in editorial notes while drafting:
 - [x] Added the already-documented one-time 800 Travel Mastery XP reward per new dimension to the Exploration summary table, alongside biome and structure rewards.
 - [x] Kept the summary aligned with the detailed Discovery Log section; no reward logic changed.
 - [ ] Continue checking page summaries for omitted documented values.
+
+
+### Follow-up pass: Achievement catalogue/source parity (v1.39.0)
+
+- [x] Parsed the source catalogue in `ClaudeBP/scripts/config/achievement_data.js`: the add-on defines exactly 248 achievements across Combat (76), Work & Support (92), and Misc & Silly (80), matching the Wiki category table.
+- [x] Recomputed the tier totals from the source definitions: Bronze 88, Silver 85, Gold 52, Platinum 14, and Mythic 9. These sum to 248 and match the Wiki.
+- [x] Verified the 20 hidden achievements are all in the Misc & Silly category, matching the Wiki's hidden-count summary.
+- [x] Checked `achievement_config.js` and `achievement_gui.js`: category pages show 10 entries per page, with 8 Combat pages, 10 Work & Support pages, and 8 Misc & Silly pages. The GUI's completion display uses no-reward wording, and hidden entries show as “???” until unlocked.
+- [x] Checked the configured countable game modes: Survival and Adventure are included; Creative and Spectator are excluded. This matches the player-facing overview.
+- [ ] Continue reviewing individual achievement conditions and counter hooks against the catalogue, including whether historical progress is backfilled or starts tracking only after an event. Count/tier parity alone does not verify every condition's implementation or live behavior.
