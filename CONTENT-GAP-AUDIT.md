@@ -321,3 +321,9 @@ Use these labels in editorial notes while drafting:
 - [x] Checked `achievement_config.js` and `achievement_gui.js`: category pages show 10 entries per page, with 8 Combat pages, 10 Work & Support pages, and 8 Misc & Silly pages. The GUI's completion display uses no-reward wording, and hidden entries show as “???” until unlocked.
 - [x] Checked the configured countable game modes: Survival and Adventure are included; Creative and Spectator are excluded. This matches the player-facing overview.
 - [ ] Continue reviewing individual achievement conditions and counter hooks against the catalogue, including whether historical progress is backfilled or starts tracking only after an event. Count/tier parity alone does not verify every condition's implementation or live behavior.
+
+
+### Follow-up pass: hidden Achievement listing wording
+
+- [x] Compared the Misc & Silly page intro with `achievement_gui.js` and the category table. Hidden achievements do occupy catalogue entries; their names/details are masked as “???” until unlocked, rather than being omitted from the list entirely.
+- [x] Corrected the English and Thai intro wording to describe the in-game display accurately. No achievement behavior changed.

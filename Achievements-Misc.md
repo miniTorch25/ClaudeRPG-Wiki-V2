@@ -10,9 +10,9 @@
 <tr><td><b>Hidden</b></td><td>20</td></tr>
 </table>
 
-**EN:** Small, cheeky and often unnoticed achievements. Hidden ones are not listed.
+**EN:** Small, cheeky and often unnoticed achievements. Hidden entries appear as “???” until unlocked.
 
-**TH:** ความสำเร็จเล็กๆ ขำๆ ที่มักไม่รู้ตัว อันที่ซ่อนไม่แสดงรายชื่อ
+**TH:** ความสำเร็จเล็กๆ ขำๆ ที่มักไม่รู้ตัว รายการที่ซ่อนจะแสดงเป็น “???” จนกว่าจะปลดล็อก
 
 > ℹ️ Names and conditions are shown in English, as in the game. / ชื่อและเงื่อนไขเป็นภาษาอังกฤษตามในเกม
 
