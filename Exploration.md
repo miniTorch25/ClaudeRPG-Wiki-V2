@@ -10,6 +10,7 @@
 <tr><td><b>Saved points</b></td><td>20</td></tr>
 <tr><td><b>Biome XP</b></td><td>120</td></tr>
 <tr><td><b>Structure XP</b></td><td>350</td></tr>
+<tr><td><b>Dimension XP</b></td><td>800</td></tr>
 </table>
 
 **EN:** Waypoint Stones for travel and the Discovery Log for exploration rewards.
