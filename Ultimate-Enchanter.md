@@ -6,6 +6,10 @@
 
 # Ultimate Enchanter
 
+<div class="material-strip material-strip--compact">
+  <div class="material-card"><img src="{{ '/assets/images/blocks/ultench_top.png' | relative_url }}" alt="Ultimate Enchanter block top texture" width="72" height="72" loading="lazy"><span>Ultimate Enchanter</span><small>Crafted workstation</small></div>
+</div>
+
 The **Ultimate Enchanter** is a crafted workstation that groups vanilla enchanting, Chorus operations, and Gem socket/ability operations. Right-click the block to open its menu. Available sections depend on your progression.
 
 ## Access and menu
