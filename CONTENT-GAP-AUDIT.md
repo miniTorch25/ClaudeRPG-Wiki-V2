@@ -472,3 +472,16 @@ Do not mark the remaining items above as complete based solely on Markdown edits
 - [x] Added and ran `scripts/validate_site.py` after the Jekyll build: 39 HTML pages, 2,421 local links/assets, and 50 fragment targets passed with no missing targets. This updates the earlier 2,278-link/48-anchor one-time audit.
 - [ ] Render and inspect desktop/mobile layouts in a real browser/device.
 - [ ] Test gameplay edge cases and multiplayer attribution/Waypoint protection in Minecraft. Source inspection does not establish live runtime behavior.
+
+
+### Follow-up: language switch and wiki tools (2026-10-29)
+
+- [x] Fixed the shared EN/TH switch so standalone language markers govern the full following section, including headings, tables, lists, and paragraphs, rather than stopping at the first heading. Updated the JavaScript cache version in the shared layout.
+- [x] Added `node --check assets/wiki.js` to the Pages workflow so future syntax errors in the shared script fail CI.
+- [x] Pages PR validation passed after the language-switch fix: JavaScript syntax check, image extraction, Jekyll build, generated-site local-link/asset/anchor validation, and artifact upload all succeeded (workflow run #40833474287). Browser-level visual testing remains outstanding.
+- [x] Added bilingual Download instructions linking to the official ClaudeRPG Releases page without hard-coding a version.
+- [x] Added a Toast Generator based on the v1.39.0 source-confirmed `toast:send` command. The preview uses the add-on's extracted frame textures and achievement icon textures; the tool validates the frame, icon key, header, sound, target and pipe-delimited command format.
+- [x] Pages PR validation passed for the new tools: image extraction, Jekyll build, generated-site local-link/asset/anchor validation, and artifact upload all succeeded (workflow run #40834051484).
+- [ ] Still required: inspect the published language toggle and Toast preview in a real browser at desktop and narrow/mobile widths.
+- [ ] Still required: test generated Toast commands and visual behavior inside Minecraft Bedrock. The command format and constraints were checked against `toast_command.js`, `toast_send.js`, `toast_manager.js`, and `toast_config.js` in the v1.39.0 add-on, but live runtime behavior has not been tested in this pass.
+- [x] Added repository contribution and formatting guidance in `CONTRIBUTING.md` and `.editorconfig`.
