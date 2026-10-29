@@ -1,7 +1,5 @@
 # ClaudeRPG Addon Wiki
 
-
-
 <div data-lang="en" markdown="1">
 
 <table align="right" width="280">
@@ -16,13 +14,15 @@
 ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Prestige and Ascension, Mastery lines, Augmented gear, elemental Chorus armor, Gems, Runes, evolving mobs, achievements, and more.
 
 ## 🚀 Start here
-<div class="home-actions">
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">Getting Started</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">Guide Quest</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">FAQ</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">Glossary</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">Changelog</a>
-</div>
+<a class="button primary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">Getting Started</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">Guide Quest</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">FAQ</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">Glossary</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">Changelog</a>
 
 ## ⚔️ Character
 - [Progression](Progression) — Level, Prestige, Ascension
@@ -41,15 +41,13 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 - [Exploration](Exploration) — Waypoints and Discovery Log · [Quality of Life](Quality-of-Life)
 
 ## 🧰 Tools
-<div class="home-actions">
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">Download ClaudeRPG</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">Toast Generator</a>
-</div>
+<a class="button primary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">Download ClaudeRPG</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">Toast Generator</a>
 
 ## 🛠️ For admins
 [Admin Tools](Admin)
 
-</div>
 
 <div data-lang="th" markdown="1">
 
@@ -65,13 +63,15 @@ ClaudeRPG transforms Minecraft Bedrock into an RPG with levels and stats, Presti
 ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม RPG ที่มีเลเวลและค่าสเตตัส ระบบ Prestige และ Ascension สาย Mastery อุปกรณ์ Augment เกราะธาตุ Chorus อัญมณี รูน มอนสเตอร์วิวัฒนาการ ระบบความสำเร็จ และอื่น ๆ
 
 ## 🚀 เริ่มต้นที่นี่
-<div class="home-actions">
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">เริ่มต้นเล่น</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">คู่มือเควสต์</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">คำถามที่พบบ่อย</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">อภิธานศัพท์</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">บันทึกการอัปเดต</a>
-</div>
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/getting-started">เริ่มต้นเล่น</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/guide-quest">คู่มือเควสต์</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/faq">คำถามที่พบบ่อย</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/1.-getting-started/glossary">อภิธานศัพท์</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/6.-systems-reference/changelog">บันทึกการอัปเดต</a>
 
 ## ⚔️ ตัวละคร
 - [ความก้าวหน้า](Progression) — เลเวล, Prestige และ Ascension
@@ -90,15 +90,13 @@ ClaudeRPG เปลี่ยน Minecraft Bedrock ให้เป็นเกม
 - [การสำรวจ](Exploration) — จุดนำทางและบันทึกการค้นพบ · [ระบบอำนวยความสะดวก](Quality-of-Life)
 
 ## 🧰 เครื่องมือ
-<div class="home-actions">
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">ดาวน์โหลด ClaudeRPG</a>
-<a class="button" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">เครื่องมือสร้าง Toast</a>
-</div>
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/download">ดาวน์โหลด ClaudeRPG</a>
+
+<a class="button secondary" href="https://minitorch.gitbook.io/clauderpg-wiki/8.-tools-and-project-maintenance/toast-generator">เครื่องมือสร้าง Toast</a>
 
 ## 🛠️ สำหรับผู้ดูแล
 [เครื่องมือผู้ดูแล](Admin)
 
-</div>
 
 ---
 
