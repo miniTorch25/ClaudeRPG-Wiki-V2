@@ -422,3 +422,10 @@ Use these labels in editorial notes while drafting:
 - [x] Added the Ultimate Enchanter block texture to its dedicated guide so players can recognize the workstation.
 - [x] Confirmed each referenced texture path exists in the v1.39.0 image manifest and is covered by the Pages workflow's extraction routes.
 - [ ] Verify these galleries visually on desktop and narrow/mobile screens; a successful extraction/build only confirms the assets are present in the generated site.
+
+
+### Follow-up pass: Gem, Rune, and Chorus texture readability
+
+- [x] Standardized the inline Gem-tier and Rune-grade icons to 40px attributes to match the shared CSS presentation.
+- [x] Added original Resonant Ink, Genesis Ink, and Transcendent Ink textures to the Chorus overview, using filenames verified in the v1.39.0 image manifest and supported by the Pages extraction workflow.
+- [ ] Confirm visual balance and image readability on narrow/mobile screens in an actual browser/device.
