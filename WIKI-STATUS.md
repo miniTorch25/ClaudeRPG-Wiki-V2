@@ -1,4 +1,4 @@
-# Current Wiki Status — 2026-10-29 (updated after PR #65)
+# Current Wiki Status — 2026-10-29 (updated after PR #68)
 
 This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronological work log and includes older unchecked checklist items that may have been superseded by later audits. Use this page to distinguish completed repository checks from work that still requires a real browser or Minecraft client.
 
@@ -12,6 +12,7 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 - **Recipe parity:** the Transcendent Ink note now matches the two v1.39.0 brewing recipes in both languages; see [PR #30](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/30).
 - **Repository conventions:** added `.editorconfig`, [CONTRIBUTING.md](CONTRIBUTING.md), and README links to the new tools in [PR #63](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/63).
 - **Final static-audit pass:** [PR #65](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/65) added the tool/audit pages to the table of contents, syntax-checks inline JavaScript across all repository HTML pages, and checks all ten Toast frame textures plus every configured icon preset before building. [PR #66](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/66) also made the site validator fail if an image omits its `alt` attribute; all checks passed in [workflow run #40835597056](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835597056).
+- **Source organization:** [PR #68](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/68) moved Toast Generator styles and behavior into `assets/toast-generator.css` and `assets/toast-generator.js`, documented the source layout, and added syntax validation for the standalone script. The Pages workflow passed in [run #40840521788](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40840521788).
 
 ## Still outstanding
 
