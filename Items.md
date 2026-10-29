@@ -50,6 +50,19 @@ All custom ClaudeRPG items, blocks, and recipes.
 | <img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Stone (Blank) | Shaped: 4 Stone Bricks + Ender Pearl (cross) | Teleport-only stone with no name; anyone can break it. |
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | Shaped: 4 Netherite Ingot, 2 Echo Shard, Ender Eye, Nether Star, Myth Gem | Portable teleport menu with special points. |
 
+
+## Quick item audit guide
+
+The inventory groups several item families into single rows (for example, seven Gem rarities and seven Rune types), so the row count is not the same as the number of individual item definitions.
+
+- **Progression items:** Prestige Sigil and Ascension Relic are used for progression milestones; Ascension changes shared world difficulty.
+- **Equipment-workflow tools:** Reforge Hammers support Reforge/Salvage and Gem crushing; Engravers handle carving/engraving; the Ultimate Enchanter is a block-based multi-system workstation.
+- **Materials and currencies:** Uncarved Gems, Gem Dust, Augment materials, Core items, Resonant/Genesis/Transcendent Ink, and Enchant Essence serve different systems. Do not assume they are interchangeable.
+- **Player utility items:** Stats Book, Knowledge Book, Script Tool, Insight Lens, Sculk Potion, and Waypoint items have distinct access, targeting, or eligibility rules. In particular, Sculk Potion conversion can consume a potion on successful use and the converted mob gives no loot.
+- **Restrictions:** Some tools/actions require progression unlocks, command permission, Creative mode, or Admin access. Check the relevant system page before assuming an item can be used by every player at every stage.
+
+The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) are package inventory counts, not 40 separate visible rows. This page is a quick reference; use each linked system page for full behavior. Remaining item-by-item acquisition and restriction verification should be recorded in the audit rather than inferred from the item name.
+
 ---
 
 **See also:** [Augment](Augment) · [Gem](Gem) · [Rune](Rune) · [Waypoint](Exploration)
@@ -107,6 +120,19 @@ All custom ClaudeRPG items, blocks, and recipes.
 | Waypoint Stone (บล็อก) | คราฟต์ตามรูปแบบ: Stone Bricks 4 + Ender Pearl 4 + Compass | จุดวาร์ปที่ตั้งชื่อได้ |
 | <img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Stone (Blank) | คราฟต์ตามรูปแบบ: Stone Bricks 4 + Ender Pearl วางเป็นรูปกากบาท | ใช้วาร์ปอย่างเดียว ไม่มีชื่อ และผู้เล่นทุกคนทุบได้ |
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | คราฟต์ตามรูปแบบ: Netherite Ingot 4, Echo Shard 2, Ender Eye, Nether Star และ Myth Gem | เมนูวาร์ปแบบพกพาที่มีจุดพิเศษ |
+
+
+## แนวทางตรวจสอบไอเทมแบบย่อ
+
+ตารางนี้รวมไอเทมหลายตระกูลไว้ในแถวเดียว (เช่น Gem 7 ระดับ และ Rune 7 ชนิด) ดังนั้นจำนวนแถวจึงไม่เท่ากับจำนวนไฟล์นิยามไอเทมทั้งหมด
+
+- **ไอเทมความก้าวหน้า:** Prestige Sigil และ Ascension Relic ใช้กับหมุดหมายความก้าวหน้า โดย Ascension เปลี่ยนความยากของโลกที่ผู้เล่นใช้ร่วมกัน
+- **เครื่องมือจัดการอุปกรณ์:** Reforge Hammer ใช้กับ Reforge/Salvage และบด Gem; Engraver ใช้แกะสลัก/สลักช่อง; Ultimate Enchanter เป็นบล็อกสำหรับทำงานหลายระบบ
+- **วัตถุดิบและสกุลเงิน:** Uncarved Gem, Gem Dust, วัตถุดิบ Augment, Core, Ink แต่ละระดับ และ Enchant Essence ใช้ในระบบต่างกัน อย่าถือว่าใช้แทนกันได้
+- **ไอเทมอำนวยความสะดวก:** Stats Book, Knowledge Book, Script Tool, Insight Lens, Sculk Potion และไอเทม Waypoint มีข้อกำหนดการเข้าถึง เป้าหมาย หรือสิทธิ์ต่างกัน โดยเฉพาะ Sculk Potion ที่ใช้ยาเมื่อแปลงสำเร็จ และมอนที่ถูกแปลงจะไม่ดรอปของ
+- **ข้อจำกัด:** เครื่องมือหรือการกระทำบางอย่างต้องปลดล็อกระบบก่อน ต้องมีสิทธิ์ใช้คำสั่ง อยู่ใน Creative หรือเป็น Admin ควรอ่านหน้าระบบที่เกี่ยวข้องก่อนสรุปว่าใครก็ใช้ได้ทุกช่วงความก้าวหน้า
+
+จำนวนที่ระบุ (นิยามไอเทม 40 รายการ นิยามบล็อก 4 รายการ และสูตร 35 รายการ) คือจำนวนไฟล์ในแพ็ก ไม่ใช่จำนวนแถวที่แสดงแยกกัน หน้านี้เป็นคู่มืออ้างอิงย่อ ส่วนรายละเอียดการทำงานให้อ่านหน้าระบบที่เกี่ยวข้อง งานตรวจสอบแหล่งที่มาและข้อจำกัดของไอเทมแต่ละรายการที่เหลือควรบันทึกไว้ใน Audit ไม่ควรเดาจากชื่อไอเทม
 
 ---
 
