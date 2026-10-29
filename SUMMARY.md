@@ -19,6 +19,7 @@
 
 ## 3. Equipment & Item Reference
 * [Items](Items.md)
+* [Ultimate Enchanter](Ultimate-Enchanter.md)
 * [Item Categories](Item-Categories.md)
 * [Augment & Reforge](Augment.md)
 * [Chorus](Chorus.md)
