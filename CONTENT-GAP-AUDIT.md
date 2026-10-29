@@ -267,3 +267,10 @@ Use these labels in editorial notes while drafting:
 - [x] Clarified Guide Quest step 7.2: a Prestige 3 player can raise the shared world to Ascension 3, but Rune system access still requires Prestige 6 + Ascension 3 according to the v1.39.0 central feature gate.
 - [x] Kept world-Ascension eligibility separate from the player's Prestige requirement for Rune access; no addon behavior changed.
 - [ ] Continue checking progression steps where world milestones may be mistaken for feature unlocks.
+
+
+### Follow-up pass: Guide Quest Awakened Gem drop gate
+
+- [x] Clarified Guide Quest step 6.2 that Awakened mobs become an Uncarved Gem source at Ascension 7+, matching the v1.39.0 acquisition audit; Geode mobs begin at Ascension 4+ and boss drops at Ascension 2+.
+- [x] Kept drop-source availability separate from the Gem system access gate (Prestige 4 + Ascension 2).
+- [ ] Continue checking progression steps where world milestones or drop sources may be mistaken for system unlock access.
