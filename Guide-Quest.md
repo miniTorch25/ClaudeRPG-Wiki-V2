@@ -74,7 +74,7 @@
 | Step | Title / หัวข้อ | Do / ทำอย่างไร |
 |---|---|---|
 | 6.1 | Reach Prestige 4<br><i>ถึง Prestige 4</i> | Gems need Prestige 4 + Ascension 2. Keep prestiging: each Prestige raises the max level by 20 and costs more Sigils. |
-| 6.2 | Find an Uncarved Gem<br><i>หา Uncarved Gem</i> | Gems need Prestige 4 + Ascension 2. Uncarved Gems drop from Wither, Warden and Ender Dragon (Ascension 2+), Geode mobs (Ascension 4+) and Awakened mobs. 9 Gem Dust also craft one. |
+| 6.2 | Find an Uncarved Gem<br><i>หา Uncarved Gem</i> | Gems need Prestige 4 + Ascension 2. Uncarved Gems drop from Wither, Warden and Ender Dragon (Ascension 2+), Geode mobs (Ascension 4+) and Awakened mobs (Ascension 7+). 9 Gem Dust also craft one. |
 | 6.3 | Craft an Engraver<br><i>คราฟต์ Engraver</i> | Amethyst Shard + Netherite Ingot + Amethyst Block. It carves gems and engraves sockets, and has limited durability. |
 | 6.4 | Carve a Gem<br><i>แกะ Gem</i> | Hold an Uncarved Gem in your main hand and the Engraver in your off hand, then right-click. The gem tier is random (1% chance of 2 gems). |
 | 6.5 | Engrave a Socket<br><i>เจาะ Socket</i> | Ultimate Enchanter > Engrave Socket, pick an armor piece. Each armor piece has one socket; success chance is 33%. Hold the Engraver in your inventory. |
