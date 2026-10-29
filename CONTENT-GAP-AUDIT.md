@@ -274,3 +274,10 @@ Use these labels in editorial notes while drafting:
 - [x] Clarified Guide Quest step 6.2 that Awakened mobs become an Uncarved Gem source at Ascension 7+, matching the v1.39.0 acquisition audit; Geode mobs begin at Ascension 4+ and boss drops at Ascension 2+.
 - [x] Kept drop-source availability separate from the Gem system access gate (Prestige 4 + Ascension 2).
 - [ ] Continue checking progression steps where world milestones or drop sources may be mistaken for system unlock access.
+
+
+### Follow-up pass: keep repeated Gem-source lists aligned
+
+- [x] Updated Guide Quest step 4.2 to include Awakened mobs as an Uncarved Gem source from Ascension 7+, matching step 6.2 and the v1.39.0 acquisition audit.
+- [x] Preserved the separate source thresholds: bosses at Ascension 2+, Geode mobs at Ascension 4+, and Awakened mobs at Ascension 7+.
+- [ ] Continue checking repeated acquisition summaries for omissions or inconsistent gates.
