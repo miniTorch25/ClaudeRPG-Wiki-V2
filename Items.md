@@ -99,7 +99,7 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 
 ---
 
-**See also:** [Augment](Augment) · [Gem](Gem) · [Rune](Rune) · [Waypoint](Exploration)
+**See also:** [Augment](Augment) · [Ultimate Enchanter](Ultimate-Enchanter) · [Gem](Gem) · [Rune](Rune) · [Waypoint](Exploration)
 
 
 
