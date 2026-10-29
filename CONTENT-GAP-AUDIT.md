@@ -174,3 +174,15 @@ Use these labels in editorial notes while drafting:
 - [ ] Check tables and item lists at mobile width in a rendered browser or on a real device; CSS source changes alone do not prove the rendered result.
 - [ ] Confirm every factual claim is tied to the documented v1.39.0 release or explicitly marked as unverified.
 - [x] Corrected the bilingual `Items.md` Stats Book recipe summary to 4 Sticks after checking `ClaudeBP/recipes/stats_book.json` (shapeless recipe contains four Stick ingredients).
+
+
+### Follow-up pass: Mob Evolution, Achievements, Guide Quest, and Admin
+
+- [x] Added bilingual terminology guidance separating shared World Ascension from an individual mob's evolution tier and from boss/special-mob behavior.
+- [x] Added bilingual navigation steps for finding Achievement conditions through category pages, pagination, icon state, and hidden entries.
+- [x] Added bilingual Guide Quest ordering guidance: follow numbered steps and chapters, consult each step's action, and check the current step when progress stalls.
+- [x] Added bilingual player-feature vs Admin-tool guidance, including the Admin tag boundary and caution around world-wide changes. This is documentation guidance, not a full permission/security test.
+- [ ] Verify detailed Bosses/phase behavior against the v1.39.0 scripts and ensure boss-specific rules are not inferred from regular evolution tiers.
+- [ ] Complete the remaining custom-item behavior/acquisition audit against implementing scripts, including salvage and admin/creative restrictions.
+- [ ] Run rendered narrow-screen/mobile checks; source CSS and successful build alone are not visual validation.
+- [ ] Re-run build, generated HTML/link/anchor audit, and bilingual parity review after this pass.
