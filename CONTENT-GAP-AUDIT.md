@@ -413,3 +413,12 @@ Use these labels in editorial notes while drafting:
 - [x] Rechecked the current `Mastery.md` page and confirmed that it already contains a bilingual practical guide covering unlock, activity-based XP, exclusive paths, the 60-second switching cooldown, effect toggles, per-level variance, and XP after max level. The older gap note about adding this quick-start guide is therefore satisfied by the current page.
 - [ ] Remaining visual validation: inspect the published item and achievement artwork at narrow/mobile widths in an actual browser or device.
 - [ ] Remaining source audit: finish the row-by-row custom item/block acquisition and restriction review where source details are available; do not mark untested in-game interactions as verified.
+
+
+### Follow-up pass: category and waypoint visuals from original Resource Pack
+
+- [x] Added original category icons (`cat_combat.png`, `cat_work.png`, `cat_misc.png`) to the Achievements overview, paired with the current category counts.
+- [x] Added original Waypoint Stone, Blank Waypoint Stone, and Waypoint Orb textures to the Exploration guide.
+- [x] Added the Ultimate Enchanter block texture to its dedicated guide so players can recognize the workstation.
+- [x] Confirmed each referenced texture path exists in the v1.39.0 image manifest and is covered by the Pages workflow's extraction routes.
+- [ ] Verify these galleries visually on desktop and narrow/mobile screens; a successful extraction/build only confirms the assets are present in the generated site.

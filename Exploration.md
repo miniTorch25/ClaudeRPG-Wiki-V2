@@ -18,6 +18,12 @@
 **TH:** หินวาร์ปสำหรับเดินทางและสมุดบันทึกการค้นพบ
 
 
+<div class="material-strip material-strip--compact">
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_top.png' | relative_url }}" alt="Waypoint Stone top texture" width="64" height="64" loading="lazy"><span>Waypoint Stone</span><small>Named destination</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="Blank Waypoint Stone top texture" width="64" height="64" loading="lazy"><span>Waypoint Stone (Blank)</span><small>Unnamed destination</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="Waypoint Orb" width="64" height="64" loading="lazy"><span>Waypoint Orb</span><small>Portable waypoint menu</small></div>
+</div>
+
 ## Waypoint Stones · หินวาร์ป
 
 **EN:** Waypoint Stones are placeable blocks that let you **teleport** between named points. Teleporting costs **Ender Pearls** (1 pearl per 400 blocks of horizontal distance, min 1, max 8; crossing dimensions = 8). Cooldown 10s. You arrive on **top of the block**.

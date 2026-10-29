@@ -21,6 +21,12 @@
 **TH:** Achievement **ไม่มีรางวัล** มีแค่การแจ้งเตือน Toast (และคำพูดตลกในแชตบางอัน) ความคืบหน้าเก็บแยกตามผู้เล่น บางตัวนับย้อนหลังจาก Level/Prestige/Mastery/Chorus ที่มี ที่เหลือเริ่มนับใหม่ ผู้เล่นโหมด Creative และ Spectator ไม่นับ เปิดได้จาก **เมนู Status › Achievements** 3 หมวด มีตัวเลือกหน้า หน้าละ 10 อัน ปุ่ม ก่อนหน้า/ถัดไป/กลับ ทุกอันมีไอคอนสี (สำเร็จ) และไอคอนเทา (ยังไม่สำเร็จ)
 
 
+<div class="material-strip">
+  <div class="material-card"><img src="{{ '/assets/images/achievements/cat_combat.png' | relative_url }}" alt="Combat category icon" width="64" height="64" loading="lazy"><span>Combat</span><small>76 achievements</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/achievements/cat_work.png' | relative_url }}" alt="Work and Support category icon" width="64" height="64" loading="lazy"><span>Work &amp; Support</span><small>92 achievements</small></div>
+  <div class="material-card"><img src="{{ '/assets/images/achievements/cat_misc.png' | relative_url }}" alt="Misc and Silly category icon" width="64" height="64" loading="lazy"><span>Misc &amp; Silly</span><small>80 achievements</small></div>
+</div>
+
 | Category / หมวด | Achievements | Hidden / ซ่อน |
 |---|---|---|
 | [Combat](Achievements-Combat) · การต่อสู้ | 76 | 0 |
