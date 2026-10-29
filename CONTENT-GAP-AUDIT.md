@@ -498,3 +498,22 @@ Do not mark the remaining items above as complete based solely on Markdown edits
 - [ ] Visual inspection of the published site at desktop and narrow/mobile sizes still requires an actual browser/device.
 - [ ] Toast command behavior, achievement counter edge cases, and Waypoint ownership/protection still require a real Minecraft Bedrock test world; source inspection cannot establish runtime behavior.
 - [ ] The Gem/Rune Ascension confirmation-text mismatch is an upstream add-on issue and has not been changed here.
+
+
+### Final repository validation — 2026-10-29 (after PR #70)
+
+#### Verified
+
+- [x] Merged [PR #68](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/68), [PR #69](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/69), and [PR #70](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/70).
+- [x] Confirmed the post-merge main-branch workflow [#40841464954](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40841464954) completed successfully, including JavaScript syntax checks, inline-script checks, image extraction, Toast texture/preset checks, Jekyll build, generated-site link/asset/anchor validation, artifact upload, and GitHub Pages deployment.
+- [x] Updated [WIKI-STATUS.md](WIKI-STATUS.md) with the PR #70 and deployment result; aligned the README category count with the eight sections listed in its navigation overview; removed the duplicate Content Gap Audit entry from the Systems Reference section while retaining it in Tools & Project Maintenance.
+- [x] Reconfirmed that CI success is not presented as evidence of real-device visual testing or Minecraft runtime testing.
+
+#### Remaining external/runtime verification — not marked complete
+
+- [ ] Inspect the published site in a real browser at desktop and narrow/mobile widths, especially language switching, Toast preview sizing, and enlarged item/achievement/mob/block images.
+- [ ] Exercise Toast commands in a disposable Minecraft Bedrock v1.39.0 world, including player permissions, resource costs/cooldowns, sounds, disabled-Toast fallback, and custom icon keys.
+- [ ] Test multiplayer Achievement attribution edge cases and Waypoint/block ownership/protection behavior.
+- [ ] Decide whether to correct the Gem/Rune Ascension confirmation-text inconsistency in the add-on itself. This repository task only documents the conflict; it does not change add-on gameplay files.
+
+These remaining checks need a real browser/device, a Minecraft test world, or a separate explicit add-on change. They must not be checked off based on repository edits or CI alone.
