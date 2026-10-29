@@ -21,15 +21,33 @@
     const article = document.querySelector('.article-content');
     if (!article) return;
 
-    // Clear state first, so switching languages always starts from the same DOM.
+    // Restore blocks hidden by a previous language choice before recalculating.
     article.querySelectorAll('[data-language-hidden]').forEach(node => {
       node.hidden = false;
       node.removeAttribute('data-language-hidden');
     });
 
     const children = Array.from(article.children);
+    const markerFor = node => {
+      if (!node || node.nodeType !== Node.ELEMENT_NODE) return null;
+      if (!/^(P|H1|H2|H3|H4|H5|H6|DIV)$/.test(node.tagName)) return null;
+      if (node.matches('[data-lang]')) return null;
+      const strong = node.querySelector(':scope > strong, :scope > b');
+      const raw = (strong ? strong.textContent : node.textContent).trim();
+      const label = raw.replace(/[:：]$/, '').trim().toLowerCase();
+      if (label === 'en' || label === 'english') {
+        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\s*[:：]?\s*/, '').trim() : '';
+        return { language: 'en', standalone: !rest };
+      }
+      if (label === 'th' || label === 'thai' || label === 'ไทย') {
+        const rest = strong ? node.textContent.replace(strong.textContent, '').replace(/^\s*[:：]?\s*/, '').trim() : '';
+        return { language: 'th', standalone: !rest };
+      }
+      return null;
+    };
+
     for (let i = 0; i < children.length; i++) {
-      const marker = languageMarker(children[i]);
+      const marker = markerFor(children[i]);
       if (!marker) continue;
 
       if (!marker.standalone) {
@@ -38,21 +56,24 @@
         continue;
       }
 
-      // A standalone EN/TH marker controls the following blocks up to the next
-      // language marker or a structural section boundary.
+      // A standalone EN/TH marker labels a whole language section. Keep every
+      // following block in that section in sync, including headings and tables,
+      // until the next language marker. Stopping at headings left most content
+      // visible in both languages on several pages.
       children[i].hidden = true;
       children[i].setAttribute('data-language-hidden', 'true');
+      let foundNextMarker = false;
       for (let j = i + 1; j < children.length; j++) {
-        const next = children[j];
-        const nextMarker = languageMarker(next);
-        if (nextMarker) {
+        const nextMarker = markerFor(children[j]);
+        if (nextMarker && nextMarker.standalone) {
           i = j - 1;
+          foundNextMarker = true;
           break;
         }
-        if (/^H[1-6]$/.test(next.tagName) || next.tagName === 'HR') break;
-        next.hidden = marker.language !== language;
-        next.setAttribute('data-language-hidden', 'true');
+        children[j].hidden = marker.language !== language;
+        children[j].setAttribute('data-language-hidden', 'true');
       }
+      if (!foundNextMarker) break;
     }
   }
 
