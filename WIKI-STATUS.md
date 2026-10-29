@@ -1,4 +1,4 @@
-# Current Wiki Status — 2026-10-29 (updated after PR #69)
+# Current Wiki Status — 2026-10-29 (updated after PR #70)
 
 This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronological work log and includes older unchecked checklist items that may have been superseded by later audits. Use this page to distinguish completed repository checks from work that still requires a real browser or Minecraft client.
 
@@ -14,6 +14,7 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 - **Final static-audit pass:** [PR #65](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/65) added the tool/audit pages to the table of contents, syntax-checks inline JavaScript across all repository HTML pages, and checks all ten Toast frame textures plus every configured icon preset before building. [PR #66](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/66) also made the site validator fail if an image omits its `alt` attribute; all checks passed in [workflow run #40835597056](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835597056).
 - **Source organization:** [PR #68](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/68) moved Toast Generator styles and behavior into `assets/toast-generator.css` and `assets/toast-generator.js`, documented the source layout, and added syntax validation for the standalone script. The Pages workflow passed in [run #40840521788](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40840521788).
 - **Maintenance cleanup:** [PR #69](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/69) removed an unused language-marker helper from `assets/wiki.js` and updated this status page. Its workflow passed JavaScript syntax checks, image and Toast preset validation, the Jekyll build, and generated-site local link/asset/anchor checks in [run #40841068645](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40841068645).
+- **Navigation and maintenance documentation:** [PR #70](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/70) removed a duplicate audit entry from the table of contents, corrected the README's category count, and recorded PR #69 in this status page. The post-merge Pages build and deployment both succeeded in [run #40841464954](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40841464954).
 
 ## Still outstanding
 
@@ -35,6 +36,6 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 
 ## Validation boundaries
 
-- The Pages workflows for the language-switch fix and tool pages passed JavaScript syntax checks (where applicable), image extraction, Jekyll build, generated local-link/asset/anchor validation, and artifact upload.
+- The post-merge Pages workflow [#40841464954](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40841464954) passed JavaScript syntax checks, inline-tool script checks, image extraction, Toast texture/preset validation, Jekyll build, generated local-link/asset/anchor validation, artifact upload, and deployment.
 - The current wiki has **not** been visually inspected in a real browser/device in this pass, and the Toast generator has **not** been exercised in Minecraft. CI confirms static/build integrity only. Do not treat CI success as proof of those runtime checks.
 - The source-level item/block inventory is now recorded row-by-row in [ITEM-SOURCE-AUDIT.md](ITEM-SOURCE-AUDIT.md). Remaining source-level candidates are concentrated in Achievement event/counter edge cases; see the chronological audit for individual IDs and evidence.
