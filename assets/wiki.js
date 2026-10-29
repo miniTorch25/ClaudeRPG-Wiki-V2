@@ -5,24 +5,76 @@
   const buttons = Array.from(document.querySelectorAll('button[data-language]'));
   const key = 'clauderpg-wiki-language';
 
+  // Detect both inline labels ("**EN:** text") and standalone language
+  // markers ("**EN**" followed by one or more blocks of English content).
+  function languageMarker(node) {
+    if (!node || node.nodeType !== Node.ELEMENT_NODE || node.tagName !== 'P') return null;
+    const strong = node.querySelector(':scope > strong');
+    if (!strong) return null;
+    const label = strong.textContent.trim().replace(/:$/, '').trim().toLowerCase();
+    if (label !== 'en' && label !== 'th') return null;
+    const rest = node.textContent.replace(strong.textContent, '').trim();
+    return { language: label, standalone: !rest };
+  }
+
+  function applyArticleLanguage(language) {
+    const article = document.querySelector('.article-content');
+    if (!article) return;
+
+    // Clear state first, so switching languages always starts from the same DOM.
+    article.querySelectorAll('[data-language-hidden]').forEach(node => {
+      node.hidden = false;
+      node.removeAttribute('data-language-hidden');
+    });
+
+    const children = Array.from(article.children);
+    for (let i = 0; i < children.length; i++) {
+      const marker = languageMarker(children[i]);
+      if (!marker) continue;
+
+      if (!marker.standalone) {
+        children[i].hidden = marker.language !== language;
+        children[i].setAttribute('data-language-hidden', 'true');
+        continue;
+      }
+
+      // A standalone EN/TH marker controls the following blocks up to the next
+      // language marker or a structural section boundary.
+      children[i].hidden = true;
+      children[i].setAttribute('data-language-hidden', 'true');
+      for (let j = i + 1; j < children.length; j++) {
+        const next = children[j];
+        const nextMarker = languageMarker(next);
+        if (nextMarker) {
+          i = j - 1;
+          break;
+        }
+        if (/^H[1-6]$/.test(next.tagName) || next.tagName === 'HR') break;
+        next.hidden = marker.language !== language;
+        next.setAttribute('data-language-hidden', 'true');
+      }
+    }
+  }
+
   function applyLanguage(language) {
     if (language !== 'th') language = 'en';
     document.documentElement.lang = language;
     document.querySelectorAll('[data-label-en][data-label-th]').forEach(node => {
-      node.setAttribute('aria-label', node.dataset[`label${language === 'th' ? 'Th' : 'En'}`]);
+      node.setAttribute('aria-label', node.dataset[language === 'th' ? 'labelTh' : 'labelEn']);
     });
-    if (search) search.placeholder = search.dataset[`placeholder${language === 'th' ? 'Th' : 'En'}`] || search.placeholder;
+    if (search) {
+      search.placeholder = search.dataset[language === 'th' ? 'placeholderTh' : 'placeholderEn'] ||
+        (language === 'th' ? 'ค้นหาในเมนู…' : 'Search navigation…');
+      search.setAttribute('aria-label', language === 'th' ? 'ค้นหาในเมนู' : 'Search navigation');
+    }
     document.body.classList.toggle('lang-en', language === 'en');
     document.body.classList.toggle('lang-th', language === 'th');
+
     document.querySelectorAll('[data-lang="en"], [data-lang="th"]').forEach(node => {
       node.hidden = node.dataset.lang !== language;
     });
-    document.querySelectorAll('.article-content p, .home-hero p').forEach(paragraph => {
-      const first = paragraph.firstElementChild;
-      if (!first || first.tagName !== 'STRONG') return;
-      const label = first.textContent.trim().replace(/:$/, '').toUpperCase();
-      if (label === 'EN' || label === 'TH') paragraph.hidden = label.toLowerCase() !== language;
-    });
+    applyArticleLanguage(language);
+
     buttons.forEach(button => {
       const active = button.dataset.language === language;
       button.classList.toggle('is-active', active);
@@ -33,16 +85,24 @@
 
   document.addEventListener('click', event => {
     const button = event.target.closest('button[data-language]');
-    if (button) { event.preventDefault(); applyLanguage(button.dataset.language); }
+    if (button) {
+      event.preventDefault();
+      applyLanguage(button.dataset.language);
+    }
   });
+
   let language = 'en';
-  try { const saved = localStorage.getItem(key); if (saved === 'en' || saved === 'th') language = saved; } catch (_) {}
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved === 'en' || saved === 'th') language = saved;
+  } catch (_) {}
   applyLanguage(language);
 
   if (toggle && sidebar) toggle.addEventListener('click', () => {
     const open = sidebar.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(open));
   });
+
   if (search && sidebar) {
     const links = Array.from(sidebar.querySelectorAll('.side-nav a'));
     const headings = Array.from(sidebar.querySelectorAll('.nav-heading'));
