@@ -108,3 +108,20 @@
 
 ---
 **See also / ดูเพิ่มเติม:** [Getting Started](Getting-Started) · [Progression](Progression)
+
+
+## Following the Guide Quest in order · วิธีทำ Guide Quest ตามลำดับ
+
+**EN**
+- Start at **Chapter 1 · Basics** and follow the numbered step IDs in ascending order (for example, 1.1, 1.2, 1.3). Continue chapter by chapter through the listed 44 steps across 8 chapters.
+- Read the **Do** column for the action that triggers each step. The quest detects supported actions automatically; opening a menu or obtaining an item may be a required action, not merely a suggestion.
+- Reopen Guide Quest from **Script Tool › Guides & Items** or **Status › Progression** to check the current step if you are unsure what comes next.
+- If a step does not advance, verify that you performed the listed action with the required item/menu and then check the quest's current step. Do not skip ahead based on chapter titles alone.
+- The quest has no rewards; its purpose is to guide players through the addon's systems.
+
+**TH**
+- เริ่มจาก **Chapter 1 · Basics** แล้วทำตามหมายเลขขั้นจากน้อยไปมาก (เช่น 1.1, 1.2, 1.3) ไล่ไปทีละบทจนครบ 44 ขั้นใน 8 บท
+- อ่านคอลัมน์ **Do** เพื่อดูการกระทำที่ใช้ตรวจจับขั้น เควสจะตรวจจับการกระทำที่รองรับโดยอัตโนมัติ การเปิดเมนูหรือรับไอเทมอาจเป็นเงื่อนไขที่ต้องทำจริง ไม่ใช่เพียงคำแนะนำ
+- เปิด Guide Quest อีกครั้งจาก **Script Tool › Guides & Items** หรือ **Status › Progression** เพื่อตรวจสอบขั้นปัจจุบันหากไม่แน่ใจว่าต้องทำอะไรต่อ
+- หากขั้นไม่เลื่อน ให้ตรวจว่าทำตามการกระทำที่ระบุโดยใช้ไอเทมหรือเมนูที่ถูกต้องแล้วหรือยัง จากนั้นตรวจขั้นปัจจุบัน อย่าข้ามขั้นจากการดูชื่อบทอย่างเดียว
+- เควสไม่มีรางวัล จุดประสงค์คือแนะนำระบบต่าง ๆ ของแอดออน
