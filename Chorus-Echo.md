@@ -16,6 +16,22 @@
 
 > ℹ️ Effect descriptions are shown in English, exactly as written in the game. / คำอธิบายเอฟเฟกต์เป็นภาษาอังกฤษตามที่เขียนในเกม
 
+## Quick workflow · วิธีใช้งาน
+
+**EN**
+1. Check the Chorus overview for the Prestige 2 system unlock and the Resonant Ink costs for rolling both sockets or locking one socket.
+2. Choose the armor piece you want to build around. Each piece has two sockets; a full armor set has eight Chorus sockets.
+3. Roll Echo for the piece, then review both socket results. Duplicate elements are allowed.
+4. If one result is useful, lock that socket before rerolling the other. Locking binds the piece to the selected tier; unlocking is free.
+5. Count matching elements across all four armor pieces. Set bonuses activate at 2, 4, 6 and 8 matching sockets. Check the hybrid list if two different Echo elements appear.
+
+**TH**
+1. ดูหน้า Chorus หลักเพื่อตรวจการปลดล็อกระบบที่ Prestige 2 และค่า Resonant Ink สำหรับสุ่มสองช่องหรือล็อกหนึ่งช่อง
+2. เลือกเกราะที่ต้องการจัดบิลด์ เกราะแต่ละชิ้นมี 2 ช่อง และเกราะครบชุดมี Chorus รวม 8 ช่อง
+3. สุ่มระดับ Echo แล้วตรวจผลทั้งสองช่อง ธาตุซ้ำกันได้
+4. หากได้ผลที่ต้องการ ให้ล็อกช่องนั้นก่อนสุ่มอีกช่อง การล็อกผูกเกราะกับ Tier ที่เลือก ส่วนการปลดล็อกฟรี
+5. นับธาตุที่ตรงกันจากเกราะทั้งสี่ชิ้น โบนัสชุดทำงานที่ 2, 4, 6 และ 8 ช่อง หากได้ธาตุ Echo ต่างกันสองชนิด ให้ตรวจรายการ Hybrid
+
 
 ## Elements · ธาตุ
 
