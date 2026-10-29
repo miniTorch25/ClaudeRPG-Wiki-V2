@@ -347,3 +347,13 @@ Use these labels in editorial notes while drafting:
 - [x] By a Thread increments when a player survives resolved damage with exactly 1 HP remaining. Second Wind records a below-10%-HP state after resolved non-lethal damage and awards the event when the player later returns to full HP; the low-HP state is cleared on death or leaving the world.
 - [x] No definite mismatch was found in these five reviewed conditions. This is a source-code comparison, not a live gameplay test; other achievement hooks and edge cases remain unreviewed.
 - [ ] Continue checking the remaining condition/counter pairs, especially multi-step interactions and counters whose wording implies a particular item, target, or game state.
+
+
+### Follow-up pass: Augment, Gem, mana, and synergy Achievement hooks (v1.39.0)
+
+- [x] Compared selected catalogue counters with their implementation call sites: Augment reroll/lock/core use, Gem carving/enchant/salvage, Stellar Upgrade creation, mana depletion, and combat synergy.
+- [x] Augment rerolls and locks increment the crystal-use counter and add the corresponding crystal cost; using the max-upgrade path records Augment Core use. These counters represent actions recorded by the add-on, not a scan of prior inventory history.
+- [x] Gem carving increments the carved-Gem counter; the salvage path increments general item salvage and separately increments Gem salvage when the salvaged item contains Gems. Gem enchantment is recorded by the enchant flow.
+- [x] Stellar Upgrade creation increments its Achievement counter in the Stellar Core system. Mana Drain is recorded when a successful mana consumption leaves the player's mana at zero; a failed consume does not count. The synergy Achievement increments when the combat pipeline receives a positive synergy damage bonus.
+- [x] No definite mismatch was found in these selected call sites. One wording nuance is that the synergy counter specifically observes a positive damage bonus, so this check does not prove it tracks every possible non-damage synergy effect.
+- [ ] Continue the remaining Achievement condition/counter audit and, where possible, validate edge cases in-game; this pass is source inspection only.
