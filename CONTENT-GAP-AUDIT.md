@@ -304,3 +304,10 @@ Use these labels in editorial notes while drafting:
 - [x] Compared the Exploration quick-start wording with the Waypoint Orb behavior notes and the v1.39.0 scripts.
 - [x] Corrected the quick-start phrase “five per Orb list” to “five per player across the player's Waypoint Orb list,” matching the player-level limit and avoiding the implication that each Orb grants a separate allowance.
 - [ ] Continue checking repeated Waypoint limits and permissions across the Wiki; no live multiplayer test was performed.
+
+
+### Follow-up pass: Discovery Log summary completeness
+
+- [x] Added the already-documented one-time 800 Travel Mastery XP reward per new dimension to the Exploration summary table, alongside biome and structure rewards.
+- [x] Kept the summary aligned with the detailed Discovery Log section; no reward logic changed.
+- [ ] Continue checking page summaries for omitted documented values.
