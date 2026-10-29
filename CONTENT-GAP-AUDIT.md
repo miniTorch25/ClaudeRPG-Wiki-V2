@@ -215,3 +215,11 @@ Use these labels in editorial notes while drafting:
 
 - [x] Rechecked the English and Thai Transcendent Ink descriptions against both v1.39.0 brewing recipe JSON files. Corrected the Thai audit note: both recipes use Genesis Ink as input, with Nether Star or Stellar Core as the separate reagent; neither recipe uses Resonant Ink + Genesis Ink nor Stellar Upgrade as the Transcendent Ink reagent.
 - [ ] Continue row-by-row source reconciliation for the remaining item/block use restrictions and acquisition paths; this wording fix does not complete the full item audit or live gameplay checks.
+
+
+### Follow-up pass: Waypoint block interaction and protection (v1.39.0)
+
+- [x] Checked the four custom block definitions and the event-router/WaypointManager paths. Interacting with `ultimate_enchanter` opens its GUI; interacting with either Waypoint Stone opens the appropriate waypoint menu, with a sneak-and-hold-item exception for ordinary block placement.
+- [x] Clarified in both English and Thai item tables that registered named Waypoint Stones are protected by owner/Admin checks for breaking and Ultimate Picker pickup, while `Waypoint Stone (Blank)` has no owner/name protection and can be broken by anyone.
+- [x] Confirmed that the block-definition files themselves do not encode these ownership rules; those behaviors are implemented in scripts. This remains a source audit, not a live multiplayer test.
+- [ ] Continue checking remaining item/block access restrictions and acquisition paths, then rerun the generated-page/link and bilingual parity checks.
