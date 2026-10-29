@@ -30,9 +30,9 @@ All custom ClaudeRPG items, blocks, and recipes.
 | <img src="{{ '/assets/images/items/ultimate_picker.png' | relative_url }}" alt="" width="28" loading="lazy"> Ultimate Picker | Smithing: Stellar Upgrade + Netherite Pickaxe + Myth Gem | Picks up blocks as items while preserving data such as chest contents and sign text. Some blocks require Creative mode. |
 | <img src="{{ '/assets/images/items/stellar_upgrade.png' | relative_url }}" alt="" width="28" loading="lazy"> Stellar Upgrade | Shaped: 4 Gold Block + 4 Uncommon Gem + Netherite Upgrade Template; duplicate: Stellar Upgrade + 4 Gold Block + 4 Uncommon Gem → 2 | Smithing template for Eternal items. |
 | <img src="{{ '/assets/images/blocks/ultench_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Ultimate Enchanter (block) | Shaped: 4 Uncarved Gem (corners), 4 Stone Bricks, Crafting Table, Enchanting Table | Carves, engraves, installs, enchants, transmutes, and removes Gems; handles Chorus and vanilla enchantments. |
-| <img src="{{ '/assets/images/items/uncarved_gem.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem | Bosses (Wither, Warden, Ender Dragon) drop 1–7 from Ascension 2; Geode mobs: base 8% chance; Awakened mobs: base 6% chance for 1–2. Also 9 Gem Dust (3×3), or any Gem + Diorite. Evolved-mob chances can be affected by Looting and Gem Mastery. | Use an Engraver to carve into a random Gem. |
+| <img src="{{ '/assets/images/items/uncarved_gem.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem | Player-killed Wither, Warden, or Ender Dragon: 1–7 from Ascension 2; Geode evolved mobs: 8% base chance for 1 from Ascension 4; Awakened evolved mobs: 6% base chance for 1–2 from Ascension 7. Geode/Awakened chances can be affected by Looting and Gem Mastery. Also craft from 9 Gem Dust (3×3), or any Gem + Diorite. | Use an Engraver to carve into a random Gem. |
 | <img src="{{ '/assets/images/blocks/uncarved_gem_block.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem Block | 9 Uncarved Gems (3×3); shapeless recipe returns 9 | Compact storage; also an ingredient for Genesis Ink. |
-| <img src="{{ '/assets/images/items/gem_dust.png' | relative_url }}" alt="" width="28" loading="lazy"> Gem Dust | Crush an Uncarved Gem with a Hammer (1–10), or obtain by salvaging | Currency for Gem actions. |
+| <img src="{{ '/assets/images/items/gem_dust.png' | relative_url }}" alt="" width="28" loading="lazy"> Gem Dust | Crush an Uncarved Gem with a Hammer (1–10); salvage; or an Awakened evolved mob has a 20% base chance to drop 1–3 on a player kill from Ascension 7. | Currency for Gem actions and crafting Uncarved Gems. |
 | <img src="{{ '/assets/images/items/common_gem.png' | relative_url }}" alt="" width="28" loading="lazy"> Common … Myth Gem (7) | Carved from Uncarved Gems | Installed in an armor socket. See [Gem](Gem). |
 | <img src="{{ '/assets/images/items/uncarved_rune.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Rune | Legend Gem + Amethyst Shard (shapeless) | Carve with an Engraver (Shift = ×16) into Rune items. See [Rune](Rune). |
 | <img src="{{ '/assets/images/items/rune_gamma.png' | relative_url }}" alt="" width="28" loading="lazy"> Gamma … Omega Rune (7) | Carved from Uncarved Runes | Holds one random rune. |
@@ -50,6 +50,16 @@ All custom ClaudeRPG items, blocks, and recipes.
 | <img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Stone (Blank) | Shaped: 4 Stone Bricks + Ender Pearl (cross) | Teleport-only stone with no name; anyone can break it. |
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | Shaped: 4 Netherite Ingot, 2 Echo Shard, Ender Eye, Nether Star, Myth Gem | Portable teleport menu with special points. |
 
+
+## Drop and acquisition rules verified from v1.39.0 scripts
+
+- **Uncarved Gem:** boss drops start at Ascension 2 (Wither, Warden, and Ender Dragon, 1–7 per player kill). Geode evolved mobs unlock at Ascension 4 and have an 8% base chance to drop one; Awakened evolved mobs unlock at Ascension 7 and have a 6% base chance to drop 1–2. Looting and Gem Mastery can scale the evolved-mob Gem chance.
+- **Gem Dust:** Awakened evolved mobs have a separate 20% base chance to drop 1–3 Gem Dust from Ascension 7. This is independent of their Uncarved Gem drop roll.
+- **Core items:** Core evolved mobs unlock at Ascension 1. On a player kill, there is a shared 25% base chance to drop exactly one Core item, randomly Augment Core or Stellar Core; Looting can scale the shared chance. The two Core items do not each have a separate 25% chance.
+- **Enchanted mobs:** a player kill guarantees 1–5 each of Enchant Essence and Augment Crystal at base settings. Looting can add extra Enchant Essence; the configured Augment Crystal count does not use that extra-count bonus.
+- **Kill attribution:** these scripted drops are only generated when the source detects a player kill; do not describe them as guaranteed drops from environmental or non-player kills.
+
+Checked against `evolution_config.js`, `progression_config.js`, and `evolution_manager.js` in v1.39.0. Drop chances are base values and can be changed by configuration or affected by listed bonuses.
 
 ## Behavior notes verified from v1.39.0 scripts
 
@@ -125,9 +135,9 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 | <img src="{{ '/assets/images/items/ultimate_picker.png' | relative_url }}" alt="" width="28" loading="lazy"> Ultimate Picker | Smithing: Stellar Upgrade + Netherite Pickaxe + Myth Gem | เก็บบล็อกเป็นไอเทมโดยรักษาข้อมูล เช่น ของในหีบและข้อความบนป้าย บางบล็อกต้องใช้ Creative |
 | <img src="{{ '/assets/images/items/stellar_upgrade.png' | relative_url }}" alt="" width="28" loading="lazy"> Stellar Upgrade | คราฟต์ตามรูปแบบ: Gold Block 4 + Uncommon Gem 4 + Netherite Upgrade Template; ทำซ้ำด้วย Stellar Upgrade + Gold Block 4 + Uncommon Gem 4 ได้ 2 ชิ้น | แม่แบบ Smithing สำหรับไอเทม Eternal |
 | Ultimate Enchanter (บล็อก) | คราฟต์ตามรูปแบบ: Uncarved Gem 4 มุม, Stone Bricks 4, Crafting Table และ Enchanting Table | แกะสลัก ใส่ช่อง ติดตั้ง แปลง และถอด Gem รวมถึงจัดการ Chorus และเอนชานต์แบบปกติ |
-| <img src="{{ '/assets/images/items/uncarved_gem.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem | บอส Wither, Warden และ Ender Dragon ดรอป 1–7 ชิ้นตั้งแต่ Ascension 2; มอน Geode มีโอกาสพื้นฐาน 8%; มอน Awakened มีโอกาสพื้นฐาน 6% ที่จะดรอป 1–2 ชิ้น หรือคราฟต์จาก Gem Dust 9 ชิ้น (3×3) หรือ Gem ชนิดใดก็ได้ + Diorite โดยโอกาสดรอปจากมอนวิวัฒนาการอาจเพิ่มจาก Looting และ Gem Mastery | ใช้ Engraver แกะสลักเป็น Gem แบบสุ่ม |
+| <img src="{{ '/assets/images/items/uncarved_gem.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem | เมื่อผู้เล่นฆ่า Wither, Warden หรือ Ender Dragon จะดรอป 1–7 ชิ้นตั้งแต่ Ascension 2; มอนวิวัฒนาการ Geode มีโอกาสพื้นฐาน 8% ที่จะดรอป 1 ชิ้นตั้งแต่ Ascension 4; มอนวิวัฒนาการ Awakened มีโอกาสพื้นฐาน 6% ที่จะดรอป 1–2 ชิ้นตั้งแต่ Ascension 7 โอกาสจาก Geode/Awakened อาจเพิ่มด้วย Looting และ Gem Mastery นอกจากนี้คราฟต์จาก Gem Dust 9 ชิ้น (3×3) หรือ Gem ชนิดใดก็ได้ + Diorite | ใช้ Engraver แกะสลักเป็น Gem แบบสุ่ม |
 | <img src="{{ '/assets/images/blocks/uncarved_gem_block.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Gem Block | Uncarved Gem 9 ชิ้น (3×3); คราฟต์กลับแบบไม่กำหนดรูปแบบเพื่อแยกเป็น 9 ชิ้น | ใช้เก็บของให้กะทัดรัด และเป็นวัตถุดิบของ Genesis Ink |
-| <img src="{{ '/assets/images/items/gem_dust.png' | relative_url }}" alt="" width="28" loading="lazy"> Gem Dust | ใช้ Hammer บด Uncarved Gem (ได้ 1–10) หรือได้จาก Salvage | ใช้เป็นค่าใช้จ่ายของระบบ Gem |
+| <img src="{{ '/assets/images/items/gem_dust.png' | relative_url }}" alt="" width="28" loading="lazy"> Gem Dust | ใช้ Hammer บด Uncarved Gem (ได้ 1–10), ได้จาก Salvage หรือมอนวิวัฒนาการ Awakened มีโอกาสพื้นฐาน 20% ที่จะดรอป 1–3 ชิ้นเมื่อผู้เล่นฆ่าตั้งแต่ Ascension 7 | ใช้เป็นค่าใช้จ่ายของระบบ Gem และคราฟต์ Uncarved Gem |
 | Common … Myth Gem (7 ระดับ) | แกะสลักจาก Uncarved Gem | ติดตั้งในช่องเกราะ ดูรายละเอียดที่ [Gem](Gem) |
 | <img src="{{ '/assets/images/items/uncarved_rune.png' | relative_url }}" alt="" width="28" loading="lazy"> Uncarved Rune | Legend Gem + Amethyst Shard (คราฟต์แบบไม่กำหนดรูปแบบ) | ใช้ Engraver แกะสลักเป็น Rune (กด Shift เพื่อทำ ×16) ดู [Rune](Rune) |
 | Gamma … Omega Rune (7 ระดับ) | แกะสลักจาก Uncarved Rune | ไอเทมเก็บรูนแบบสุ่ม 1 รูน |
@@ -145,6 +155,16 @@ The listed counts (40 custom item definitions, 4 block definitions, 35 recipes) 
 | <img src="{{ '/assets/images/blocks/waypoint_blank_top.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Stone (Blank) | คราฟต์ตามรูปแบบ: Stone Bricks 4 + Ender Pearl วางเป็นรูปกากบาท | ใช้วาร์ปอย่างเดียว ไม่มีชื่อ และผู้เล่นทุกคนทุบได้ |
 | <img src="{{ '/assets/images/items/waypoint_orb.png' | relative_url }}" alt="" width="28" loading="lazy"> Waypoint Orb | คราฟต์ตามรูปแบบ: Netherite Ingot 4, Echo Shard 2, Ender Eye, Nether Star และ Myth Gem | เมนูวาร์ปแบบพกพาที่มีจุดพิเศษ |
 
+
+## กฎการดรอปและการได้รับที่ยืนยันจาก Script v1.39.0
+
+- **Uncarved Gem:** บอส Wither, Warden และ Ender Dragon เริ่มดรอปตั้งแต่ Ascension 2 จำนวน 1–7 ชิ้นเมื่อผู้เล่นฆ่า มอนวิวัฒนาการ Geode ปลดล็อกตั้งแต่ Ascension 4 และมีโอกาสพื้นฐาน 8% ที่จะดรอป 1 ชิ้น ส่วน Awakened ปลดล็อกตั้งแต่ Ascension 7 และมีโอกาสพื้นฐาน 6% ที่จะดรอป 1–2 ชิ้น Looting และ Gem Mastery สามารถเพิ่มโอกาสดรอป Gem จากมอนวิวัฒนาการได้
+- **Gem Dust:** มอนวิวัฒนาการ Awakened มีโอกาสพื้นฐานแยกต่างหาก 20% ที่จะดรอป Gem Dust 1–3 ชิ้นตั้งแต่ Ascension 7 ซึ่งเป็นการสุ่มคนละส่วนกับการดรอป Uncarved Gem
+- **Core:** มอนวิวัฒนาการ Core ปลดล็อกตั้งแต่ Ascension 1 เมื่อผู้เล่นฆ่า มีโอกาสพื้นฐานรวม 25% ที่จะดรอป Core 1 ชิ้น โดยสุ่มเป็น Augment Core หรือ Stellar Core; Looting เพิ่มโอกาสรวมนี้ได้ ไอเทม Core ทั้งสองชนิดไม่ได้มีโอกาส 25% แยกจากกัน
+- **Enchanted mobs:** เมื่อผู้เล่นฆ่า จะรับประกัน Enchant Essence 1–5 ชิ้นและ Augment Crystal 1–5 ชิ้นตามค่าตั้งต้น Looting สามารถเพิ่ม Enchant Essence เพิ่มเติมได้ แต่โบนัสจำนวนดังกล่าวไม่ได้ใช้กับ Augment Crystal
+- **เงื่อนไขการฆ่า:** ระบบสร้างของดรอปเหล่านี้เมื่อระบุได้ว่าผู้เล่นเป็นผู้ฆ่าเท่านั้น จึงไม่ควรเขียนว่ารับประกันจากการตายด้วยสิ่งแวดล้อมหรือจากผู้ฆ่าที่ไม่ใช่ผู้เล่น
+
+ตรวจจาก `evolution_config.js`, `progression_config.js` และ `evolution_manager.js` ใน v1.39.0 แล้ว ค่าโอกาสเป็นค่าพื้นฐานและอาจเปลี่ยนได้จากการตั้งค่าหรือโบนัสที่ระบุไว้
 
 ## หมายเหตุพฤติกรรมที่ยืนยันจาก Script v1.39.0
 
