@@ -107,6 +107,8 @@ The v1.39.0 addon package was retrieved from the Library and inspected directly.
 - [x] Identified the build pipeline in `.github/workflows/pages.yml`: GitHub Actions extracts image assets from `ClaudeRPG_v1_39_0.zip`, then runs `actions/jekyll-build-pages@v1` to build the site into `_site`.
 - [x] Generated HTML and anchor audit completed from the GitHub Pages artifact: 37 HTML pages, 2,278 local links/assets checked, 48 anchors checked, and no missing local targets found.
 - [ ] Narrow-viewport/browser screenshots and real-device validation remain outstanding.
+- [x] Added bilingual step-by-step workflows to `Exploration.md` for named/portable waypoints, Discovery Log rewards, and common teleport/discovery troubleshooting.
+- [x] Added bilingual player-facing setup and troubleshooting guidance to `Quality-of-Life.md` for Settings, Quick Stash, Toast fallback, HP display, Re-Crops, and mining effects. This is a documentation pass, not a real-device UI test.
 
 
 
@@ -163,6 +165,7 @@ Use these labels in editorial notes while drafting:
 - [x] Verified progression formulas against v1.39.0 source: XP thresholds use the normal +25 step through Level 100 and 60% of that step afterward; awarded XP is rounded to a whole number (minimum 1); Prestige/Ascension costs use `floor` before applying caps; stat caps use `Math.round(base × capMultiplier)`; Perk values are rounded to two decimals and each pick keeps its pick-time strength.
 - [x] Added a bilingual pre-Prestige checklist to `Progression.md`, covering cap verification, Sigil preparation, reset expectations, Perk selection, and post-reset equipment requirements.
 - [ ] Expand remaining key pages with step-by-step player workflows.
+- [x] Added player workflows to Exploration and Quality of Life; remaining high-priority gaps include deeper Mob Evolution/Bosses guidance, Achievements/Guide Quest navigation, Admin permission guidance, and the remaining custom-item behavior audit.
 - [x] Added bilingual step-by-step workflows to the Chorus Echo, Resonance, Transcend, and Fusion pages; broader player workflow coverage remains incomplete.
 - [ ] Keep English and Thai explanations aligned wherever both are provided.
 - [x] Compared all 35 recipe JSON definitions with the English and Thai item tables. Found and corrected one recipe-count mismatch: Stats Book requires 4 Sticks (not 1). Remaining recipe summaries matched the JSON ingredient/method/output definitions.

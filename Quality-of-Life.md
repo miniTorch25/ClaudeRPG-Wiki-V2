@@ -72,5 +72,27 @@ Particle aura from 2+ matching Chorus sockets. See [Chorus](Chorus). · ดู�
 - **Looting / Fortune** raise addon drops: +20% chance per level (max 95%) for evolved-mob drops (Gem, Core, Essence, Echo Shard) and Fortune's Favor. · Looting/Fortune เพิ่มโอกาสดรอปของแอดออน
 
 
+## Recommended setup workflow · ขั้นตอนตั้งค่าแนะนำ
+
+1. **Open Settings:** use **Script Tool › Utilities › Settings** and adjust personal notifications or display options. Personal settings survive Prestige, but an Admin's world-wide setting takes priority.
+2. **Choose notification fallback:** if Toast pop-ups are disabled, use the configured chat or action-bar notifications. The achievement/discovery action-bar options apply only when Toast is off.
+3. **Use Quick Stash safely:** first put at least one example of an item into a nearby chest, trapped chest, or barrel. Activate Quick Stash from the Script Tool. Matching items can then be moved into eligible nearby containers within five blocks.
+4. **Check exclusions before stashing:** Quick Stash does not move the held item, armor, offhand items, or items with Lore such as Runes, Gems, and Augments. It searches up to eight containers and has a two-second cooldown.
+5. **Tune combat feedback:** use personal settings for Chorus Aura and notifications where available. Health Display has a world-wide Admin toggle; it shows HP when you aim at nearby mobs or bosses, within the documented range.
+6. **Keep mining effects distinct:** Vein is a Tool Augment, Luck is a Pickaxe Augment, and Re-Crops is a T3 hoe Rune. They are different systems and have different compatibility requirements.
+
+### Common issues · ปัญหาที่พบบ่อย
+
+| Symptom | What to check |
+|---|---|
+| Quick Stash moved nothing | Make sure a nearby eligible container already contains the same item type. Check the five-block radius and excluded item slots/types. |
+| A Lore item stayed in inventory | This is expected for items carrying Rune, Gem, or Augment Lore. |
+| Toast disappeared | Check whether Toast pop-ups are enabled; chat/action-bar fallback settings apply when Toast is off. |
+| HP numbers do not show | Aim directly at the mob and check range; world-wide display may be disabled by an Admin. |
+| Crops were not replanted | Confirm the hoe has the **Re-Crops T3 Rune**, and that the crop is one of the supported types. |
+| Vein did not collect adjacent blocks | Check the tool's Vein Augment/Rune setup and block connectivity; durability is consumed for each block broken. |
+
+**Safety note / ข้อควรทราบ:** Quick Stash is a convenience transfer, not a full inventory sorter. Review destination containers before relying on it for storage organization.
+
 ---
 **See also / ดูเพิ่มเติม:** [Exploration](Exploration) · [Items](Items)
