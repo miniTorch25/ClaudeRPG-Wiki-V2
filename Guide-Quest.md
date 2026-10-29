@@ -54,7 +54,7 @@
 | Step | Title / หัวข้อ | Do / ทำอย่างไร |
 |---|---|---|
 | 4.1 | Reach Prestige 2<br><i>ถึง Prestige 2</i> | Chorus unlocks at Prestige 2. Climb back to your max level (now 60) and Prestige again. |
-| 4.2 | Craft the Ultimate Enchanter<br><i>คราฟต์ Ultimate Enchanter</i> | Uncarved Gem x4 + Stone Bricks + Crafting Table + Enchanting Table. Uncarved Gems drop from Wither, Warden and Ender Dragon (Ascension 2+), or Geode mobs (Ascension 4+). Ask your Admin if you have none yet. |
+| 4.2 | Craft the Ultimate Enchanter<br><i>คราฟต์ Ultimate Enchanter</i> | Uncarved Gem x4 + Stone Bricks + Crafting Table + Enchanting Table. Uncarved Gems drop from Wither, Warden and Ender Dragon (Ascension 2+), Geode mobs (Ascension 4+) and Awakened mobs (Ascension 7+). Ask your Admin if you have none yet. |
 | 4.3 | Brew Resonant Ink<br><i>ปรุง Resonant Ink</i> | Brewing Stand: Dragon's Breath + Echo Shard makes Resonant Ink, the currency of Chorus, Runes and the Prestige / Ascension items. |
 | 4.4 | Roll an Echo element<br><i>สุ่มธาตุ Echo</i> | Ultimate Enchanter > Chorus > Roll, level Echo (6 Resonant Ink). Each armor piece has 2 element slots. Wear the armor. |
 | 4.5 | Activate a 2-piece set<br><i>ปลดเซ็ต 2 ช่อง</i> | Wear armor whose slots hold the SAME element in 2 slots. 2 / 4 / 6 / 8 matching slots unlock stronger set effects. Lock a good element (Ink) and roll the rest. |
