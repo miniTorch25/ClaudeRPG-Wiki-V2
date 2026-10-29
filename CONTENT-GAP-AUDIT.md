@@ -327,3 +327,12 @@ Use these labels in editorial notes while drafting:
 
 - [x] Compared the Misc & Silly page intro with `achievement_gui.js` and the category table. Hidden achievements do occupy catalogue entries; their names/details are masked as “???” until unlocked, rather than being omitted from the list entirely.
 - [x] Corrected the English and Thai intro wording to describe the in-game display accurately. No achievement behavior changed.
+
+
+### Follow-up pass: Achievement progress backfill vs event tracking (v1.39.0)
+
+- [x] Verified `AchievementManager.syncState()` runs on the periodic flush cycle and applies registered state providers using max counters, so current-state values can backfill progress for existing players.
+- [x] Verified state providers derive current Level / max-level status, Prestige, Ascension, selected perks, Mastery levels and paths, Chorus equipment state, plus a baseline `joined` flag. Equipment checks also inspect current Gem sets, Rune arsenal, Augment completion, inventory fullness, and armor variety.
+- [x] Verified action counters (for example melee/ranged hits, mob kills, mining, fishing and many item interactions) are driven by event hooks and are not reconstructed from world history. Their progress therefore depends on events observed by the Achievement system, rather than a universal historical scan.
+- [x] Documented this distinction in the audit to avoid claiming that all Achievement progress is backfilled. Existing stored counters/unlocks remain in the per-player `crpg:ach` dynamic property and are not reset by Prestige according to the manager comments.
+- [ ] Continue a targeted review of individual hooks for edge cases where the implemented event does not fully match the human-readable condition; no gameplay behavior was changed in this audit.
