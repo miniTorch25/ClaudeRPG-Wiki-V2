@@ -59,7 +59,7 @@
 
 | Definition / identifier | Acquisition route checked | Use / restrictions checked | Source evidence |
 |---|---|---|---|
-| `ultimate_enchanter` | Shaped recipe: 4 Uncarved Gems, 4 Stone Bricks, Crafting Table, Enchanting Table | Interaction opens Ultimate Enchanter GUI; configured as a protected/Creative-only pickup block for Ultimate Picker outside Creative | `recipes/ultimate_enchanter.json`; `scripts/core/event_router.js`; `scripts/config/ultimate_picker_blacklist.js` |
+| `ultimate_enchanter` | Shaped recipe: 4 Uncarved Gems, 4 Stone Bricks, Crafting Table, Enchanting Table | Interaction opens Ultimate Enchanter GUI; it is not in the current Ultimate Picker blacklist, and no owner/Admin protection was found for this block | `recipes/ultimate_enchanter.json`; `scripts/core/event_router.js`; `scripts/config/ultimate_picker_blacklist.js` |
 | `uncarved_gem_block` | Shaped recipe: 9 Uncarved Gems; shapeless unpack returns 9 Uncarved Gems | Storage/conversion block; brewing reagent for Genesis Ink; no custom interaction handler identified | `recipes/uncarved_gem_block.json`; `recipes/uncarved_gem_block_to_gem.json`; `recipes/genesis_ink.json` |
 | `waypoint_stone` | Shaped recipe: 4 Stone Bricks + 4 Ender Pearls + Compass | Interaction opens named Waypoint menu; registered stones require owner/Admin to break or pick up | `recipes/waypoint_stone.json`; `scripts/core/event_router.js`; `scripts/systems/waypoint_manager.js` |
 | `waypoint_stone_blank` | Shaped recipe: 4 Stone Bricks + 1 Ender Pearl | Interaction opens blank Waypoint menu; no owner/name protection, so any player can break it | `recipes/waypoint_stone_blank.json`; `scripts/core/event_router.js`; `scripts/systems/waypoint_manager.js` |
