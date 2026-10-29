@@ -183,7 +183,8 @@ Use these labels in editorial notes while drafting:
 - [x] Added bilingual Guide Quest ordering guidance: follow numbered steps and chapters, consult each step's action, and check the current step when progress stalls.
 - [x] Added bilingual player-feature vs Admin-tool guidance, including the Admin tag boundary and caution around world-wide changes. This is documentation guidance, not a full permission/security test.
 - [ ] Verify detailed Bosses/phase behavior against the v1.39.0 scripts and ensure boss-specific rules are not inferred from regular evolution tiers.
-- [ ] Complete the remaining custom-item behavior/acquisition audit against implementing scripts, including salvage and admin/creative restrictions.
+- [x] Source-audited key utility-item paths in v1.39.0: Insight Lens self/other-player behavior, Script Tool Creative/Admin category filtering, Waypoint Orb enablement/cost/cooldown/special-point limits, Stellar Core force-evolution eligibility and cost, Ultimate Picker blacklist/Waypoint ownership checks, and Sculk Potion success-only consumption/refusal cases. Added bilingual notes to `Items.md`.
+- [ ] Complete the remaining item-by-item behavior/acquisition audit for all 40 item definitions, including the full salvage rules, requirements, Creative/Admin restrictions, and interactions that need in-game confirmation.
 - [ ] Run rendered narrow-screen/mobile checks; source CSS and successful build alone are not visual validation.
 - [ ] Re-run build, generated HTML/link/anchor audit, and bilingual parity review after this pass.
 
