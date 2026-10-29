@@ -493,7 +493,7 @@ Do not mark the remaining items above as complete based solely on Markdown edits
 
 - [x] Completed the row-by-row source inventory for all 40 custom item definitions and all 4 custom block definitions, mapping acquisition, use/restrictions, and relevant source files in [ITEM-SOURCE-AUDIT.md](ITEM-SOURCE-AUDIT.md). Earlier unchecked item-audit lines above are historical work-log entries superseded by this audit; they do not mean the source inventory is still absent.
 - [x] Revalidated the Toast tool's 10 frame textures and 7 configured icon presets against the v1.39.0 package; all referenced preset textures exist.
-- [x] Expanded CI to syntax-check inline JavaScript in every repository HTML file, then build Jekyll and validate generated local links, assets, and anchors. [Workflow run #40835325446](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835325446) passed.
+- [x] Expanded CI to syntax-check inline JavaScript in every repository HTML file, verify Toast textures/presets, build Jekyll, validate generated local links/assets/anchors, and fail if any image omits an `alt` attribute. [Workflow run #40835597056](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835597056) passed with no missing image-alt attributes.
 - [x] Added Download, Toast Generator, current status, source audit, and contribution pages to SUMMARY.md.
 - [ ] Visual inspection of the published site at desktop and narrow/mobile sizes still requires an actual browser/device.
 - [ ] Toast command behavior, achievement counter edge cases, and Waypoint ownership/protection still require a real Minecraft Bedrock test world; source inspection cannot establish runtime behavior.
