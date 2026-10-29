@@ -1,3 +1,7 @@
+---
+permalink: /Ultimate-Enchanter
+---
+
 <div data-lang="en" markdown="1">
 
 [🏠 Home](Home) · [📖 Systems](Systems) · [🎒 Items](Items) · [❓ FAQ](FAQ)

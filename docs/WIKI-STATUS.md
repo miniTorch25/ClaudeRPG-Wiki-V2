@@ -1,3 +1,7 @@
+---
+permalink: /WIKI-STATUS
+---
+
 # Current Wiki Status — 2026-10-29
 
 ## Repository organization
