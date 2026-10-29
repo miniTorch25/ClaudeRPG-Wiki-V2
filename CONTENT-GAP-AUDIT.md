@@ -235,7 +235,7 @@ Use these labels in editorial notes while drafting:
 
 ### Follow-up pass: missing item icon assets
 
-- [x] Compared the repository's recursive Git tree with image references in `Items.md`. The only committed file under `assets/images` is the hero SVG; the item/block PNGs referenced by the item table are absent from the repository tree.
-- [x] Removed 58 broken inline image tags from `Items.md` (English and Thai tables). Item names, acquisition recipes, and behavior descriptions remain as text, avoiding broken-image placeholders while the icon artwork is unavailable.
-- [ ] Add and verify the intended item/block icon assets in a future artwork pass; this change does not generate replacement artwork.
-- [ ] Run the configured site build and check generated HTML and mobile rendering after the asset fix.
+- [x] Rechecked the image pipeline against `.github/workflows/pages.yml`: the site build extracts PNG/JPG/WEBP assets from `ClaudeRPG_v1_39_0.zip` into `assets/images/items` and `assets/images/blocks` before Jekyll runs. The original icon references correspond to texture filenames in the v1.39.0 add-on archive, so the absence of generated image files from the Git tree alone did not establish broken published images.
+- [x] Restored the 58 inline item/block image tags in `Items.md` (English and Thai tables), using the existing texture filenames from the add-on archive and the build's extraction destinations.
+- [x] Confirmed the main-branch Pages workflow completed successfully after the prior changes. This verifies the build/deploy workflow, but does not by itself visually verify every image in a browser or mobile layout.
+- [ ] Inspect the published page and confirm all restored icons render correctly on desktop and mobile.
