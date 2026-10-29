@@ -436,3 +436,28 @@ Use these labels in editorial notes while drafting:
 - [x] Added a visual reference gallery for all four custom block families in both English and Thai sections of `Items.md`: Waypoint Stone, Blank Waypoint Stone, Ultimate Enchanter, and Uncarved Gem Block.
 - [x] Checked the four texture filenames against the v1.39.0 image manifest; the existing Pages build extracts them from the add-on archive into `assets/images/blocks`.
 - [ ] Confirm the rendered block images and card layout at desktop and mobile widths; source manifest/build checks do not replace visual inspection.
+
+
+### Final validation snapshot — 2026-10-29
+
+This snapshot separates completed repository checks from work that requires a real Minecraft client or an accessible current add-on source package.
+
+#### Verified in the repository / CI
+
+- [x] No open pull requests were returned by the repository's open-PR query at the time of this snapshot.
+- [x] The latest main-branch Pages workflow observed for this snapshot completed successfully: image extraction, Jekyll build, artifact upload, and deployment. Run: https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40821325530
+- [x] The image pipeline is configured to extract original item, block, achievement, mob, toast, and rarity textures from `ClaudeRPG_v1_39_0.zip` at build time. Generated image folders are build artifacts, not missing committed assets.
+- [x] The previous generated-site audit checked 2,278 local links/assets and 48 anchor fragments across 37 generated HTML pages with no missing targets at that point. This result predates the latest image-only changes, so it is not represented as a fresh post-change scan.
+- [x] Recent documentation-only changes enlarged inline art, added original category/waypoint/block/item textures, and clarified Augment/Reforge/Salvage guidance. No add-on gameplay code was changed.
+
+#### Still not verifiable from source/CI alone
+
+- [ ] Strict item-by-item reconciliation of all 40 item definitions and 4 block definitions against every acquisition route, use restriction, command/menu grant, and Creative/Admin boundary. Existing source audits cover important families and edge cases, but the audit does not claim that every row is fully reconciled.
+- [ ] A fresh generated-HTML link/image/anchor scan after the latest PRs. A successful Pages build confirms compilation and deployment, not that every rendered image is visually correct.
+- [ ] Desktop and narrow/mobile visual inspection in an actual browser or device. CSS review and CI success are not substitutes for visual testing.
+- [ ] Live in-game and multiplayer checks for event-driven Achievement edge cases and Waypoint/block ownership behavior. Source inspection identifies candidates but cannot establish actual runtime behavior.
+- [ ] Resolve the Gem/Rune unlock confirmation-text inconsistency in the add-on itself. The Wiki documents the central feature gates (Gem P4/A2; Rune P6/A3) and notes the conflict; changing the add-on requires separate authorization.
+
+#### Completion rule
+
+Do not mark the remaining items above as complete based solely on Markdown edits, source inspection of a subset, or a successful Pages workflow. The documentation work is complete only to the extent explicitly marked `[x]`; the remaining items require the missing source reconciliation or real-client validation described above.
