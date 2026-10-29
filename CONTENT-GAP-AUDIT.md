@@ -297,3 +297,10 @@ Use these labels in editorial notes while drafting:
 - [x] Cross-checked all recipe references to `crpg:stellar_upgrade`: Eternal Hammer, Eternal Engraver, Insight Lens, Ultimate Picker, and the duplicate recipe that yields two Stellar Upgrades.
 - [x] Corrected the English and Thai `Items.md` use descriptions so Stellar Upgrade is not described as serving only as a Smithing template for Eternal items.
 - [ ] Continue the remaining item-by-item audit for acquisition routes and use restrictions; this source check does not establish live gameplay behavior.
+
+
+### Follow-up pass: Waypoint Orb special-point limit consistency (v1.39.0)
+
+- [x] Compared the Exploration quick-start wording with the Waypoint Orb behavior notes and the v1.39.0 scripts.
+- [x] Corrected the quick-start phrase “five per Orb list” to “five per player across the player's Waypoint Orb list,” matching the player-level limit and avoiding the implication that each Orb grants a separate allowance.
+- [ ] Continue checking repeated Waypoint limits and permissions across the Wiki; no live multiplayer test was performed.
