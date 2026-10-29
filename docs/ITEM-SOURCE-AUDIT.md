@@ -1,3 +1,7 @@
+---
+permalink: /ITEM-SOURCE-AUDIT
+---
+
 # Item & Block Source Audit — ClaudeRPG v1.39.0
 
 > Scope: source-level reconciliation of every custom item/block definition in the supplied `ClaudeRPG_Prog_v1_39_0.mcaddon` archive against recipe JSON and relevant behavior scripts. This is not an in-game or multiplayer test.

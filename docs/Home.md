@@ -1,3 +1,7 @@
+---
+permalink: /Home
+---
+
 # ClaudeRPG Addon Wiki
 
 <div data-lang="en" markdown="1">
