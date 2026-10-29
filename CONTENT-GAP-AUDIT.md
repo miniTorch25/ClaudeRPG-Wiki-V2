@@ -201,3 +201,11 @@ Use these labels in editorial notes while drafting:
 - [ ] Compare all 40 item definitions, 4 block definitions, and 35 recipes against the package implementation for item-by-item acquisition, usage, and Creative/Admin restrictions. Existing recipe-count checks do not replace this behavior audit.
 - [ ] Run the repository's configured build and inspect its result; no workflow run was returned for the current documentation commit during this check.
 - [ ] Check rendered pages at narrow/mobile widths in an actual browser/device; source-level table/CSS inspection is not equivalent to visual testing.
+
+
+### Follow-up pass: Recipe-to-definition reconciliation (v1.39.0)
+
+- [x] Parsed all 35 recipe JSON files and reconciled their outputs against the 40 custom item definitions and 4 custom block definitions in the v1.39.0 package. Every recipe output resolves to a defined custom item/block; no recipe output is missing a definition.
+- [x] Checked every `crpg:` item/block reference used as a recipe ingredient, input, or reagent against the package definitions. No unresolved custom references were found.
+- [x] Confirmed that the 35 recipe files produce 25 distinct custom outputs; repeated outputs are intentional recipe families, including the multiple routes to Uncarved Gem, Stellar Upgrade, and Transcendent Ink.
+- [ ] This structural reconciliation does **not** prove every recipe's player-facing description, recipe unlock behavior, item use restrictions, command/menu grant path, or live in-game behavior. Continue the separate row-by-row source audit and gameplay checks.
