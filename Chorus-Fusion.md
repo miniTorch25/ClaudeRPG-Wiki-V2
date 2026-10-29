@@ -14,6 +14,22 @@
 
 **TH:** Awaken, Melodious, Genesis: สามระดับสูงสุดของโครัส เกิดจากการหลอมธาตุ Transcend
 
+## Fusion workflow · ขั้นตอนการหลอม
+
+**EN**
+1. **Check requirements first:** each fusion has its own Prestige and Chorus Mastery requirement, listed in the table. Unlocking the base Chorus system alone is not enough.
+2. **Prepare the exact element pair:** Awaken fuses two specified Transcend elements in the two sockets of one armor piece. Melodious and Genesis require two already-fused elements across two armor pieces, with each source piece holding the same element in both sockets.
+3. **Confirm the cost:** prepare the listed number of Stellar Cores. The table describes one payment per fusion operation, not a cost per source piece.
+4. **Review before confirming:** fusion changes the source armor piece or pieces into the result. Make sure the pair and both source pieces are correct before committing.
+5. **Plan around the result:** fusion tiers cannot be rolled directly and have no hybrids. Their elements count as their parent elements for Chorus thresholds and Synergy, as explained on the overview.
+
+**TH**
+1. **ตรวจเงื่อนไขก่อน:** การหลอมแต่ละแบบมีข้อกำหนด Prestige และ Chorus Mastery ของตัวเองตามตาราง การปลดล็อก Chorus พื้นฐานอย่างเดียวไม่เพียงพอ
+2. **เตรียมคู่ธาตุให้ตรง:** Awaken หลอมธาตุ Transcend สองชนิดที่กำหนดในช่องทั้งสองของเกราะชิ้นเดียว ส่วน Melodious และ Genesis ต้องใช้ธาตุที่หลอมแล้วสองชนิดจากเกราะสองชิ้น โดยแต่ละชิ้นต้องมีธาตุเดียวกันทั้งสองช่อง
+3. **ตรวจค่าใช้จ่าย:** เตรียม Stellar Core ตามจำนวนในตาราง โดยเป็นค่าใช้จ่ายต่อการหลอมหนึ่งครั้ง ไม่ใช่ต่อเกราะต้นทางแต่ละชิ้น
+4. **ตรวจสอบก่อนยืนยัน:** การหลอมเปลี่ยนเกราะต้นทางหนึ่งหรือสองชิ้นให้เป็นผลลัพธ์ ตรวจคู่ธาตุและเกราะต้นทางให้ถูกต้องก่อนดำเนินการ
+5. **วางแผนผลลัพธ์:** Tier ที่หลอมแล้วสุ่มโดยตรงไม่ได้และไม่มี Hybrid ธาตุเหล่านี้นับเป็นธาตุแม่สำหรับเกณฑ์ Chorus และ Synergy ตามหน้า Chorus หลัก
+
 > ℹ️ Effect descriptions are shown in English, exactly as written in the game. / คำอธิบายเอฟเฟกต์เป็นภาษาอังกฤษตามที่เขียนในเกม
 
 
