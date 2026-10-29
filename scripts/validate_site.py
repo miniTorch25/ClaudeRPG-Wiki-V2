@@ -14,9 +14,12 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.refs: list[tuple[str, str]] = []
         self.anchors: set[str] = set()
+        self.images_without_alt: int = 0
 
     def handle_starttag(self, tag: str, attrs) -> None:
         values = dict(attrs)
+        if tag.lower() == "img" and "alt" not in values:
+            self.images_without_alt += 1
         for attr in ("href", "src", "poster"):
             value = values.get(attr)
             if value:
@@ -80,9 +83,13 @@ def main() -> int:
     repo_name = os.environ.get("GITHUB_REPOSITORY", "").split("/")[-1]
     baseurl = f"/{repo_name}" if repo_name else ""
     errors: list[str] = []
+    checked_images_without_alt = 0
     checked = 0
     checked_fragments = 0
     for page, parser in pages.items():
+        if parser.images_without_alt:
+            checked_images_without_alt += parser.images_without_alt
+            errors.append(f"{page.relative_to(site)}: {parser.images_without_alt} image(s) missing an alt attribute")
         for attr, raw_url in parser.refs:
             parsed = urlsplit(raw_url)
             if parsed.scheme.lower() in {"http", "https", "mailto", "tel", "javascript", "data"} or parsed.netloc:
@@ -104,6 +111,7 @@ def main() -> int:
                     errors.append(f"{page.relative_to(site)}: missing fragment #{fragment} in {target.relative_to(site)}")
 
     print(f"Scanned {len(pages)} HTML pages; checked {checked} local links/assets and {checked_fragments} fragment targets.")
+    print(f"Checked image accessibility attributes; found {checked_images_without_alt} image(s) missing alt.")
     if errors:
         print(f"Found {len(errors)} problem(s):")
         for error in errors:

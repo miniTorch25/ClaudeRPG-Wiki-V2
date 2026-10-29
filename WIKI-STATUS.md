@@ -1,4 +1,4 @@
-# Current Wiki Status — 2026-10-29
+# Current Wiki Status — 2026-10-29 (updated after PR #65)
 
 This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronological work log and includes older unchecked checklist items that may have been superseded by later audits. Use this page to distinguish completed repository checks from work that still requires a real browser or Minecraft client.
 
@@ -10,7 +10,8 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 - **Item and block source audit:** all 40 custom item definitions, 4 custom block definitions, and 35 recipe definitions have been mapped in [ITEM-SOURCE-AUDIT.md](ITEM-SOURCE-AUDIT.md). This is source-level evidence, not live-game testing.
 - **Boss source audit:** boss phase scanning, thresholds, intervals, retries, minion-cap scope, and cleanup behavior were checked against v1.39.0 scripts in [PR #21](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/21).
 - **Recipe parity:** the Transcendent Ink note now matches the two v1.39.0 brewing recipes in both languages; see [PR #30](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/30).
-- **Repository conventions:** added `.editorconfig`, [CONTRIBUTING.md](CONTRIBUTING.md), and README links to the new tools in [PR #63](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/63). The validation workflow now syntax-checks shared JavaScript and inline JavaScript in the Toast tool.
+- **Repository conventions:** added `.editorconfig`, [CONTRIBUTING.md](CONTRIBUTING.md), and README links to the new tools in [PR #63](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/63).
+- **Final static-audit pass:** [PR #65](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/65) added the tool/audit pages to the table of contents, syntax-checks inline JavaScript across all repository HTML pages, and checks all ten Toast frame textures plus every configured icon preset before building. CI passed in [workflow run #40835325446](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835325446).
 
 ## Still outstanding
 
@@ -34,3 +35,4 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 
 - The Pages workflows for the language-switch fix and tool pages passed JavaScript syntax checks (where applicable), image extraction, Jekyll build, generated local-link/asset/anchor validation, and artifact upload.
 - The current wiki has **not** been visually inspected in a real browser/device in this pass, and the Toast generator has **not** been exercised in Minecraft. Do not treat CI success as proof of those runtime checks.
+- The source-level item/block inventory is now recorded row-by-row in [ITEM-SOURCE-AUDIT.md](ITEM-SOURCE-AUDIT.md). Remaining source-level candidates are concentrated in Achievement event/counter edge cases; see the chronological audit for individual IDs and evidence.
