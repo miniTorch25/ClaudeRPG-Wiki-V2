@@ -209,3 +209,9 @@ Use these labels in editorial notes while drafting:
 - [x] Checked every `crpg:` item/block reference used as a recipe ingredient, input, or reagent against the package definitions. No unresolved custom references were found.
 - [x] Confirmed that the 35 recipe files produce 25 distinct custom outputs; repeated outputs are intentional recipe families, including the multiple routes to Uncarved Gem, Stellar Upgrade, and Transcendent Ink.
 - [ ] This structural reconciliation does **not** prove every recipe's player-facing description, recipe unlock behavior, item use restrictions, command/menu grant path, or live in-game behavior. Continue the separate row-by-row source audit and gameplay checks.
+
+
+### Follow-up pass: Bilingual item-source parity
+
+- [x] Rechecked the English and Thai Transcendent Ink descriptions against both v1.39.0 brewing recipe JSON files. Corrected the Thai audit note: both recipes use Genesis Ink as input, with Nether Star or Stellar Core as the separate reagent; neither recipe uses Resonant Ink + Genesis Ink nor Stellar Upgrade as the Transcendent Ink reagent.
+- [ ] Continue row-by-row source reconciliation for the remaining item/block use restrictions and acquisition paths; this wording fix does not complete the full item audit or live gameplay checks.
