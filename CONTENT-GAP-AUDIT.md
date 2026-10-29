@@ -388,3 +388,14 @@ Use these labels in editorial notes while drafting:
 - [ ] **Needs test — Cake Day (MC52):** the counter is scheduled from a pre-interaction event when the player interacts with a cake block. The hook does not inspect the cake's post-interaction bite state, so verify whether unsuccessful/cancelled interactions can count.
 - [x] **Source-confirmed distinction — Spyglass Peeper (MC59):** the counter increments when spyglass use starts, not when a minimum viewing duration or a completed use is confirmed. This may match the broad wording “use a spyglass”; it is recorded as a definition detail, not a confirmed defect.
 - [x] No gameplay code was changed. These edge cases are source-inspection findings and test candidates; they have not been reproduced in-game. Keep the public achievement catalogue aligned with its in-game text until testing justifies a documentation clarification.
+
+
+### Follow-up pass: larger source-texture images and Reforge/Salvage preflight
+
+- [x] Confirmed that the Pages workflow extracts original item, block, mob, achievement, toast, and rarity textures from `ClaudeRPG_v1_39_0.zip` during the build; generated image folders are build artifacts and are not expected to be committed into the source tree.
+- [x] Expanded the Augment/Reforge material strip with the Reforge Hammer and Eternal Hammer, and increased material art from 48px to 64px for easier inspection.
+- [x] Added a six-item visual reference strip to `Item-Categories.md`, using original texture filenames already used by the existing item documentation/build extraction workflow.
+- [x] Increased the inline item icons in `Items.md` from 28px to 40px and updated the shared CSS sizing so they render consistently.
+- [x] Added a bilingual preflight checklist to `Augment.md`: review target stats/material/durability, distinguish Reroll/Max/Remove, and choose Salvage vs Perfect Salvage deliberately.
+- [ ] Run the Pages build and generated-link/image audit after this change; rendered mobile/device visual validation remains outstanding and must not be inferred from a successful build.
+- [ ] Continue the remaining row-by-row source audit for all custom items and blocks; this pass improves presentation and decision guidance but does not claim that every item has been live-tested.
