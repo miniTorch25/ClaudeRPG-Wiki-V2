@@ -223,3 +223,11 @@ Use these labels in editorial notes while drafting:
 - [x] Clarified in both English and Thai item tables that registered named Waypoint Stones are protected by owner/Admin checks for breaking and Ultimate Picker pickup, while `Waypoint Stone (Blank)` has no owner/name protection and can be broken by anyone.
 - [x] Confirmed that the block-definition files themselves do not encode these ownership rules; those behaviors are implemented in scripts. This remains a source audit, not a live multiplayer test.
 - [ ] Continue checking remaining item/block access restrictions and acquisition paths, then rerun the generated-page/link and bilingual parity checks.
+
+
+### Follow-up pass: Eternal Engraver and Ultimate Picker restrictions (v1.39.0)
+
+- [x] Checked `gem_manager.js` and `ultench_gui.js`: carrying an Eternal Engraver anywhere in inventory makes all Engraver-related durability costs free, including normal Engraver use and armor socket engraving; it also satisfies the socket-engraving inventory requirement by itself.
+- [x] Checked `ultimate_picker_blacklist.js` and `event_router.js`: the Survival restriction is an explicit configured blacklist (command/structure and related protected blocks), not a blanket Creative-only rule for all custom blocks. Named Waypoint Stones use a separate owner/Admin permission check. Updated both language rows to reflect this distinction.
+- [x] Kept the wording bounded to source-confirmed behavior and supported block data; no live gameplay test was performed.
+- [ ] Continue strict row-by-row checks for remaining custom items and blocks, then rerun generated-page/link and English/Thai parity checks.
