@@ -199,7 +199,7 @@ Use these labels in editorial notes while drafting:
 - [x] Added an item-family guide in both languages explaining grouped rows, major item categories, and key eligibility/restriction caveats.
 - [ ] Verify exact boss triggers, repeat behavior, effect durations, and minion-cap scope against the v1.39.0 implementation; the available Wiki repository view alone does not prove those details.
 - [ ] Compare all 40 item definitions, 4 block definitions, and 35 recipes against the package implementation for item-by-item acquisition, usage, and Creative/Admin restrictions. Existing recipe-count checks do not replace this behavior audit.
-- [ ] Run the repository's configured build and inspect its result; no workflow run was returned for the current documentation commit during this check.
+- [x] Run the repository's configured build and inspect its result for the boss/item documentation follow-up: GitHub Actions run [#54](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40795873824) completed successfully, including the image-extraction step, Jekyll build, and artifact upload. The deploy job was skipped for the pull-request event, as configured; this confirms build success, not visual mobile validation.
 - [ ] Check rendered pages at narrow/mobile widths in an actual browser/device; source-level table/CSS inspection is not equivalent to visual testing.
 
 
