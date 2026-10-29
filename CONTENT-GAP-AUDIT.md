@@ -184,7 +184,8 @@ Use these labels in editorial notes while drafting:
 - [x] Added bilingual player-feature vs Admin-tool guidance, including the Admin tag boundary and caution around world-wide changes. This is documentation guidance, not a full permission/security test.
 - [ ] Verify detailed Bosses/phase behavior against the v1.39.0 scripts and ensure boss-specific rules are not inferred from regular evolution tiers.
 - [x] Source-audited key utility-item paths in v1.39.0: Insight Lens self/other-player behavior, Script Tool Creative/Admin category filtering, Waypoint Orb enablement/cost/cooldown/special-point limits, Stellar Core force-evolution eligibility and cost, Ultimate Picker blacklist/Waypoint ownership checks, and Sculk Potion success-only consumption/refusal cases. Added bilingual notes to `Items.md`.
-- [ ] Complete the remaining item-by-item behavior/acquisition audit for all 40 item definitions, including the full salvage rules, requirements, Creative/Admin restrictions, and interactions that need in-game confirmation.
+- [x] Source-audited Gem carving/crushing, Rune carving and tier/compatibility gates, Rune Anvil costs, Salvage eligibility/rewards, and Augment Crystal/Core costs against the v1.39.0 implementation; added bilingual notes to `Items.md`.
+- [ ] Complete the remaining item-by-item behavior/acquisition audit for all 40 item definitions, especially acquisition/drop claims and Creative/Admin restrictions not covered by this focused Gem/Rune/Salvage pass. Live gameplay edge cases remain untested.
 - [ ] Run rendered narrow-screen/mobile checks; source CSS and successful build alone are not visual validation.
 - [ ] Re-run build, generated HTML/link/anchor audit, and bilingual parity review after this pass.
 
