@@ -20,6 +20,34 @@
 **Unlock note / หมายเหตุการปลดล็อก:** The v1.39.0 central feature gate requires **Prestige 6 + Ascension 3**. The Ascension confirmation note says P3, but that note conflicts with the central gate. / เงื่อนไขหลักในโค้ด v1.39.0 กำหนด **Prestige 6 + Ascension 3** ส่วนข้อความยืนยัน Ascension ที่ระบุ P3 ขัดแย้งกับเงื่อนไขหลักในโค้ด.
 
 
+## Quick-start workflow · วิธีเริ่มใช้งาน
+
+**EN**
+
+1. **Unlock the system:** reach Prestige 6 and Ascension 3. The confirmation text currently mentions P3, but the documented central gate is P6/A3.
+2. **Prepare a rune:** craft an Uncarved Rune from a Legend Gem and Amethyst Shard. To carve it, hold the Uncarved Rune with an Engraver in your offhand and use it; sneak-use processes ×16.
+3. **Check the grade:** the resulting Rune item contains one random rune. Its grade indicates the rune tier, and the grade probabilities are listed above. Higher grades are less common.
+4. **Inspect compatibility:** before inserting, open the matching list page and confirm the rune fits the weapon/tool type. Armor, food, and Shears cannot hold runes; the Magic pool is disabled.
+5. **Tune the rune:** at the Anvil's Rune menu, choose Recarved to reroll both grade and rune, Reroll to change the effect while keeping grade, or Selective reroll to choose an effect type. Compare the Resonant Ink cost first.
+6. **Install and level:** Insert installs the Rune item into the main-hand weapon/tool; only one rune can be installed per item. Rune levels can be raised through Rune Mastery and Chorus Synergy, but curses do not gain these level bonuses.
+7. **Reconsider drawbacks:** the positive effect grows with level and the drawback shrinks to zero at Lv 7. Review both sides at the displayed reference level (Lv 4) before choosing a rune.
+
+**TH**
+
+1. **ปลดล็อกระบบ:** ทำ Prestige 6 และ Ascension 3 ข้อความยืนยันในเกมปัจจุบันระบุ P3 แต่เงื่อนไขหลักที่เอกสารอ้างอิงคือ P6/A3
+2. **เตรียมรูน:** คราฟต์ Uncarved Rune จาก Legend Gem และ Amethyst Shard ถือ Uncarved Rune พร้อม Engraver ที่มือรองแล้วใช้เพื่อแกะสลัก; ย่อใช้เพื่อทำครั้งละ ×16
+3. **ตรวจเกรด:** ไอเทม Rune ที่ได้มีรูนสุ่มหนึ่งตัว เกรดบอก Tier ของรูน และโอกาสแต่ละเกรดอยู่ในตารางด้านบน เกรดสูงพบได้น้อยกว่า
+4. **ตรวจความเข้ากันได้:** ก่อนติดตั้ง เปิดหน้ารายการที่เกี่ยวข้องและตรวจว่ารูนใช้กับอาวุธหรือเครื่องมือชนิดนั้นได้ เกราะ อาหาร และกรรไกรใส่รูนไม่ได้ ส่วนพูล Magic ถูกปิดใช้งาน
+5. **ปรับรูน:** ที่เมนู Rune ของทั่ง เลือก Recarved เพื่อสุ่มทั้งเกรดและรูน, Reroll เพื่อเปลี่ยนเอฟเฟกต์โดยคงเกรดเดิม หรือ Selective reroll เพื่อเลือกประเภทเอฟเฟกต์ ตรวจค่า Resonant Ink ก่อน
+6. **ติดตั้งและเพิ่มเลเวล:** Insert จะติดตั้ง Rune item ลงอาวุธหรือเครื่องมือในมือหลัก โดยหนึ่งชิ้นติดตั้งได้หนึ่งรูน เลเวลเพิ่มจาก Rune Mastery และ Chorus Synergy แต่คำสาปไม่ได้รับโบนัสเลเวลเหล่านี้
+7. **พิจารณาข้อเสียด้วย:** เอฟเฟกต์ด้านดีแรงขึ้นตามเลเวลและข้อเสียลดจนเป็นศูนย์ที่ Lv 7 ตรวจทั้งสองด้านโดยอ้างอิงเลเวลที่แสดงในตาราง (Lv 4) ก่อนเลือก
+
+### Common planning mistakes · ข้อผิดพลาดที่ควรหลีกเลี่ยง
+
+- **EN:** Do not confuse a Rune item's grade with a guaranteed specific effect; do not spend Resonant Ink before checking the action's tier-based cost; and do not assume every weapon or tool accepts every rune type.
+- **TH:** อย่าสับสนระหว่างเกรดของไอเทมรูนกับเอฟเฟกต์เฉพาะที่รับประกัน อย่าใช้ Resonant Ink โดยไม่ตรวจราคาที่คูณตาม Tier และอย่าคิดว่าอาวุธหรือเครื่องมือทุกชนิดใส่รูนทุกประเภทได้
+
+
 ## Rune items · ไอเทมรูน
 
 **EN:** A Rune item holds **one random rune**. Make an **Uncarved Rune** (Legend Gem + Amethyst Shard), hold it with an **Engraver** in your offhand and use it (Shift = ×16) to carve a Rune item of a random grade. The grade equals the tier of the rune inside (Gamma = T1 … Omega = T7).
