@@ -44,7 +44,7 @@
 
 | Step | Title / หัวข้อ | Do / ทำอย่างไร |
 |---|---|---|
-| 3.1 | Craft a Reforge Hammer<br><i>คราฟต์ Reforge Hammer</i> | Craft a Reforge Hammer: Iron Block + Dark Oak Log. It is used on an anvil for every Reforge action. |
+| 3.1 | Craft a Reforge Hammer<br><i>คราฟต์ Reforge Hammer</i> | Craft a Reforge Hammer: 2 Iron Blocks + 3 Dark Oak Logs. It is used on an anvil for every Reforge action. |
 | 3.2 | View Total Statistics<br><i>ดู Total Statistics</i> | Status Menu > Character & Gear > Total Statistics. It lists the Augment bonuses on your gear and lets you switch single stats on or off. |
 | 3.3 | Reroll an Augment<br><i>Reroll Augment</i> | Side task. Hold your Hammer and right-click an anvil (or Shift + right-click): Reroll costs hammer durability + 1 Augment Crystal. Enchanted mobs drop 1-5 Crystals; 1 Crystal + Diamond + Lapis crafts 2 Crystals. |
 | 3.4 | Lock an Augment stat<br><i>Lock ค่า Augment</i> | Side task. At the anvil choose Lock to protect a good stat from future Rerolls (hammer durability + 2 Augment Crystals). |
