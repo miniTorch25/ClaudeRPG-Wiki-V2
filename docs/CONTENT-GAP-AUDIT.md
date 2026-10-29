@@ -1,3 +1,7 @@
+---
+permalink: /CONTENT-GAP-AUDIT
+---
+
 # Content Gap Audit — ClaudeRPG Wiki V2
 
 > **Scope:** Initial editorial audit of the existing wiki repository.
