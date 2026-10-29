@@ -79,3 +79,7 @@ body.lang-th [data-lang="en"],body.lang-en [data-lang="th"],.language-hidden{dis
   .article-content table:not([align="right"]) th,
   .article-content table:not([align="right"]) td{padding:7px 8px;}
 }
+
+
+/* Keep small resource-pack pixel-art icons crisp when enlarged in tables. */
+.article-content table img{image-rendering:pixelated;object-fit:contain;}
