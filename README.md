@@ -20,7 +20,7 @@ ClaudeRPG adds character progression, equipment customization, elemental armor, 
 
 ## Browse the wiki
 
-The wiki is organized into seven areas:
+The wiki is organized into eight areas:
 
 1. **Getting Started** — installation, guided learning, FAQ, and terminology.
 2. **Character & Progression** — Level, Prestige, Ascension, Stats, Mastery, and Achievements.
@@ -29,6 +29,7 @@ The wiki is organized into seven areas:
 5. **Exploration & Quality of Life** — Waypoints, discovery, settings, stash, and display helpers.
 6. **Systems Reference** — system index and release history.
 7. **Admin & Maintenance** — administrator-only tools and commands.
+8. **Tools & Project Maintenance** — download guidance, Toast command builder, source audits, and contributor documentation.
 
 See [SUMMARY.md](SUMMARY.md) for the navigation tree. Current completed work and remaining validation are tracked in [WIKI-STATUS.md](WIKI-STATUS.md). Contribution and validation standards are in [CONTRIBUTING.md](CONTRIBUTING.md). The shared site shell and navigation live in `assets/wiki.css` and `assets/wiki.js`; the Toast Generator uses separate files at `assets/toast-generator.css` and `assets/toast-generator.js` so its page markup stays easier to maintain.
 
