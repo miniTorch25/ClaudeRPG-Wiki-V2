@@ -11,7 +11,7 @@ This page is the concise current snapshot. `CONTENT-GAP-AUDIT.md` is a chronolog
 - **Boss source audit:** boss phase scanning, thresholds, intervals, retries, minion-cap scope, and cleanup behavior were checked against v1.39.0 scripts in [PR #21](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/21).
 - **Recipe parity:** the Transcendent Ink note now matches the two v1.39.0 brewing recipes in both languages; see [PR #30](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/30).
 - **Repository conventions:** added `.editorconfig`, [CONTRIBUTING.md](CONTRIBUTING.md), and README links to the new tools in [PR #63](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/63).
-- **Final static-audit pass:** [PR #65](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/65) added the tool/audit pages to the table of contents, syntax-checks inline JavaScript across all repository HTML pages, and checks all ten Toast frame textures plus every configured icon preset before building. CI passed in [workflow run #40835325446](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835325446).
+- **Final static-audit pass:** [PR #65](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/65) added the tool/audit pages to the table of contents, syntax-checks inline JavaScript across all repository HTML pages, and checks all ten Toast frame textures plus every configured icon preset before building. [PR #66](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/pull/66) also made the site validator fail if an image omits its `alt` attribute; all checks passed in [workflow run #40835597056](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40835597056).
 
 ## Still outstanding
 
