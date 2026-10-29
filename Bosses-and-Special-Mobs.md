@@ -63,14 +63,20 @@
 - The thresholds describe effects that trigger as a boss loses health; they are not the mob's Evolution Tier. Ascension changes world difficulty/unlocks, while the boss's current HP determines when an available phase effect can trigger.
 - **Aura** effects apply within the listed radius; **summon** entries state how many minions are created by that trigger. The general minion cap is 10, but this page does not establish whether the cap is shared across every boss encounter or scoped to an individual boss—verify that detail in-game before documenting it more precisely.
 - Special abilities listed in the first table are separate from boss phases and do not imply that the mob has evolved.
-- The table summarizes the wiki's documented configuration. Confirm exact trigger timing, repeat behavior, effect duration, and multiplayer edge cases against the matching v1.39.0 scripts before treating them as verified implementation details.
+- **Verified against the v1.39.0 scripts:** boss phases are scanned every 20 ticks (about once per second) while players are in the same dimension and within 64 blocks of the boss. The scan uses the boss's current HP fraction and the world's Ascension.
+- Aura effects repeat on their configured intervals (3s for both Wither auras, 20s for the Dragon's first aura, 6s for its late aura, and 8s for the Elder Guardian aura). The Warden tremor repeats every 10s. Effect durations are configured separately and may be shorter than the interval.
+- Phase messages are tagged as sent once per boss. Summon phases are also marked complete only after at least one minion successfully spawns; if the local cap is full or spawning fails, the manager can try again on a later scan. Enrage remains active while its phase conditions are met.
+- **Minion cap scope is now confirmed from code:** the cap is 10 tagged boss minions within 64 blocks of each boss, not one global cap for all bosses. Minions are also removed by cleanup when farther than 80 blocks from every player in their dimension. These are source-code findings; live multiplayer behavior has not been tested.
 
 **TH**
 - เปอร์เซ็นต์ที่ระบุคือ **เกณฑ์ HP** ส่วน A2/A4/A6 คือ **ระดับ World Ascension ขั้นต่ำ** โดยต้องผ่านเงื่อนไขทั้งสองอย่างจึงจะใช้เอฟเฟกต์นั้นได้
 - เกณฑ์เหล่านี้อธิบายเอฟเฟกต์ที่ทำงานเมื่อ HP ของบอสลดลง ไม่ใช่ Evolution Tier ของมอนสเตอร์ Ascension ใช้กำหนดความยาก/การปลดล็อกของโลก ส่วน HP ปัจจุบันของบอสเป็นตัวกำหนดว่าเอฟเฟกต์เฟสที่ปลดล็อกแล้วจะทำงานเมื่อใด
 - เอฟเฟกต์ **Aura** มีผลในรัศมีที่ระบุ ส่วนรายการ **summon** ระบุจำนวนลูกสมุนที่เกิดจากการทำงานนั้น มีเพดานลูกสมุนทั่วไป 10 ตัว แต่หน้านี้ยังไม่ได้ยืนยันว่าเพดานดังกล่าวใช้ร่วมกันระหว่างบอสทุกตัวหรือแยกตามบอส จึงควรตรวจสอบในเกมก่อนระบุให้ละเอียดกว่านี้
 - ความสามารถพิเศษในตารางแรกแยกจากเฟสบอส และไม่ได้หมายความว่ามอนสเตอร์ตัวนั้นวิวัฒนาการแล้ว
-- ตารางนี้สรุปข้อมูลที่ Wiki ระบุไว้ ควรตรวจจังหวะการทำงาน การทำซ้ำ ระยะเวลาเอฟเฟกต์ และกรณีผู้เล่นหลายคนกับ Script v1.39.0 ที่ตรงกันก่อนถือว่าเป็นรายละเอียดที่ยืนยันจากโค้ดแล้ว
+- **ยืนยันจาก Script v1.39.0 แล้ว:** ระบบตรวจเฟสบอสทุก 20 ticks (ประมาณวินาทีละครั้ง) เมื่อมีผู้เล่นอยู่ในมิติเดียวกันและอยู่ห่างจากบอสไม่เกิน 64 บล็อก โดยใช้สัดส่วน HP ปัจจุบันของบอสและค่า Ascension ของโลก
+- เอฟเฟกต์ Aura ทำงานซ้ำตามช่วงเวลาที่ตั้งค่าไว้ (Aura ของ Wither ทั้งสองแบบทุก 3 วินาที, Aura แรกของ Dragon ทุก 20 วินาที, Aura ระยะท้ายทุก 6 วินาที และ Aura ของ Elder Guardian ทุก 8 วินาที) ส่วน Tremor ของ Warden ทำงานทุก 10 วินาที ระยะเวลาของเอฟเฟกต์ถูกตั้งแยกจากช่วงเวลาที่เรียกใช้
+- ข้อความแจ้งเฟสจะถูกทำเครื่องหมายว่าแสดงแล้วหนึ่งครั้งต่อบอส ส่วนเฟสเรียกลูกสมุนจะถูกทำเครื่องหมายว่าสำเร็จเมื่อมีลูกสมุนเกิดอย่างน้อยหนึ่งตัวเท่านั้น หากเต็มเพดานหรือเรียกเกิดไม่สำเร็จ ระบบจะลองใหม่ในการตรวจรอบถัดไป Enrage จะทำงานต่อขณะที่เงื่อนไขของเฟสนั้นยังผ่านอยู่
+- **ยืนยันขอบเขตเพดานลูกสมุนจากโค้ดแล้ว:** จำกัดลูกสมุนที่ติดแท็กไว้ 10 ตัวภายในรัศมี 64 บล็อกของบอสแต่ละตัว ไม่ใช่เพดานรวมของบอสทั้งหมด ลูกสมุนยังถูกลบโดยระบบ Cleanup เมื่ออยู่ไกลจากผู้เล่นทุกคนเกิน 80 บล็อกในมิตินั้น ข้อมูลนี้ตรวจจากซอร์สโค้ดแล้ว แต่ยังไม่ได้ทดสอบพฤติกรรมจริงใน Multiplayer
 
 ---
 **See also / ดูเพิ่มเติม:** [Mob Evolution](Mob-Evolution) · [Progression](Progression)
