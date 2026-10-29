@@ -52,6 +52,10 @@ layout: default
   <a class="category-card" data-lang="th" href="{{ '/Systems' | relative_url }}"><span class="card-number">06 / อ้างอิง</span><h3>สารบัญระบบ</h3><p>ภาพรวมระบบหลักและบันทึกการอัปเดต</p></a>
   <a class="category-card" data-lang="en" href="{{ '/Admin' | relative_url }}"><span class="card-number">07 / ADMIN</span><h3>Admin &amp; Maintenance</h3><p>Administrator tools and maintenance commands.</p></a>
   <a class="category-card" data-lang="th" href="{{ '/Admin' | relative_url }}"><span class="card-number">07 / ผู้ดูแล</span><h3>เครื่องมือผู้ดูแลและบำรุงรักษา</h3><p>เครื่องมือผู้ดูแลระบบและคำสั่งสำหรับบำรุงรักษา</p></a>
+  <a class="category-card" data-lang="en" href="{{ '/Download' | relative_url }}"><span class="card-number">08 / DOWNLOAD</span><h3>Download ClaudeRPG</h3><p>Get the add-on package and installation resources.</p></a>
+  <a class="category-card" data-lang="th" href="{{ '/Download' | relative_url }}"><span class="card-number">08 / ดาวน์โหลด</span><h3>ดาวน์โหลด ClaudeRPG</h3><p>ดาวน์โหลดไฟล์แอดออนและดูข้อมูลสำหรับติดตั้ง</p></a>
+  <a class="category-card" data-lang="en" href="{{ '/Toast-Generator/' | relative_url }}"><span class="card-number">09 / TOOL</span><h3>Toast Generator</h3><p>Create and preview a ClaudeRPG Toast command.</p></a>
+  <a class="category-card" data-lang="th" href="{{ '/Toast-Generator/' | relative_url }}"><span class="card-number">09 / เครื่องมือ</span><h3>เครื่องมือสร้าง Toast</h3><p>สร้างคำสั่ง Toast ของ ClaudeRPG พร้อมดูตัวอย่างก่อนนำไปใช้</p></a>
 </div>
 
 <div data-lang="en">
