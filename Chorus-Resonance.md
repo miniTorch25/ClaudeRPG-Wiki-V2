@@ -16,6 +16,22 @@
 
 > ℹ️ Effect descriptions are shown in English, exactly as written in the game. / คำอธิบายเอฟเฟกต์เป็นภาษาอังกฤษตามที่เขียนในเกม
 
+## Quick workflow · วิธีใช้งาน
+
+**EN**
+1. Unlock Resonance through Chorus Mastery Lv 5; the system itself requires Prestige 2.
+2. Check the Resonant Ink cost on the Chorus overview before rolling or locking sockets.
+3. Select Resonance for the armor piece and roll its sockets. Duplicates are allowed; lock a desired result before rerolling the other socket.
+4. Remember that locking binds the armor piece to its tier. Unlocking is free, but plan your tier before spending more Ink.
+5. Build matching Resonance sockets across the full set to reach the 2/4/6/8-socket thresholds. Consult the element and hybrid tables below before committing to a build.
+
+**TH**
+1. ปลดล็อก Resonance ด้วย Chorus Mastery Lv 5 โดยระบบ Chorus เองต้องปลดล็อกที่ Prestige 2
+2. ตรวจค่า Resonant Ink ในหน้า Chorus หลักก่อนสุ่มหรือล็อกช่อง
+3. เลือก Resonance ให้เกราะชิ้นนั้นแล้วสุ่มช่อง ธาตุซ้ำกันได้ หากได้ผลที่ต้องการให้ล็อกไว้ก่อนสุ่มช่องอื่น
+4. จำไว้ว่าการล็อกผูกเกราะกับ Tier นั้น การปลดล็อกฟรี แต่ควรวางแผน Tier ก่อนใช้ Ink เพิ่ม
+5. จัดช่อง Resonance ที่ตรงกันทั้งชุดเพื่อให้ถึงเกณฑ์ 2/4/6/8 ช่อง ตรวจตารางธาตุและ Hybrid ด้านล่างก่อนตัดสินใจ
+
 
 ## Elements · ธาตุ
 
