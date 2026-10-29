@@ -61,7 +61,7 @@
 2. To use another player's named stone, interact with it and choose to save it to your own list if prompted.
 3. Open the stone's menu and choose **Teleport**. Check the displayed destination and remember that travel costs Ender Pearls based on horizontal distance; cross-dimension travel costs 8.
 4. If a destination is no longer usable because its stone was destroyed, remove the stale entry through the manager.
-5. For a portable destination, use a **Waypoint Orb** and add a special point while standing at the desired location. Special points are free, but limited to five per Orb list.
+5. For a portable destination, use a **Waypoint Orb** and add a special point while standing at the desired location. Special points are free, but limited to five per player across the player's Waypoint Orb list.
 
 ### Find Discovery rewards · รับรางวัลการค้นพบ
 1. Open **Discovery Log** from the Status menu or Script Tool.
