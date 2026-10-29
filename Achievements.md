@@ -39,3 +39,20 @@ Total **248** · hidden achievements show as "???" until unlocked. · รวม 
 
 ---
 **See also / ดูเพิ่มเติม:** [Guide Quest](Guide-Quest) · [Quality of Life (Toast)](Quality-of-Life)
+
+
+## Finding an achievement condition · วิธีค้นหาเงื่อนไข Achievement
+
+**EN**
+1. Open **Status Menu › Achievements**.
+2. Choose the most relevant category: [Combat](Achievements-Combat), [Work & Support](Achievements-Work-and-Support), or [Misc & Silly](Achievements-Misc).
+3. Use the page selector and **Previous/Next** controls; the menu shows 10 achievements per page.
+4. Compare the icon state: coloured means completed, grey means incomplete. A hidden entry appears as **???** until unlocked.
+5. For a specific condition, open the matching category page and scan its condition/description rather than guessing from the achievement title. Some progress is backfilled from existing character progression, while other counters begin tracking from when the feature is used.
+
+**TH**
+1. เปิด **Status Menu › Achievements**
+2. เลือกหมวดที่เกี่ยวข้อง: [Combat](Achievements-Combat), [Work & Support](Achievements-Work-and-Support) หรือ [Misc & Silly](Achievements-Misc)
+3. ใช้ตัวเลือกหน้าและปุ่ม **ก่อนหน้า/ถัดไป** โดยแต่ละหน้ามี 10 รายการ
+4. ดูสถานะไอคอน: สีหมายถึงสำเร็จแล้ว ส่วนสีเทาหมายถึงยังไม่สำเร็จ รายการที่ซ่อนจะแสดงเป็น **???** จนกว่าจะปลดล็อก
+5. หากต้องการทราบเงื่อนไขเฉพาะ ให้เปิดหน้าหมวดที่ตรงกันแล้วอ่านคำอธิบาย/เงื่อนไข อย่าเดาจากชื่อ Achievement อย่างเดียว บางความคืบหน้านับย้อนหลังจากข้อมูลตัวละครเดิม ส่วนตัวนับอื่นจะเริ่มนับเมื่อใช้งานระบบนั้น
