@@ -47,7 +47,6 @@
 ## 6. Systems Reference
 * [Systems Index](Systems.md)
 * [Changelog](Changelog.md)
-* [Content Gap Audit](CONTENT-GAP-AUDIT.md)
 
 ## 7. Admin & Maintenance
 * [Admin Tools](Admin.md)
