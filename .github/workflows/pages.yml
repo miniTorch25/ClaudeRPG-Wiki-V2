@@ -63,6 +63,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Validate generated local links, assets, and anchors
+        run: python scripts/validate_site.py ./_site
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -436,3 +436,39 @@ Use these labels in editorial notes while drafting:
 - [x] Added a visual reference gallery for all four custom block families in both English and Thai sections of `Items.md`: Waypoint Stone, Blank Waypoint Stone, Ultimate Enchanter, and Uncarved Gem Block.
 - [x] Checked the four texture filenames against the v1.39.0 image manifest; the existing Pages build extracts them from the add-on archive into `assets/images/blocks`.
 - [ ] Confirm the rendered block images and card layout at desktop and mobile widths; source manifest/build checks do not replace visual inspection.
+
+
+### Final validation snapshot — 2026-10-29
+
+This snapshot separates completed source/repository checks from work that requires a real Minecraft client or a rendered browser/device.
+
+#### Verified in the repository / CI
+
+- [x] Before PR #58 was opened, the repository's open-PR query returned no pending PRs.
+- [x] The latest main-branch Pages workflow observed for this snapshot completed successfully: image extraction, Jekyll build, artifact upload, and deployment. Run: https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40821325530
+- [x] The image pipeline is configured to extract original item, block, achievement, mob, toast, and rarity textures from `ClaudeRPG_v1_39_0.zip` at build time. Generated image folders are build artifacts, not missing committed assets.
+- [x] The previous generated-site audit checked 2,278 local links/assets and 48 anchor fragments across 37 generated HTML pages with no missing targets at that point. This result predates the latest image-only changes, so it is not represented as a fresh post-change scan.
+- [x] Recent documentation-only changes enlarged inline art, added original category/waypoint/block/item textures, and clarified Augment/Reforge/Salvage guidance. No add-on gameplay code was changed.
+
+#### Still not verifiable from source/CI alone
+
+- [x] Completed a row-by-row source reconciliation for all 40 item definitions and 4 block definitions, mapping recipe/drop/grant routes and major scripted use/permission rules in `ITEM-SOURCE-AUDIT.md`. This is source-level verification only; live gameplay edge cases remain untested.
+- [x] Added and ran `scripts/validate_site.py` in the Pages workflow after Jekyll builds. Run [#40822508001](https://github.com/miniTorch25/ClaudeRPG-Wiki-V2/actions/runs/40822508001) scanned 39 HTML pages, 2,421 local links/assets, and 50 fragment targets; no missing local targets or anchors were found. This verifies path/anchor existence, not visual correctness.
+- [ ] Desktop and narrow/mobile visual inspection in an actual browser or device. CSS review and CI success are not substitutes for visual testing.
+- [ ] Live in-game and multiplayer checks for event-driven Achievement edge cases and Waypoint/block ownership behavior. Source inspection identifies candidates but cannot establish actual runtime behavior.
+- [ ] Resolve the Gem/Rune unlock confirmation-text inconsistency in the add-on itself. The Wiki documents the central feature gates (Gem P4/A2; Rune P6/A3) and notes the conflict; changing the add-on requires separate authorization.
+
+#### Completion rule
+
+Do not mark the remaining items above as complete based solely on Markdown edits, source inspection of a subset, or a successful Pages workflow. The documentation work is complete only to the extent explicitly marked `[x]`; the remaining items require the missing source reconciliation or real-client validation described above.
+
+
+### Follow-up pass: full item/block source reconciliation (v1.39.0)
+
+- [x] Inspected the supplied `ClaudeRPG_Prog_v1_39_0.mcaddon` archive and mapped all 40 `ClaudeBP/items/*.json` definitions and all 4 `ClaudeBP/blocks/*.json` definitions to their recipes, scripted acquisition/grant paths, and principal use restrictions.
+- [x] Reconciled the 35 recipe JSON definitions with the custom item/block inventory and existing English/Thai `Items.md` summaries; no unresolved custom recipe ingredient or output references were found in the structural audit.
+- [x] Added `ITEM-SOURCE-AUDIT.md` with a definition-by-definition evidence table and explicit boundaries between source review and live testing.
+- [x] Corrected `Items.md` in both languages to describe both Gem Fusion modes: standard Fusion uses 5 same-tier Gems; Core Fusion uses 2 same-tier Gems + 1 Augment Core. Both produce one Gem of the next tier and require a Reforge Hammer/durability.
+- [x] Added and ran `scripts/validate_site.py` after the Jekyll build: 39 HTML pages, 2,421 local links/assets, and 50 fragment targets passed with no missing targets. This updates the earlier 2,278-link/48-anchor one-time audit.
+- [ ] Render and inspect desktop/mobile layouts in a real browser/device.
+- [ ] Test gameplay edge cases and multiplayer attribution/Waypoint protection in Minecraft. Source inspection does not establish live runtime behavior.
