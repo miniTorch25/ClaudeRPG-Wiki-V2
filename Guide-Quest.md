@@ -87,7 +87,7 @@
 | Step | Title / หัวข้อ | Do / ทำอย่างไร |
 |---|---|---|
 | 7.1 | Reach Prestige 6<br><i>ถึง Prestige 6</i> | Runes need Prestige 6 and Ascension 3. Keep prestiging: each Prestige raises the max level by 20 and costs more Sigils. |
-| 7.2 | World reaches Ascension 3<br><i>โลกถึง Ascension 3</i> | Raise the world to Ascension 3 (needs a Prestige 3 player and Ascension Relics). Mobs get much tougher; the Sculk tier appears. |
+| 7.2 | World reaches Ascension 3<br><i>โลกถึง Ascension 3</i> | Raise the world to Ascension 3 (needs a Prestige 3 player and Ascension Relics). Mobs get much tougher; the Sculk tier appears. **This alone does not unlock Runes**: Rune access requires Prestige 6 + Ascension 3. |
 | 7.3 | Craft an Uncarved Rune<br><i>คราฟต์ Uncarved Rune</i> | Legend Gem + Amethyst Shard (shapeless). |
 | 7.4 | Carve a Rune item<br><i>แกะไอเทมรูน</i> | Hold the Uncarved Rune with the Engraver in your off hand and use it (Shift = x16). You get a Rune item of a random grade: Gamma < Delta < Theta < Sigma < Phi < Psi < Omega (T1 to T7) with a random Rune inside. |
 | 7.5 | Insert a Rune<br><i>ติดตั้ง Rune</i> | Anvil > Rune > Insert: puts the Rune item into the weapon or tool in your main hand (weapons and tools only; armor uses Gems). Use Recarved or Reroll with Resonant Ink to change it. |
