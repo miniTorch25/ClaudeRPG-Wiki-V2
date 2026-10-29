@@ -260,3 +260,10 @@ Use these labels in editorial notes while drafting:
 - [x] Cross-checked Guide Quest steps 5.5 and 6.1 against `Progression.md` and `Gem.md`. Clarified that Ascension 2 enables boss Uncarved Gem drops, but Gem system access requires both Prestige 4 and Ascension 2.
 - [x] Kept the distinction between world Ascension eligibility (a Prestige 2 player can raise it to A2) and the separate Gem feature gate (P4/A2).
 - [ ] Continue checking other progression steps for cases where an item/drop milestone could be mistaken for system unlock access.
+
+
+### Follow-up pass: Guide Quest Rune unlock clarity
+
+- [x] Clarified Guide Quest step 7.2: a Prestige 3 player can raise the shared world to Ascension 3, but Rune system access still requires Prestige 6 + Ascension 3 according to the v1.39.0 central feature gate.
+- [x] Kept world-Ascension eligibility separate from the player's Prestige requirement for Rune access; no addon behavior changed.
+- [ ] Continue checking progression steps where world milestones may be mistaken for feature unlocks.
