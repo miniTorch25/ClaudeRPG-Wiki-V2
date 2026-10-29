@@ -1,3 +1,7 @@
+---
+permalink: /CONTRIBUTING
+---
+
 # Contributing to ClaudeRPG Wiki V2
 
 ## Repository layout
