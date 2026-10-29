@@ -51,3 +51,11 @@
 
 ## 7. Admin & Maintenance
 * [Admin Tools](Admin.md)
+
+## 8. Tools & Project Maintenance
+* [Download ClaudeRPG](Download.md)
+* [Toast Generator](Toast-Generator.html)
+* [Current Wiki Status](WIKI-STATUS.md)
+* [Content Gap Audit](CONTENT-GAP-AUDIT.md)
+* [Item & Block Source Audit](ITEM-SOURCE-AUDIT.md)
+* [Contributing Guidelines](CONTRIBUTING.md)
