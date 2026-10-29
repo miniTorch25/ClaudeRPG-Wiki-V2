@@ -15,6 +15,8 @@ ClaudeRPG adds character progression, equipment customization, elemental armor, 
 - **[Guide Quest](Guide-Quest.md)** — an in-game guided tour.
 - **[FAQ](FAQ.md)** — quick answers to common questions.
 - **[Systems Index](Systems.md)** — a map of the documented gameplay systems.
+- **[Download ClaudeRPG](Download.md)** — official release link and safe installation checklist.
+- **[Toast Generator](Toast-Generator.html)** — build, preview, and copy a source-verified Toast command.
 
 ## Browse the wiki
 
@@ -28,7 +30,7 @@ The wiki is organized into seven areas:
 6. **Systems Reference** — system index and release history.
 7. **Admin & Maintenance** — administrator-only tools and commands.
 
-See [SUMMARY.md](SUMMARY.md) for the navigation tree.
+See [SUMMARY.md](SUMMARY.md) for the navigation tree. Contribution and validation standards are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Version and accuracy
 
