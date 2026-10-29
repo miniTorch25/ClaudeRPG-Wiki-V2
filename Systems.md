@@ -20,6 +20,7 @@
 | Gem (84 abilities) | Prestige 4 + Ascension 2 | [Gem](Gem) · [Abilities](Gem-Abilities) |
 | Rune (116 runes) | Prestige 6 + Ascension 3 | [Rune](Rune) · [Weapon](Runes-Weapon-Types) · [All-Weapon](Runes-All-Weapon) · [Tool](Runes-Tool) · [Curse](Runes-Curse) |
 | Item categories | — | [Item Categories](Item-Categories) |
+| Ultimate Enchanter (Vanilla Enchant, Chorus, Gem) | Prestige 2 / Prestige 4 + Ascension 2 for advanced sections | [Ultimate Enchanter](Ultimate-Enchanter) |
 | Mob Evolution | Ascension 1+ | [Mob Evolution](Mob-Evolution) |
 | Bosses & special mobs | — | [Bosses & Special Mobs](Bosses-and-Special-Mobs) |
 | Exploration (Waypoint, Discovery) | — | [Exploration](Exploration) |
