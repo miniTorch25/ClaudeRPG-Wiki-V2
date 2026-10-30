@@ -25,7 +25,7 @@ Right-click the Stats Book (Status), Knowledge Book (encyclopedia), or Script To
 Augment at P1, Chorus at P2, Gem at P4 + Ascension 2, and Rune at P6 + Ascension 3. See [Progression](Progression).
 
 ### Where do I get Echo Shards?
-Sculk Evolve mobs and the Warden can drop 1–3 when killed by a player. Echo Shards can also be found in Ancient Cities.
+Sculk Evolve mobs and the Warden drop 1–3 Echo Shards when killed by a player. Mobs created by a Sculk Potion drop none; Looting can add extra shards. Echo Shards can also be found in Ancient Cities.
 
 ### Why are there no Magic runes?
 The Magic rune pool exists but is disabled until magic weapons are added.
@@ -71,7 +71,7 @@ Not yet.
 Augment ปลดล็อกที่ P1, Chorus ที่ P2, Gem ที่ P4 + Ascension 2 และ Rune ที่ P6 + Ascension 3 ดูรายละเอียดที่หน้า [ความก้าวหน้า](Progression)
 
 ### หา Echo Shard ได้จากที่ไหน?
-มอนสเตอร์ Sculk Evolve และ Warden มีโอกาสดรอป 1–3 ชิ้นเมื่อผู้เล่นเป็นผู้กำจัด นอกจากนี้ยังพบ Echo Shard ได้ใน Ancient City
+มอนสเตอร์ Sculk Evolve และ Warden จะดรอป Echo Shard 1–3 ชิ้นเมื่อผู้เล่นเป็นผู้กำจัด (มอนสเตอร์ที่เกิดจาก Sculk Potion จะไม่ดรอป และ Looting ช่วยเพิ่มจำนวนที่ได้) นอกจากนี้ยังพบ Echo Shard ได้ใน Ancient City
 
 ### ทำไมจึงไม่มีรูน Magic?
 มีพูลรูน Magic อยู่แล้ว แต่ปิดใช้งานไว้จนกว่าจะเพิ่มอาวุธเวทมนตร์เข้ามา
