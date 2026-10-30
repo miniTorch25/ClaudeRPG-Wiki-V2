@@ -71,7 +71,7 @@ Particle aura from 2+ matching Chorus sockets. See [Chorus](Chorus). · ดู�
 
 
 ## Mining & drops · การขุดและดรอป
-- **Vein** (Tool Augment): breaks connected same-type blocks one at a time; drops come from vanilla loot tables, so **Fortune** and **Silk Touch** work. 1 durability per block. Shears can Vein leaves. Hoe Vein covers all leaves. Rune *Earthsplitter* adds +24 (global cap 48). · ขุดบล็อกชนิดเดียวกันที่ติดกัน ใช้ loot table ของเกม จึงใช้ Fortune/Silk Touch ได้ เสียความทนทาน 1 ต่อบล็อก
+- **Vein** (Tool Augment): breaks connected same-type blocks one at a time; drops come from vanilla loot tables, so **Fortune** and **Silk Touch** work. 1 durability per block. Shears can Vein leaves. Hoe Vein covers all leaves. Rune *Vein Boost* adds +4 at Lv 4 (scales with rune level; global cap 48). · ขุดบล็อกชนิดเดียวกันที่ติดกัน ใช้ loot table ของเกม จึงใช้ Fortune/Silk Touch ได้ เสียความทนทาน 1 ต่อบล็อก
 - **Luck** (Pickaxe Augment): chance of a bonus ore drop.
 - **Looting / Fortune** raise addon drops: +20% chance per level (max 95%) for evolved-mob drops (Gem, Core, Essence, Echo Shard) and Fortune's Favor. · Looting/Fortune เพิ่มโอกาสดรอปของแอดออน
 
