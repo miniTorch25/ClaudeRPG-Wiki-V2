@@ -1,0 +1,98 @@
+ClaudeRPG Wiki vs Addon v1.39.0 - Mismatch Report
+=================================================
+Wiki:   https://minitorch25.github.io/ClaudeRPG-Wiki-V2/
+Addon:  ClaudeRPG_v1_39_0.zip (BP + RP, v1.39.0)
+Scope:  every wiki page except the Class system (not in the addon yet)
+
+SUMMARY
+-------
+The wiki matches the addon almost everywhere. Numbers, tables and effect
+texts were compared against the config/scripts in the ZIP and agree.
+Only 2 wiki-side mismatches were found. 3 addon-side issues are listed
+separately (the wiki is not wrong there).
+
+
+PART 1 - WIKI vs ADDON MISMATCHES (fix on the wiki)
+---------------------------------------------------
+
+[1] Quality of Life page - stale "Earthsplitter" rune          (CONFIRMED)
+    Wiki says : Rune "Earthsplitter" adds +24 Vein (global cap 48).
+    Addon     : No rune named Earthsplitter exists in the 116-rune catalog
+                (config/rune_catalog.js). The rune that gives Vein is
+                "Vein Boost" (all_tool pool, T7, Vein +4 at Lv 4, Chorus
+                affinity Earth + Metal). The cap of 48 is correct.
+    Also      : The wiki's own Tool Runes page lists Vein Boost +4, so the
+                wiki contradicts itself.
+    Source of the stale text: scripts/systems/knowledge_book.js (in-game
+                Knowledge Book still uses the old rune list).
+    Suggested fix: replace "Earthsplitter +24" with "Vein Boost rune
+                (+4 at Lv 4, scales with rune level)". Keep the cap of 48.
+
+[2] FAQ page - Echo Shard drop wording                          (MINOR)
+    Wiki says : Sculk Evolve mobs and the Warden "can drop 1-3" Echo Shards
+                when killed by a player.
+    Addon     : The drop is guaranteed (1-3) on a player kill
+                (config/evolution_config.js: shardMin 1, shardMax 3;
+                managers/evolution_manager.js). Exceptions: mobs created by
+                a Sculk Potion drop none (anti-farm). Looting can add extra
+                shards (loot_bonus_config.js: APPLY_EVO_SHARD).
+    Suggested fix: "Sculk Evolve mobs and the Warden drop 1-3 Echo Shards
+                when killed by a player (none from Sculk Potion mobs;
+                Looting adds more)."
+
+
+PART 2 - ADDON-SIDE ISSUES (the wiki is correct; consider fixing the addon)
+---------------------------------------------------------------------------
+
+[A] Wrong unlock text in Ascension confirmation messages
+    File     : scripts/config/progression_config.js (UNLOCK_NOTES)
+    Problem  : Says Gem unlocks at P2 and Rune at P3.
+    Real gate: Gem = Prestige 4 + Ascension 2, Rune = Prestige 6 + Ascension 3
+               (the wiki states this correctly).
+
+[B] Old rune names in the in-game Knowledge Book
+    File     : scripts/systems/knowledge_book.js
+    Problem  : Still mentions old runes such as Earthsplitter, Lucky Strike,
+               Smelter's Touch. This is the origin of mismatch [1].
+
+[C] Rune "Fertile" has a dead effect
+    File     : scripts/config/rune_catalog.js (hoe pool, T6, "fertile")
+    Problem  : Defines freeBonemeal 10 (10% free Bone Meal) but no script
+               handles the effect, so it does nothing in game.
+    Wiki     : Shows "-" for the effect, which matches real behavior.
+    Options  : implement the effect or remove it from the catalog.
+
+
+PART 3 - WIKI STRUCTURE NOTES (not data mismatches)
+---------------------------------------------------
+- The Ultimate Enchanter page is linked from the Systems page but is not in
+  the sidebar menu.
+- The Download page contains no gameplay data to compare.
+- Chorus effect text uses straight apostrophes in the addon and curly ones
+  on the wiki (e.g. Reaper's Mark). Cosmetic only.
+
+
+PART 4 - WHAT WAS CHECKED AND FOUND CORRECT
+-------------------------------------------
+Home, Getting Started, Guide Quest (44 steps / 8 chapters), FAQ (except [2]),
+Glossary, Systems index, Changelog, Progression (level cap 40 + 20 per
+Prestige, XP formula, Prestige/Ascension costs and scaling, perks), Stats
+(requirements, caps), Mastery (11 lines, XP totals), Items (40 items,
+4 blocks, 35 recipes), Item Categories (4 groups, 21 kinds), Augment &
+Reforge, Chorus overview (25 elements, 49 hybrids, costs, caps, synergy),
+Echo (40 effect texts), Resonance (84), Transcend (144), Fusion (28),
+Chorus Elements (tiers + all 25 aura particles), Gem, Gem Abilities (84),
+Ultimate Enchanter, Rune overview (116 runes), Weapon Runes (42),
+All-Weapon Runes (40), Tool Runes (27), Curse Runes (7), Mob Evolution
+(8 tiers), Bosses & Special Mobs, Exploration (51/5/1 biomes, 9 structures),
+Quality of Life (except [1]), Achievements (248: 76 combat / 92 work /
+80 misc, 20 hidden, all names, tiers and conditions), Admin (commands,
+19 config groups), Toast Generator (command format, costs, limits).
+
+
+LIMITATIONS
+-----------
+- Comparison was done against the config/scripts inside the ZIP, not by
+  playing the game.
+- Rune "at Lv 4" values were verified using the penalty factor 0.4 for
+  drawbacks (rune_catalog.js LEVEL_PENALTY) and the stated good-side values.
